@@ -122,6 +122,17 @@ how to know the 'main','temp' of json file. shall we click to it to find out ?  
 
 36/ try <36@,1***>
 
+37/ for command, response in commands.items():
+            if command in text.lower():
+                print("Assistant:", response)
+                engine.say(response)
+                engine.runAndWait()
+                break
+        else:
+            print("Assistant: Sorry, I didn't understand.")      <37@,1***>
+
+38/ why do we need for loop in this case ?    <38@,1***>
+
 2*** basic tutorial to build alexa
 
 1/ sets up a speech recognition system using the SpeechRecognition library. It listens to audio input from the microphone, adjusts for ambient noise, and then tries to recognize the speech using the Google Speech Recognition service. If successful, it prints out the recognized text. <1@,2***>
