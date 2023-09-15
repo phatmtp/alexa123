@@ -625,6 +625,12 @@ Assistant: Hello! How can I assist you?
 
 This code can be modified to add or remove commands, or to change the responses that the assistant gives. You can also use the code to create voice assistants for specific tasks, such as controlling smart home devices or playing music.
 
+the else statement can be shared for both the for loop and the if statement in this case. This is because the else statement is executed if none of the conditions in the for loop or the if statement are met.
+
+However, there are some cases where it is not appropriate to share the else statement. For example, if you want to do something different if the user's voice command is not in the commands dictionary, then you would need to use a separate else statement for the for loop and the if statement.
+
+Overall, whether or not to share the else statement is a matter of style and preference. There is no right or wrong answer.
+
 <38@> why do we need for loop in this case ?
 
 We need a for loop in this case because we want to check if the user's voice command is in any of the commands in the `commands` dictionary. If it is, we want to respond with the corresponding response.
