@@ -537,6 +537,49 @@ The for loop is needed in this case because the voice assistant needs to check a
 
 This code can be used to create a simple voice assistant that can respond to a limited set of commands. By adding more commands to the commands dictionary, the assistant can be made more powerful and versatile.
 
+<36@> try
+
+The `try` statement in Python is used to test a block of code for errors. If an error occurs, the code in the `except` clause is executed. The `try` statement can also have an `else` clause, which is executed if the code in the `try` clause does not raise an error.
+
+The `try` statement is a powerful tool for preventing errors and ensuring that your code continues to run smoothly.
+
+Here is an example of a simple `try` statement:
+
+```python
+try:
+    print(1 / 0)
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+```
+
+If you run this code, you will see the following output:
+
+```
+Cannot divide by zero.
+```
+
+This is because the code in the `try` clause raises a `ZeroDivisionError` exception. The `except` clause then catches the exception and prints a message to the console.
+
+The `try` statement can also be used to handle other types of errors, such as file not found errors and syntax errors.
+
+Here is an example of a more complex `try` statement:
+
+```python
+try:
+    with open("my_file.txt", "r") as f:
+        contents = f.read()
+except FileNotFoundError:
+    print("File not found.")
+except Exception as e:
+    print("An unexpected error occurred:", e)
+else:
+    print(contents)
+```
+
+This code tries to open the file `my_file.txt` for reading. If the file does not exist, the `except` clause for `FileNotFoundError` is executed. If the file exists but there is an error reading it, the `except` clause for the generic `Exception` is executed. If the file is opened and read successfully, the `else` clause is executed.
+
+The `try` statement is a versatile tool that can be used to handle a variety of errors in Python code. By using the `try` statement, you can prevent your code from crashing and ensure that it continues to run smoothly.
+
 2*** basic tutorial to build alexa
 
 <1@> sets up a speech recognition system using the SpeechRecognition library. It listens to audio input from the microphone, adjusts for ambient noise, and then tries to recognize the speech using the Google Speech Recognition service. If successful, it prints out the recognized text.
