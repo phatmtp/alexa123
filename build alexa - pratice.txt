@@ -1,0 +1,183 @@
+[0] instruction
+[1] explanaton
+[2] basic tutorial to build alexa
+[3] Build alexa
+
+
+0*** instruction
+
+1/ instruction to voice assistants <1@,0***>
+
+2/ Setting Up the Project Environment <2@,0***>
+
+3/ Speech Recognition <3@,0***>
+
+4/ Natural Language Processing <4@,0***>
+
+5/ Text-to-Speech Conversion <5@,0***>
+
+6/ Connecting to APIs and Services <6@,0***>
+
+7/ Creating Voice Commands and Responses <7@,0***>
+
+8/ Advanced Features and Enhancements <8@,0***>
+
+9/ Testing and Debugging <9@,0***>
+
+10/ Deploying Your Voice Assistant <10@,0***>
+
+
+1*** explanation
+
+1/ speech_recognition <1@,1***>
+
+2/ can speech_recognition be used as offline mode ? <2@,1***>
+
+3/ pyttsx3 <3@,1***>  
+
+4/ can pyttsx3 be used as offline mode? <4@,1***>
+
+5/ PyWhatKit <5@,1***>
+
+6/ datetime package in python <6@,1***>
+
+7/ wikipedia package in python <7@,1***>
+
+8/ pyjokes package in python <8@,1***>
+
+9/ what is NLTK libary ? <9@,1***>
+
+10/ nltk.download('punkt') <10@,1***>
+
+11/ nltk.download('averaged_perceptron_tagger') <11@,1***>
+
+12/ pos_tags = nltk.pos_tag(tokens) <12@,1***>
+
+13/ API key for the OpenWeatherMap API <13@,1***>
+
+14/ with sr.Microphone() as source: <14@,1***>
+    print("Listening...")
+
+15/ r.adjust_for_ambient_noise(source) <15@,1***>
+
+16/ what is 'try' & 'except' ? <16@,1***>
+
+17/ what is 'recognize_google(audio)' ? <17@,1***>
+
+18/ what is 'UnknownValueError' ? <18@,1***>
+
+19/ what is 'RequestError ' ? <19@,1***>
+
+20/ print("An error occurred during speech recognition:", str(e)) <20@,1***>
+
+21/ audio = r.listen(source) <21@,1***>
+
+22/ engine = pyttsx3.init() <22@,1***>
+
+23/ engine.runAndWait() <23@,1***>
+
+24/ engine.setProperty('rate', 150) 
+	 engine.setProperty('volume', 0.8)    <24@,1***> 
+
+25/ import requests <25@,1***>
+
+26/ API key <26@,1***>
+
+27/ URL <27@,1***>
+
+28/ complete_url = base_url + 'q=' + city + '&appid=' + api_key <28@,1***>
+
+29/ data = response.json()
+temperature = data['main']['temp']
+description = data['weather'][0]['description']  <29@,1***>
+
+30/ what is NLP ? <30@,1***>
+
+31/   for command, response in commands.items():
+        if command in text.lower():
+            print("Assistant:", response)
+            engine.say(response)
+            engine.runAndWait()
+            break
+    else:
+        print("Assistant: Sorry, I didn't understand.")   <31@,1***>
+
+
+32/ while True:
+    	try:
+        with sr.Microphone() as source:
+            print("Listening...")
+            r.adjust_for_ambient_noise(source)
+            audio = r.listen(source)               <32@,1***>
+
+33/ how to know the base url <33@,1***>
+
+34/ data = response.json()
+  temperature = data['main']['temp']
+  description = data['weather'][0]['description']
+                                                                                                                                                          
+how to know the 'main','temp' of json file. shall we click to it to find out ?     <34@,1***>
+
+35/ how to parse the JSON data from the OpenWeatherMap API <35@,1***>
+
+2*** basic tutorial to build alexa
+
+1/ sets up a speech recognition system using the SpeechRecognition library. It listens to audio input from the microphone, adjusts for ambient noise, and then tries to recognize the speech using the Google Speech Recognition service. If successful, it prints out the recognized text. <1@,2***>
+
+# Initialize the recognizer 
+# Use the microphone as the source for audio 
+# Adjust for ambient noise 
+# Listen for audio and convert it to text 
+# Recognize speech using Google Speech Recognition 
+
+2/ we will cover Natural Language Processing (NLP). NLP allows your voice assistant to understand and process user commands in a more intelligent way. Use the NLTK library to perform basic NLP operations <2@,2***>
+
+# Download the necessary NLTK data 
+# tokenizes the user command 
+# performs part-of-speech tagging 
+# prints the tokenized command and its part-of-speech tags
+
+3/ convert text to voice speech <3@,2***>
+
+# Initialize the text-to-speech engine
+# Set the rate and volume of the speech
+# Convert text to speech
+# Play the speech
+
+4/ Now, let's connect to APIs and services to enhance the functionality of your voice assistant. -> weather update <4@,2***>
+
+(You can integrate external APIs to fetch information such as weather updates, news headlines, or even play music from a streaming service).
+
+# Define the API key and base URL for OpenWeatherMap
+# Store user's city
+# Build the complete URL with parameters
+# Send a GET request to the API
+# Parse the response to retrieve weather information
+# Print the weather information
+
+5/ let's creating voice commands and generating appropriate responses in our voice assistant. The key is to design a framework that handles user commands effectively. <5@,2***>
+
+# Initialize the speech recognition and text-to-speech engines
+# Define voice commands and responses
+# Listen for user command
+# Convert speech to text
+# Process user command and generate response
+
+6/ Now, let's improve the user experience of your voice assistant by adding error handling and implementing additional features.
+
+In this enhanced version, we added a while loop to continuously listen for user commands until the user says "stop",'hello',what is your name','how is the weather'.
+
+You can further extend the functionality by implementing more sophisticated error handling techniques, incorporating machine learning models for intent recognition, or integrating additional APIs to provide more diverse responses. <6@,2***>
+
+# Initialize the speech recognition and text-to-speech engines
+# Define voice commands and responses
+# Listen for user command
+# Convert speech to text
+# Process user command and generate response
+
+
+3*** Build alexa
+
+1/ FULL CODE from another tutorial <1@,3***>
+
+2/ The completed code with all the previous code snippets combined <2@,3***>
