@@ -19,7 +19,13 @@
 4/ raspberry pi 4 <4@,2***>
 5/ raspberry model A <5@,2***>
 6/ raspberry pi model B <6@,2***>
+7/ Raspberry Pi 3 Model B+ <7@,2***>
+8/ Raspberry Pi Zero 2 W <8@,2***>
 
+
+3*** instruction
+
+1/ if i wanna build a mini pc. which raspberry pi model should i need ? <1@,3***>
 
 
 
