@@ -1,0 +1,24 @@
+[1] how does chat gpt work ?
+[2] The transformer algorithm
+[3] the steps of creating your own Chatbot GPT
+[4] how many kind of neural network ?
+[5] what is neural network ?
+[6] why ChatGPT is only available as a cloud-based service ?
+[7] how large is ChatGPT ?
+[8] why The transformer algorithm is expensive ?
+[9] what is The attention mechanism ?
+[10] is it possible to build ChatGPT by diy ?
+[11] is it possible to make it offline and self learning by it's own ?
+[12] how big is it, the data server of chat gpt ?
+[13] what is natural language processing ?
+[14] recurrent connection & attention mechanism
+[15] Perceptron neural network (bard explanation)
+[16] Perceptron neural network (anakin explanation)
+[17] what is Fine-tuning in A.I field ?
+[18] what is pre-trained model ?
+[19] what is overfitting ?
+[20] let's take chat gpt as the example. how long does it take to pre-training the chat bot before fine-tunning it
+[21] evaluation and iteration
+[22] various metrics like response coherence, relevancy, fluency
+[23] NAND gate
+
