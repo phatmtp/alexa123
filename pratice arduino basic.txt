@@ -1,0 +1,309 @@
+1*** Ampere 
+
+1/ what is ampere ? <1@,1***>
+
+2/ what does coulumn mean ? <2@,1***>
+
+3/ <3@,1***>
+
+# how much A in the receiving antena of the mobile phone ?
+
+# how much A in tv remote control ?
+
+# how much A in the keyboard & mouse ?
+
+# how much A in a high power flash light ?
+
+# how much A in a typical laptop ?
+
+# how much A in a microwave owen & vacuum cleaner ?
+
+# how much A in a bolt of lightning ?
+
+4/ what is nA, mA, µA ? <4@,1***>
+
+
+2*** Basic components of arduino board UNO:
+
+1/ What is PWM in simple words ? <1@,2***>
+
+2/ Digital Pins ? <2@,2***>
+
+3/ Pin 13 LED ? <3@,2***>
+
+4/ Power led ? <4@,2***>
+
+5/ Atmega 328 microcontroller ? <5@,2***> 
+
+6/ different between Microcontroller & microprocessor ? 
+<5'@,2***> 
+
+6/ Analog pins ? <6@,2***>
+
+7/ Power pins ? <7@,2***>
+
+8/ GND ? <8@,2***>
+
+9/ 5V pins ? <9@,2***>
+
+10/ Power connector ? <10@,2***>
+
+11/ TX and RX leds ? <11@,2***>
+
+12/ USB jack ? <12@,2***>
+
+13/ Reset button ? <13@,2***>
+
+
+3** Arduino specification <3***> 
+
+0/ How much byte does it take for the arduino command ? <10@,3***>  
+
+1/ clock speed ? <1@,3***>
+
+1'/ How much clock speed does it take for a single command in a cpu ? <11@,3***>
+
+2/ flash memory ? <2@,3***>
+
+3/ SSDs mainly use ? <2'@,3***>
+
+3/ Can flash memory be used to build hard drive ? <7"@,3***>
+
+4/ SRAM ? <3@,3***>
+
+5/ DRAM ? <4@,3***>
+ 
+6/ SRAM and DRAM difference ? <5@,3***>
+
+7/ When to use SRAM & DRAM ? <5'@,3***>
+
+8/ What happend if DRAM doesnt refresh ? <7"",3***>
+
+9/ Flash memory and RAM ? <2"@,3***>
+
+10/ Flash memory and SRAM ? <2"'@,3***>
+
+11/ EEPROM ? <6@,3***>
+
+12/ difference between EEPROM and SRAM ? <7"""@,3***>
+
+13/ Why do we need both EEPROM & SRAM in the arduino ? <7"""'@,3***> 
+
+14/ Flash memory and EEPROM ? <7@,3***>
+
+15/ Flash memory & EEPROM mainly used ? <8@,3***>
+
+16/ SPD chip ? <8'@,3***> 
+
+16/ A bio chip <8"@,3***>
+
+16/ what happend if there is no EEPROM in a microcontroller ? <7""',3***>
+
+17/ Electrical polarity ? <9@,3***>
+
+18/ Hard drive & DRAM ? <7'@,3***>
+
+19/ SRAM vs DRAM : How SRAM Works? How DRAM Works? Why SRAM is faster than DRAM ? <7"'@,3***>
+
+
+4'*** Safety instruction
+
+
+7*** Analog & Digital
+
+1/ What is analog & digital signal ? <1@,7***>
+
+2/ analog & digital appliance ? <2@,7***>
+
+
+8*** Bit/byte
+
+1/ What is binary number ? <1@,8***>
+
+2/ What is decimal number ? <2@,8***>
+
+3/ When to use Binary to decimal conversion and reverse ? <3@,8***> 
+
+4/ why do we need to convert binary to decimal and reverse ? <4@,8***>
+
+5/ How to convert binary to decimal ? <5@,8***>
+
+6/ How to convert decimal to binary ? <6@,8***>
+
+
+9*** Progarming aspects
+
+1/ what does void mean to programing language ? 
+<1@,9***>
+
+2/ what happend if we dont use void ? <2@,9***>
+
+3/ what is Void setup & void loop ? <3@,9***>
+
+4/ Difference between parameters & arguments ? <4@,9***>
+
+5/ What is pinmode ? <5@,9***>
+
+6/ digital write ? <6@,9***>
+
+7/ Pull up & Pull down resistor ? <7@,9***>
+
+8/ Digital read ? <8@,9***>
+
+9/ Analog write ? <9@,9***>
+
+10/ Analog read ? <10@,9***>
+
+11/ Why analog read return integer value between 0 and 1023 ? <11@,9***>
+
+12/ Analog voltage & Digital voltage <12@,9***>
+
+13/ Static & Dynamic programing languages <13@,9***>
+
+14/ why the integer is ranging from -32767 to 32768 ? <14@,9***>
+
+15/ what is serial.begin(9600) ? <15@,9***>
+
+16/ The diffirence between digital write and analog write ? <16@,9***>
+
+17/ example of digital signal & analog signal to laptop ? <17@,9***>
+
+18/ diffirence between digital write and digital read ? <18@,9***>
+
+19/ diffirence between analog write and analog read ? 
+<19@,9***>
+
+
+<10***> Technology
+
+1/ what is UART interface ? <1@,10***>
+
+2/ UART in arduino ? <2@,10***>
+
+3/ What is GPS module and RFID module ? <3@,10***>
+
+4/ Parity bit ? <4@,10***>
+
+5/ How parity bit work ? <5@,10***>
+
+6/ baud rate (speed parameter) and data rate (bit rate) in arduino. are they the same thing ? <6@,10***>
+
+7/ Does bit rate and baud rate are always same ? <7@,10***>
+
+8/ why do we need both baud rate and data bit for UART ? what happend if we dont use 2 of them for the arduino project <8@,10***>
+
+9/ simple way to understand multilevel signaling vs binary signaling <9@,10***>
+
+10/ What are some other examples of multilevel signaling ? <10@,10***>
+
+11/ What is DSL ? <11@,10***>
+
+12/ Cable vs DSL vs Fiber. <12@,10***>
+
+13/ What is LAN , and what is ethernet for simple explain ? <13@,10***>
+
+14/ are ethernet and LAN the same thing ? 
+<14@,10***>
+
+15/ what is the UART TTL in arduino ? 
+<15@,10***>
+
+16/ what is OpenWrt ? <16@,10***>
+
+17/ Linux, util-linux, musl, and BusyBox. what are they ? when do we use them ? <17@,10***>
+
+18/ What is GNU ? <18@,10***>
+
+19/ ISO C libary <19@,10***>
+
+20/ usb com driver <20@,10***>
+
+21/ What is a COM port? <21@,10***>
+
+22/ What is a MODEM ? <22@,10***>
+
+23/ modulation and demodulation process in modem <23@,10***>
+
+24/ What is Modulation ? Why Modulation is Required ? Types of Modulation Explained. 
+<24@,10***>
+
+25/ amplitude,phase,frequency <25@,10***>
+
+26/ what is bandwidth ? <26@,10***>
+
+27/ carrier wave in modem <27@,10***>
+
+28/ Modem & wifi router combos <28@,10***>
+
+29/ different type of modems <29@,10***>
+
+30/ internet service provider <30@,10***>
+
+31/ how does isp work with modem to provide internet to households ? <31@,10***>
+
+32/ Telephone modem Digital subscriber Line (DSL) Cable modem Satellite modem => how much bps ? <32@,10***>
+
+33/ tiwsted pair cable, fiber optic cable, coaxial cable 
+<33@,10***>
+
+34/ different between dsl modem and telephone
+modem ? <34@,10***>
+
+35/ Broad band internet <35@,10***>
+
+36/ PSTN <36@,10***>
+
+37/ What is telco ? <37@,10***>
+
+38/ Local loop <38@,10***>
+
+39/ What is UTP ? <39@,10***>
+
+40/ what is CLEC ? <40@,10***>
+
+41/ is binary an digital singal or analog signal ? <41@,10***>
+
+42/ beside voice signal as analog signal. is there any more examples of analog signal ?
+<42@,10***>
+
+43/ Local Loops CLEC/ISP Overview <43@,10***>
+
+44/ All OS have their own libary ? <44@,10***>
+
+45/ What is DSL and how does it use an analog signal for transmitting ? <45@,10***>
+
+46/ What is the difference between ADSL and DSL ? <46@,10***>
+
+47/ What is CI/CD ? <47@,10***>
+
+48/ Network Types: LAN, WAN, PAN, CAN, MAN, SAN, WLAN <48@,10***>
+
+<11***> Type of arduinos
+
+1/ arduino uno (standar arduino) <1@,11***>
+
+2/ Arduino pro <2@,11***>
+
+3/ arduino mega 2560 R3 <3@,11***>
+
+4/ Arduino MKR1000 <4@,11***>
+
+5/ Arduino Yun <5@,11***> 
+
+6/ what is ATmega32u4 and the Atheros AR9331  
+<6@,11***>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

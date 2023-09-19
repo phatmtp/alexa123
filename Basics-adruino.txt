@@ -1,0 +1,1494 @@
+[1] AMPERE
+[2] Basic components of arduino board UNO
+[3] Arduino specification
+[4] Arduino IDE simulation
+[4'] Safety instruction
+[5] input devices
+[6] Output devices
+[7] Analog & Digital
+[8] Bit/byte
+[9] Programing aspects
+[10] Technology
+[11] Type of arduinos
+
+
+
+1*** AMPERE:
+
+<1@> Ampere is a unit to measure electrical current
+
+<2@> 1 ampere = 6.24*10^18 electrons flowing through a certain point per second
+
+<3@> 
+# 1nA - 1µA: tiny current in the receiving antena of the mobile phone
+# 10mA: tv remote control
+# 50mA: keyboard & mouse
+# 1A: high power flash light
+# 3A: typical laptop
+# 15A: microwave oven, vacuum cleaner
+# 10,000+A: a bolt of lightning
+
+4/ Units:
+# 1 Microampere [µA] = 0.000 001 Ampere [A] or 1.0×10^-6 Ampere => 1A = 1 million µA
+# 1 Milliampere [mA] = 0.001 Ampere [A]  => 1A = 1000mA
+# 1 Nanoampere [nA] = 0.000 000 001 Ampere [A] or 1.0×10^-9 Ampere [A] => 1A = 1 billion nA
+
+
+2*** Basic components of arduino board UNO:
+
+<1@> What is PWM in simple words?
+
+- Pulse width modulation or PWM is a commonly used control technique that generates analog signals from digital devices such as microcontrollers.
+ 
+- In PWM technique, the signal's energy is distributed through a series of pulses rather than a continuously varying (analog) signal.
+
+<@2> Digital Pins
+
+- Which are number from 0 to 13 on the board. Representing the pin's location on the arduino board
+
+- The pins 4, 6, 8, 9, 10, and 12 are used as a digital input or output for the Arduino board.
+
+- Digital pins use these pins with 'digitalRead()','digitalWrite()','analogWrite'
+
+- 'analogWrite' works only on the pins with the PWM simbol: '~'
+
+<3@> Pin 13 LED
+
+- The LED build-in to your board are connected to pin 13
+
+- It will be handy target for your first blink sketch
+
+- if this LED turn on. Which mean your adruino is pluggin
+
+- When ever pin 13 goes high. pin 13 LED will turn on. And when pin 13 goes low. this led will turn off
+
+<4@> Power led
+
+- Power led indicates that the arduino board is receiving power
+
+<5@> Atmega 328 microcontroller. 
+
+- The heart of arduino board
+
+- It controls all the main function of the arduino
+
+- the ATmega328 is an 8 bit microcontrollers. low power & high performance. Wide range of features
+
+- 32KB of flash memory, 2KB of SRAM, 1KB of EEPROM, 23 general-purpose I/O lines, 32 general-purpose of working register
+
+- three flexible timer/counter with compare modes
+
+- internal and external interrupts
+
+- serial programmable with USART 
+ 
+- A byte-oriented 2-wired serial interface
+
+- 8 channel 10-bit A/D converter
+
+- programmable watchdog timer
+
+- The ATmega328 is a popular microcontroller that is used in Arduino Uno. It has 32 KB of flash memory, 2 KB of SRAM and 1 KB of EEPROM. It also has 28 pins, 14 of which are digital I/O pins and 6 of which are analog input pins. It can run at a maximum frequency of 20 MHz. The ATmega328 may be suitable for the simple wheel robot project if your program code and data fit within its memory limits.
+
+<5'@> different between Microcontroller & microprocessor:
+
+A microcontroller is a single integrated circui that contains a processor core,memory,and programmable input/output peripherals
+
+A microprocessor is a single integrated circuit that contains a processor core, but no memory or programmable input/output peripherals.
+
+Microcontrollers are designed to be self-contained systems, while microprocessors are designed to be used in conjunction with other components to create a system
+
+
+<6@> Analog pins
+
+- We have 6 analog pins on the board. Number from a0 to a5
+
+- We can connect analog sensor on these pins
+
+<7@> Power pins
+
+- We can power any components using these pins
+
+- GND and 5V pins use these pins to provide 5V power and ground to your circuit
+
+
+<8@> GND:
+
+- GND : Short for 'Ground'. There are several GND pins on the Arduino, any of which can be used to ground your circuit.
+
+- Grounding helps protect you from the dangers of damaged circuits or electrical overloads
+
+- When power surges happen, the excess electricity introduced to the system could leap out of the wiring. 
+
+- Without electrical grounding, this stray voltage could start a fire, damage appliances, or shock bystanders
+
+<9@> 5V pins:
+
+- 5V are the 5V power pins. They provide a regulated 5V output from the arduino's onboard voltage regulator. These pins can be used to power external components, such as sensors and other devices
+
+- Input pins usually accept high or low. High being tied to positive volts and low being ground. It is important to protect your input pins from voltage spikes and overloads.
+
+- Output pins usually offer a high or low in the same fashion. High being circuit positive volts and low being 0.
+
+- +5v is just a shorthand for the expected positive volts. You may find some circuits use +3.3v or +2v. These all represent circuit positive and show that value.
+
+- Gnd, ground, and -0 are circuit negative or the end of the circuit back to battery.
+
+
+<10@> Power connector
+
+- This is how you power arduino when it's not plugged into a usb port for power. Can accept voltage from 7v up to 12v
+
+<11@> TX and RX leds
+
+- these leds indicate communication between your adruino and your computer
+
+- TX and RX are abbreviations for Transmit and Receive.
+
+- These two pins are designated for connecting your own serial device whether the USB serial cable is connected or not. 
+
+- expect them to flicker rapidly during sketch upload as well as during serial communication
+
+<12@> USB jack
+
+- USB port used for powering adruino uno.
+
+- Uploading your sketches to your arduino
+
+- And for communicating with your computer
+
+<13@> Reset button
+
+- Reset button will reset ATMEGA microcontroller
+
+- It wont erase the code which already present
+
+
+3*** Arduino specification
+
+- Microcontroller: ATmega328
+- Operating voltage: 5V
+- Input voltage(recommended): 7- 12V 
+- Input voltage(limits): 6-20V
+- Digital I/O pins: 14 (of which 6 provide PWM output)
+- Analog input pins: 6
+- DC current per I/O pin: 40mA
+- DC current for 3.3V pin: 50mA
+- Flash memory: 32KB of which 0.5KB used by bootloader
+- SRAM: 2KB (ATmega328)
+- EEPROM: 1KB(ATmega328)
+- Clock speed: 16MHZ
+
+<1@> The clock speed measures the number of cycles your CPU executes per second, measured in GHz (gigahertz),hertz is mean time per second. 
+
+The ideal clock speed for arduino uno: 16 MHz. There are alot of diffirent wire carrying information in the CPU. These particular wire will turn on/off at the steady rate in syncs. Those wire are called 'the clock'. 
+
+it turning on around twice per second. Gigahertz mean the clock turning on billion times per second	
+
+<2@> Flash storage (or flash memory or flash drive).(A thumb drive, also called a USB drive or flash drive). Most SSDs (solid state drives) are made mostly of flash memory.
+
+It is a forms of non-volatile memory. so it retain any information saved to them even after you shut down your computer (unlike RAM, which only temporarily stores information).
+
+Both flash and SSD storage are easily rewriteable. So, if you are constantly uninstalling and reinstalling or downloading games. 
+
+Flash memory & SSD. These two types of memory will have you covered. 
+
+
+<2'@> SSDs mainly use ?
+
+SSDs are used anywhere that hard drives can be deployed. 
+
+In consumer products, for example, they are used in personal computers (PCs), laptops, computer games, digital cameras, digital music players, smartphones, tablets and thumb drives. 
+
+They are also incorporated with graphics cards.
+
+<2"@> Flash memory and RAM are not similar concepts. Flash memory is a type of non-volatile memory that store data when power is turned off. RAM is a type of volatile memory that store data only when the power is on. 
+
+<2"'@> Flash memory and SRAM are not similar things.  Flash memory is a type of non-volatile memory that store data when power is turned off, while SRAM is a type of volatile memory that stores data as long as power is applied
+
+<3@> SRAM (static RAM) is a type of computer memory that is used to store data and instruction that is frequently used by the processor. 
+
+It is faster than DRAM and doesnt need to be refreshed like DRAM. 
+
+SRAM is more expensive than DRAM. It is typically used in small amounts for high-speed operation such as cache memory.
+
+ SRAM uses six transistors to store one bit of data
+
+<4@> DRAM (Dynamic RAM) stores each bit of data in separate capacitor within an integrated circuit. DRAM is a volatile memory, it requires power to stored information. 
+
+DRAM is widely used in modern computer and other electronic devices for primary storage. 
+
+DRAM uses one capacitor and one transistor to store one bit of data. 
+
+DRAM is used as the main memory in many computing devices, such as personal computers, servers, mobile devices, televisions,automotive and video game consoles.
+
+The laptop has DRAM. DRAM is a common type of RAM that most laptops use. DRAM helps your laptop store and access data temporarily for faster performance. 
+
+<5@> What is difference between SRAM and DRAM?
+
+The most significant difference between SRAM and DRAM is that SRAM is made up of flip-flops (transistor based circuit to store data bits), while DRAM is made up of transistors and capacitors. SRAM is used in specialized applications such as cache memory of computer system
+
+SRAM stores data for as long as power is supplied in the system. It is much faster than DRAM which needs to be refreshed every once in a while.
+
+<5'@> When to use SRAM & DRAM ?
+
+We should use SRAM when we need fast and low-power memory, such as CPU cache units. We should use DRAM when we need high-density and cheap memory, such as main memory in computers. SRAM is more expensive and complex than DRAM.
+
+<6@> EEPROM stands for electrically erasable programmable read-only memory and is a type of non-volatile memory used in computers, usually integrated in microcontrollers such as smart cards and remote keyless
+
+<7@> Flash memory and EEPROM are not the same things. flash memory is a type of non-volatile memory that can be removable & rewritable. 
+
+Both EEPROM and flash are non-volatile memory type. EEPROM is used in computers and other electronic devices to store small amounts of data that must be saved when power is removed
+
+
+<7'@> Hard drive & DRAM ?
+
+The hard drive is not made of DRAM. The hard drive is a storage device that uses magnetic disks or flash memory to store data permanently. DRAM is a type of RAM that uses capacitors and transistors to store data temporarily. DRAM is much faster than the hard drive, but it loses data when power is off
+
+
+<7"@> Can flash memory used to build hard drive ?
+
+Yes, flash memory can be used to build hard drive. Flash memory is a type of solid-state drive (SSD) that uses electric programming to store data without any moving parts. 
+
+Flash memory is faster, quieter, and more durable than traditional hard drives that use magnetic disks.
+
+Flash memory is also more expensive and has lower capacity than traditional hard drives
+ 
+ 
+<7"'@> Why SRAM is faster than DRAM ?
+ 
+ SRAM is faster than DRAM because it doesnt needs to refresh periodically to maintain it's data, which takes time and energy
+ 
+ SRAM stores data using flip-flops,while DRAM store data using capacitors
+ 
+ Flip-slops can retain data as long as power is supplied,while capacitors leak charge over time.
+ 
+ 
+<7""@> What happend if DRAM doesnt refresh ?
+ 
+ DRAM using capacitors to store data. However,these capacitors tend leak charge over tiem,so they need to be refreshed periodically by reading and rewriting their values
+ 
+ If DRAM doesnt refresh, it will lose it's data and cause errors or crashes in the system
+ 
+ That's why systems with persistent memory (PMem) use a mechanism called a mechanism called Asynchronous DRAM refresh (ADR) to ensure that all pending writes are saved during a power loss
+
+  
+<7""'>@ What happend if there is no EEPROM in a microcontroller: 
+
+The microcontroller will not be able to store any data permanently. 
+
+This mean that any data stored in the microcontroller will be lost when the power is turned off. 
+Without EEPROM, the microcontroller will also not be able to store any program code, so it will not be able to execute any instruction  
+
+<7"""@> difference between EEPROM and SRAM
+
+EEPROM is non-volatile, which means it can retain data even when the power is off. SRAM is volatile, which means it loses data when the power is off.
+
+EEPROM can be erased and modified by byte, while SRAM can be modified by bit. Flash memory, another type of non-volatile memory, can only be erased by block.
+
+EEPROM is mainly used to store data that needs to be preserved after power loss, such as settings or calibration values. SRAM is mainly used to store temporary data that are generated during runtime, such as variables or stack.
+
+EEPROM has slower access speed than SRAM, because it requires more instructions and cycles to read and write data. SRAM has faster access speed than EEPROM, because it can directly access any address.
+
+<7"""'@> Why do we need both EEPROM & SRAM in the arduino:
+
+EEPROM & SRam serve diffirent functions in an arduino system. EEPROM is used to permanently store setting, and to store amounts of data between power cycles.
+
+SRam is used to store data in active memory, like variables used in a program, and it is where program execution take place
+
+Using just one of them would not be enough for a typicall arduino project. EEPROM provides ability to save configuration settings and store information even after a power cycle, SRAM is essential for running code and manipulating data
+
+
+<8@> applications of EEPROM & Flash memory
+
+Flash memory can be used in many other devices or components in addition to SSDs: phones, digital cameras, calculators, USB drives (also called flash drives).
+
+Flash memory are mainly used for program storage and data storage.
+ 
+EEPROM are mainly used in application to store configuration data 
+
+EEPROM has many applications in various fields such as telecom, consumer, automotive and industrial. Some of the examples are:
+
+As BIOS chip in computers to store basic input/output system settings and boot information.
+
+As storage for re-programmable calibration information in test equipment such as oscilloscopes or multimeters.
+
+As storage for in-built self-learning functionality in remote operated transmitters such as garage door openers or car keys.
+
+As serial presence detect (SPD) chip in memory modules to store information about the module’s size, speed, voltage and timing
+
+
+<8'@> SPD chip
+
+An SPD chip (serial presense detect) is a small chip on a memory module that stores information about the module’s characteristics and timings.
+
+it helps the BIOS (basic input/output system) to identify and configure the memory module correctly when the computer is started
+
+An SPD chip is an example of how EEPROM can be used to store data that needs to be preserved after power loss
+
+
+<8"@> A bio chip ?
+
+It is a device that can analyze organic molecules associated with living organisms. 
+
+It can be used for various purposes, such as DNA testing, drug discovery, disease diagnosis and biosensors.
+
+There are different types of bio chips, such as DNA chips, protein chips and lab-on-a-chip
+
+
+<9@> Electrical polarity (positive and negative) is the direction of current flow in an electrical circuit. 
+
+Current flows from the positive pole (terminal) to the negative pole. Electrons flow from negative to positive. 
+In a direct current (DC) circuit, current flows in one direction only, and one pole is always negative and the other pole is always positive. 
+
+In an alternating current (AC) circuit the two poles alternate between negative and positive and the direction of the current (electron flow) reverses periodically. 
+
+<10@> How much byte does it take for the arduino command: 
+
+The size of an arduino command depends on the type of command being used.
+
+Generally, a single command will take up between 1 and 4 bytes of memory
+
+<11@> How much clock speed does it take for a single command in a cpu: 
+
+The amount of clock speed required for a single command in a CPU depends on the type of cpu
+
+Generally, modern CPUs require clock speeds of at least 1 GHZ(1000 MHZ) to execute a single command
+
+
+4*** Arduino IDE simulation
+-> Autodesk-tinkercad
+
+
+
+4'*** Safety instruction
+
+- never connect to any voltage of over 5v to any I/O pin (digital pin & analog pin)
+
+- you can use only any voltage over 5v to power the arduino though v in pin 
+
+- never connect pin to any voltage over 5v
+
+- never have to connect  a 5v pin to a ground pin. This way you will short it down and arduino will turn off
+
+- You have to take care of polarity, which mean if there is no polarity management on the circuit, you cant connect positive and negative terminal in opposite way. You cant connect a positive pin to a negative pin of some other component and vice versa. If you do it,The device will be damage
+
+- You have to be careful while using external power. The usb power is more than enough for all the project. But if you still need to use external power, you can use DC jack or VIN pins. Please do not connect to any voltage over 5v. Although arduino can tolerate up to 20v.But still dont use above 12v
+
+@ VIN Pin. The VIN pin in Arduino boards is a power pin with a dual function. This pin can work as a voltage input for regulated external power supplies that do not use a barrel jack connector. And even in that case. 
+
+
+5*** input devices
+
+# There are many Sensors that act as the input devices. 
+-> sensors:
+
+- rotatory potentiometer: This device would change the resistance it offers if we rotate the knob clockwise or anti-clockwise
+
+- momentary push button switch: When we press the switch, it will close the circuit, when we release the switch, it will open the circuit
+
+- force sensing resistor: This resistor change it's resistance based on the force applied on it
+
+- light dependent resistor: This resistance change its resistance based on the light falling on it
+
+- Tripple axis accelerometer: usually we see it in the phones and gaming devices. it is used for getting the orientation of the object on which is placed
+
+- Joystick: basic input controller. popular for gaming console
+
+- Microphone or sound sensor: It will capture and record the sound and noices from enviroment
+
+- Touch sensor: it will sensoring if someone is touching it or not
+
+- Rotary encoder: This sensor sense rotation of the object. it can be used in the motor shaft and we can see the speed of that motor & how many rotation it has taken. It also be used in volume knobs in the music systems
+
+- Utrasonic distance sensor: it use the utrasonic waves like a sonar, to tell the distance between sonar and the object
+
+- temperature sensor: it will sensor the temperature around it
+
+- temperature & humidity sensor: it tells humidity along the temperature
+
+- the infrared sensor: this is basically an obstacle detection sensor. It can tell if an object is there or not
+
+
+6*** Output devices
+
+# output devices are devices that can convert the output given by arduino to some human readable form
+
+- light emiting diode: It basically just glow when any pin on arduino is set to high
+
+- rgb led: this kind of led has many kind of color: red - green - blue. It can form n number of colors
+
+- buzzer: it will make some sounds if high voltage is given to it 
+
+- speaker: play sounds from your devices like smart phone 
+
+- oled display: It has full-fledged display. You can display graphic on it
+
+- lcd display: this is liquid crystal display. You can display character on it
+
+- seven segment display: It consists of 7 leds. Arrange in rectangualar fashion. It used to display number on it 
+
+- dot matrix display: It is an array of multiple leds. We can show characters on it 
+
+- dc motors: It basically move clock wise or anti-clock wise if it is given some voltage across it
+
+- servo motor: This is special kind of motor. We can stop it at different angles
+
+- stepper motor: Just like a dc motor. But the entire rotation is divided into equal steps. It can stop at different angles like servo motor and it also can drive heavy load
+
+
+7*** Analog & Digital
+
+<1@> What is analog & digital signal ?
+
+- An analog signal is a continuous signal that varies in amplitude, frequency, or some other property in direct proportion with a physical variable such as pressure,temperature,sound. Analog signals can be transmitted over long distance with relatively low power. They are most commont used signal type in the world
+
+- Digital signal is a signal that is encoded and transmitted using digital technology. It uses discrete,discontinous signals. Digital transmission and storage is easier, more reliable and less expensive than analog signal.Less noice,distortion and other forms of interference
+
+<2@> analog & digital appliance: 
+
+- In the arcade gaming controller. The joy stick transmit the analog signal. While the button transmit the digital signal 
+
+- analog sinal is like a knob button. digital signal is like a switch on/off button
+
+- in the arduino. Analog sensors will be used in the analog pins. digital sensors will be used in the digital pins 
+
+
+8*** Bit/byte
+
+<1@> What is binary number ?
+
+Binary number are used to represent data in computers. A binary number consists one of only 2 digits: 0 & 1 (this is called base-2). 
+
+Meaning that every number is represented using two digits in contrast to the base-10 system which uses ten digits (0 to 9). 
+
+Binary number are used in computing to represent data because computers use electricity which can exist in two states - either on or off. 
+
+So within a computer, data is stored as a combination of one and zero 
+
+
+<2@> What is decimal number ?
+
+Decimal numbers are used for caculations and for representing values in memory. 
+
+It helps computer to represent,store and manipulate numbers in order to have the exactly caculation. Even minute differences in values can be significant
+
+
+<3@> When to use Binary to decimal conversion and reverse ?
+
+Binary to decimal conversion is used when performing operation on binary numbers, such as addition, subtraction, multiplication. 
+
+Decimal to binary conversion is used when representing decimal numbers in a binary system, such as when representing decimal fraction in binary
+
+- in terms of decimal, 8 bits represent a number between 0 and 255 (2^8-1). In terms of binary, 8 bits represent a number composed of 8 binary digits (example: 11111111)
+ 
+
+<4@> why do we need to convert binary to decimal and reverse ?
+
+- We need to convert binary to decimal and reverse because binary is easier for computers to process and store, but decimal is more familiar and readable for human. Converting between binary and decimal can help us communicate with computers and understand their outputs
+
+<5@> How to convert binary to decimal ?
+
+ .Example: There are binary numbers => 1010
+
+ .Methods:		
+        2^3    2^2   2^1     2^0
+         1      0     1       0
+		    2^3 +   0  + 2^1  +   0
+         8          + 2         = 10
+
+ .Result: Decimal number of 1010 is 10
+
+
+<6@> How to convert decimal to binary ?
+
+.Example: There are decimal number => 75
+
+.Methods:		
+               2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0
+               128 64  32  16   8   4   2   1
+
+   => nearest 75 is [64] 
+   => 75 - 64 = 11  [8]
+   => 11 - 8 = 3    [2]
+   => 3 - 2 = 1     [1]
+   => 64 + 8 + 2 + 1 = 75
+   =>  
+          128 64  32  16   8   4   2   1
+               1   0   0   1   0   1   1
+         
+
+.Result: Binary number of 75 is 1001011
+
+
+
+9*** Progarming aspects
+
+<1@> what does void mean to programing language ?
+
+Void is a keyword that means no type, no value or no parameters, depending on the context. We use it to indicate that:
+
+A function does not return a value.
+A function does not accept parameters.
+A pointer does not have a specific type and could point to different types.
+
+Void is also the name of an open-source virtual-machine-based programming language written in C++
+
+
+<2@> what happend if we dont use void ?
+
+The answer depends on what programming language and what context you are using.
+
+For example, in C or C++, if you don’t use void in main function declaration, it means that the function can accept any number of parameters.
+
+However, this may cause an error if the startup code tries to call main with two arguments. In some languages, such as Java or Python, void is not a valid keyword for main function.
+
+
+<3@> what is Void setup & void loop ?
+
+Void setup and void loop are two functions that are used in Arduino programming. 
+
+Void setup runs only once at the beginning of the program to initialize variables, pin modes, libraries, etc. 
+
+Void loop runs continuously after void setup to execute and control the program logic 
+
+The program logic are two main functions that are used in Arduino programming. 
+
+
+<4@> Difference between parameters & arguments:
+
+- The difference between arguments and parameters is that parameters are the variables that are defined or used inside parentheses while defining a function.
+
+- while arguments are the values passed to those parameters when calling the function. For example, in this function definition:
+
+def add(x, y): # x and y are parameters
+    return x + y
+
+And this function call:
+result = add(3, 5) # 3 and 5 are arguments
+
+
+Parameters are like placeholders for the values that a function needs to work with, while arguments are the actual values that are supplied when calling the function.
+
+The order and type of arguments should match the order and type of parameters.
+
+
+<5@> What is pinmode ?
+
+PinMode is a function that configures a digital pin on an Arduino board to behave either as an input or an output. 
+
+You can use it in the setup() function of your sketch to set the mode of each pin you want to use
+
+Example: 
+ 
+pinMode(13, OUTPUT); // sets pin 13 as output
+pinMode(2, INPUT); // sets pin 2 as input
+
+
+<6@> digital write :
+
+DigitalWrite is a function that writes a HIGH or a LOW value to a digital pin on an Arduino board.
+
+If the pin has been configured as an OUTPUT with pinMode(), its voltage will be set to 5V (or 3.3V on some boards) for HIGH, or 0V (ground) for LOW. For example:
+
+digitalWrite(13, HIGH); // sets pin 13 to 5V
+digitalWrite(13, LOW); // sets pin 13 to 0V
+
+If the pin has been configured as an INPUT with pinMode(), digitalWrite() will enable (HIGH) or disable (LOW) the internal pull-up resistor on the pin. 
+
+This is useful when you want to read a switch or a button without using external resistors. For example:
+
+pinMode(2, INPUT); // sets pin 2 as input
+digitalWrite(2, HIGH); // enables pull-up resistor on pin 2
+
+
+<7@> Pull up & Pull down resistor:
+
+A pull-up resistor or a pull-down resistor is a resistor that is connected to a digital input pin of Arduino or other microcontroller to prevent the floating input issue. 
+
+A floating input is an input that is not connected to anything and can randomly change between HIGH and LOW states due to noise or interference. This can cause unpredictable behavior and errors in the program.
+
+A pull-up resistor connects the input pin to VCC (the positive voltage supply) through a resistor, while a pull-down resistor connects the input pin to GND (the ground) through a resistor. 
+
+The terms pull-up and pull-down telling how the resistor is wired. The resistor limits the current flow and prevents short circuits when the input pin is connected to another voltage source.
+
+The purpose of using a pull-up or pull-down resistor is to ensure that the input pin has a defined and stable state when it is not connected to anything. 
+
+A pull-up resistor is used to make sure that the input pin reads HIGH when the button is not pressed, and LOW when the button is pressed.
+
+A pull-down resistor is used to make sure that the input pin reads LOW when the button is not pressed, and HIGH when the button is pressed.
+
+A pull-up resistor can be used to make the switch on the fan, and a pull-down resistor can be used to make the switch off.
+
+<8@> Digital read:
+
+DigitalRead is a function that reads the status of a digital pin on an Arduino board and returns either HIGH or LOW.
+
+If the pin has been configured as an INPUT with pinMode(), digitalRead() will read the voltage on the pin and return HIGH if it is close to 5V (or 3.3V on some boards), or LOW if it is close to 0V (ground). For example:
+
+int buttonState = digitalRead(2); // reads pin 2 and stores the value in buttonState
+
+If the pin has not been configured with pinMode(), or if it is not connected to anything, digitalRead() can return either HIGH or LOW randomly. Therefore, it is recommended to always use pinMode() before using digitalRead().
+
+Some analog pins can also be used as digital pins by referring to them as A0, A1, etc. However, some Arduino models have analog pins that can only be used as analog inputs, such as A6 and A7 on Arduino Nano.
+
+
+<9@> Analog write:
+
+AnalogWrite is a function that writes an analog value (PWM wave) to a pin on an Arduino board. PWM stands for Pulse Width Modulation, which is a technique that varies the width of a rectangular wave to create a pseudo-analog signal. 
+
+You can use analogWrite() to control the brightness of an LED or the speed of a motor by changing the duty cycle of the PWM wave. The duty cycle is the percentage of time that the wave is HIGH. For example:
+
+analogWrite(9, 127); // sets pin 9 to 50% duty cycle (127/255)
+analogWrite(9, 0); // sets pin 9 to 0% duty cycle (off)
+analogWrite(9, 255); // sets pin 9 to 100% duty cycle (on)
+
+The value passed to analogWrite() should be between 0 and 255, where 0 means off and 255 means on. You do not need to call pinMode() to set the pin as an output before calling analogWrite().
+
+However, not all pins on an Arduino board can support analogWrite(). Only pins that have a ~ symbol next to them can be used for PWM output. These are usually pins 3, 5, 6, 9, 10 and 11 on most Arduino boards.
+
+Analog sensors allow us to take readings over a range of values, while digital sensors only provide an ON/OFF condition
+
+
+<10@> Analog read:
+
+Analog read is a function that reads the voltage on an analog pin on an Arduino board and returns an integer value between 0 and 1023.  
+
+0 and 1023.These numbers represent the voltage level that is presented on the pin. The higher the voltage, the higher the number returned by analogRead()
+
+The Arduino boards have a multichannel, 10-bit analog to digital converter (ADC) that converts the analog voltage into a digital value. The analog pins are labeled as A0, A1, etc on most Arduino boards. For example:
+
+int sensorValue = analogRead(A0); // reads pin A0 and stores the value in sensorValue
+
+The value returned by analogRead() depends on the operating voltage of the board (5V or 3.3V) and the input voltage on the pin. 
+
+For example, on an Arduino UNO with a 5V operating voltage, a value of 0 means 0V, a value of 1023 means 5V, and a value of 512 means 2.5V. The resolution between readings is: 5 volts / 1024 units or, 0.0049 volts (4.9 mV) per unit.
+
+If you want to convert the value returned by analogRead() into a voltage, you can use this formula:
+
+float voltage = sensorValue * (5.0 / 1023.0); // converts sensorValue into voltage
+
+AnalogRead can be used to measure various sensors that output an analog signal, such as potentiometers, light sensors, temperature sensors, etc.
+
+
+<11@> Why does analog read return integer value between 0 and 1023 ?
+
+Analog Read returns an integer value between 0 and 1023 because Arduino boards have a 10-bit analog to digital converter (ADC) that converts the analog voltage into a digital value.
+
+A 10-bit ADC can represent 2^10 or 1024 different values, ranging from 0 to 1023. The ADC maps the input voltage between 0 and the operating voltage (5V or 3.3V) into these values. 
+
+For example, on an Arduino UNO with a 5V operating voltage, a value of 0 means 0V, a value of 1023 means 5V, and a value of 512 means 2.5V.
+
+If you want to convert the value returned by analogRead() into a voltage, you can use this formula:
+
+float voltage = sensorValue * (5.0 / 1023.0); // converts sensorValue into voltage
+
+This will give you a floating-point number between 0.0 and 5.0 that corresponds to the voltage on the pin.
+
+
+<12@> Analog voltage & Digital voltage
+
+An analog voltage can be just about any AC or DC voltage one runs across in the real world, for instance, voltage from a transistor battery, and the output from a wall transformer or household voltage.
+
+So a digital voltage is a voltage that can be in only 1 of 2 states. The voltage can either be entirely off or LOW at 0V. Or the voltage can be entirely ON or HIGH at the peak voltage.
+
+
+<13@> Static & Dynamic programing languages:
+
+Static programming languages are those that require the programmer to explicitly define a data type when they create a piece of data (be it a variable, parameter, return value, and so on). Typically, these types are also fixed as being that type for the lifetime of the program, and they don’t change their type. Examples of statically typed programming languages include C, C++, Java, and Go.
+
+In contrast, dynamic programming languages are those that don’t require the programmer to explicitly define a data type when they create a piece of data. Instead, the type is inferred at runtime based on the value that’s assigned to the data. Examples of dynamically typed programming languages include Python, Ruby, and JavaScript.
+
+
+<14@> why the integer is ranging from -32767 to 32768 ?
+
+The range of an integer is determined by the number of bits used to represent it. In C language, an integer takes 2 bytes which means 16 bits.
+
+One bit out of these 16 bits is for sign (+ or -) of the integer. So, remaining 15 bits will store data in form of 0 and 1. 
+
+The maximum value in binary number system using 15 bits can be 32767 (or 2^15). So an integer can store value from -32768 to 32767
+
+
+<15@> what is serial.begin(9600) ?
+
+Serial.begin(9600) is a command in the Arduino programming language that initializes the serial communication between the Arduino board and another device. 
+
+The 9600 parameter sets the data rate of the communication to 9600 bits per second. This command is usually used at the beginning of the setup function to configure the UART interface and set it to the right baud rate.
+
+The Baud rate is the speed parameter that we want the UART to run
+
+
+<16@> The diffirence between digital write and analog write ?
+
+digitalWrite sets the pin to an high or low value that remains at exactly that value until digitalWrite is called for that pin again
+
+analogWrite sets the pin to have an oscillating value which has a pulse length based of the duty cycle specified as the second parameter.
+
+In other words, digitalWrite function controls Arduino’s pin to LOW or HIGH. 
+
+Accordingly, We can use this function to turn on/off something such as: Turning on/off LED, Turning on/off Light Bulb, Turning on/off DC motor, Turning on/off Solenoid Lock, etc.
+
+analogWrite function generates PWM signal to Arduino’s pin.
+
+
+<17@> example of digital signal & analog signal to laptop ?
+
+Analog signals are continuous signals that represent physical measurements such as sound, light, temperature, or pressure. Analog signals are transmitted as electrical signals that vary in voltage or current. Examples of devices that use analog signals are analog clocks and thermometers.
+
+Digital signals, on the other hand, are discrete signals that represent binary data. Digital signals are transmitted as electrical signals that are either on or off. Examples of devices that use digital signals are digital clocks and computers.
+
+To connect an analog signal to a laptop, you will need an analog-to-digital converter (ADC) that converts the analog signal to a digital signal. To connect a digital signal to a laptop, you can use a USB cable or HDMI cable depending on the type of digital signal you want to connect.
+
+<18@> diffirence between digital write and digital read ?
+
+digitalWrite() sets the pin to an high or low value that remains at exactly that value until digitalWrite() is called for that pin again.
+
+On the other hand, digitalRead() function reads the value from a specified digital pin, either HIGH or LOW.
+
+In other words, digitalWrite() function controls Arduino’s pin to LOW or HIGH and can be used to turn on/off something such as LED, light bulb, DC motor or solenoid lock. 
+
+Meanwhile, digitalRead() function reads the value from a specified digital pin and returns either HIGH or LOW depending on whether the voltage at that pin is above or below a certain threshold
+
+<19@> diffirence between analog write and analog read ?
+
+analogWrite() function writes an analog value (PWM wave) to a pin. 
+
+It can be used to light a LED at varying brightnesses or drive a motor at various speeds. 
+
+After a call to analogWrite(), the pin will generate a steady rectangular wave of the specified duty cycle until the next call to analogWrite() (or a call to digitalRead() or digitalWrite()) on the same pin.
+
+On the other hand, analogRead() function reads the value from an analog input pin and returns a value between 0 and 1023.
+
+Arduino boards contain a multichannel, 10-bit analog-to-digital converter that maps input voltages between 0 and the operating voltage (5V or 3.3V) into integer values between 0 and 1023
+
+
+10*** Technology
+ 
+<1@> what is UART interface ?
+
+UART stands for Universal Asynchronous Receiver/Transmitter
+
+It is a computer hardware device for asynchronous serial communication in which the data format and transmission speeds are configurable
+
+It sends data bits one by one, from the least significant to the most significant, framed by start and stop bits so that precise timing is handled by the communication channel
+
+<2@> UART in arduino ?
+
+UART is a peripheral that is present inside a microcontroller. 
+
+It is used for communication between an Arduino board and a computer, or with other devices such as a GPS module or RFID module. 
+
+The Arduino board and a computer or other devices use serial communication. 
+
+All Arduino boards have at least one serial port (also known as a UART or USART), and some have several.
+
+To set up UART communication on the Arduino, you can use the function Serial.begin(speed). 
+
+The speed parameter is the baud rate that we want the UART to run.
+
+Using this function will set the remaining UART parameters to default values (Data length =8, Parity bit =1, Number of Stop Bits=None)
+
+<3@> What is GPS module and RFID module ?
+
+- GPS stands for Global Positioning System. GPS chips and modules provide users with instantaneous location and time data anywhere on Earth. 
+
+The Global Positioning System (GPS) is a spaced-based navigational system that provides exact location and time information to any GPS receiver. 
+
+The system uses many satellites (at least 24), at approximate orbits of 12,000 miles above the Earth.
+
+- RFID stands for Radio Frequency Identification.It is a technology that uses radio waves to identify and track objects.
+
+It is a wireless technology with two main parts: tags and readers 
+
+RFID tags are attached to objects and contain information that can be read by RFID readers. 
+
+The readers use radio waves to communicate with the tags and retrieve the information stored in them
+
+- However,barcodes and RFID are two different technologies. 
+Barcodes use a series of lines of varying widths and spaces to represent data.RFID uses radio waves to identify and track objects
+
+RFID technology is used in many industries such as retail, healthcare, logistics, and manufacturing
+
+<4@> Parity bit ?
+
+A parity bit is a single bit that can be appended to a binary string. 
+
+It is set to either 1 or 0 to make the total number of 1-bits either even (“even parity”) or odd (“odd parity”). 
+
+The purpose of a parity bit is to provide a simple way to check for errors later when data is stored or transferred
+
+However, parity checking is an old technology that has been used for error detection in data transmission and storage. 
+
+It may not be used as frequently in modern systems
+
+While it can still be used in some systems today, there are other more advanced error detection methods that may be used instead of or in addition to parity checking.
+
+<5@> How parity bit work ?
+
+When sender transmits data to the receiver, the data might get scrambled by noise or data might get corrupted during the transmission.
+
+One extra bit called as parity bit is sent along with the original data bits.
+Parity bit helps to check if any error occurred in the data during the transmission.
+
+Error detection using single parity check involves the following steps:
+
+	Step 1 -> At sender side: 
+
+		Total number of 1’s in the data unit to be transmitted is counted.
+	
+		The total number of 1’s in the data unit is made even in case of even parity.
+	
+		The total number of 1’s in the data unit is made odd in case of odd parity.
+	
+		This is done by adding an extra bit called as parity bit.
+
+
+	Step 2:
+
+		The newly formed code word (Original data + parity bit) is transmitted to the receiver
+
+	
+	Step 3 -> At receiver side:
+
+		Receiver receives the transmitted code word.
+		The total number of 1’s in the received code word is counted.
+
+If total number of 1’s is even and even parity is used, then receiver assumes that no error occurred.
+
+If total number of 1’s is even and odd parity is used, then receiver assumes that error occurred.
+
+If total number of 1’s is odd and odd parity is used, then receiver assumes that no error occurred.
+
+If total number of 1’s is odd and even parity is used, then receiver assumes that error occurred.
+
+	
+Example: Consider the data unit to be transmitted is 1001001 and even parity is used.
+
+		- At Sender Side:
+ 			
+			Total number of 1’s in the data unit is counted.
+
+			Total number of 1’s in the data unit = 3.
+
+Clearly, even parity is used and total number of 1’s is odd.
+So, parity bit = 1 is added to the data unit to make total number of 1’s even.
+Then, the code word 10010011 is transmitted to the receiver.
+
+		- At Receiver Side:
+ 
+After receiving the code word, total number of 1’s in the code word is counted.
+Consider receiver receives the correct code word = 10010011.
+
+Even parity is used and total number of 1’s is even.
+So, receiver assumes that no error occurred in the data during the transmission.
+
+
+<6@> baud rate (speed parameter) and data rate (bit rate) in arduino. are they the same thing ?
+
+- Baud and bit rate are 2 diffirent things. But they could be the same or not depend on the situation
+
+- Bit rate:
+
+Bit rate referes to Number of data bits transferred per second.
+
+Unit of Bit rate is bits per second(bps). 
+
+For example bit rate is 10kbps means 10,000 bits are transferred within one second.
+
+- Baut rate:
+
+Baud rate refers to number of signal or voltage level changes per second. 
+
+Unit of baud rate is bauds per second. 
+
+For example baud rate is 9600 means 9600 signal level changes are happening within a second
+
+<7@> Does bit rate and baud rate are always same ?
+
+No, they are only same in binary signaling. If we use multilevel signaling bit rate and baud rate are different.
+
+<8@> why do we need both baud rate and data bit for UART ? what happend if we dont use 2 of them for the arduino project
+
+Baud rate and data bits are both important for UART communication. 
+
+Baud rate is a measure used for the speed of data transfer and it is measured in bits per second (bps).
+
+In order for the data transfer to be a success both the transmitting and receiving UART must operate at almost the same baud rate.
+
+The data bits are used to represent each character of data being transmitted. 
+
+The number of data bits used will determine how many different characters can be transmitted.
+
+If you don’t use both baud rate and data bits for your Arduino project, you may not be able to communicate with other devices properly at all
+
+<9@> simple way to understand multilevel signaling vs binary signaling 
+
+Binary signaling is a digital signaling method that uses two signal levels to represent binary values.
+
+Binary signaling is simple and easy to implement but it requires more bandwidth than multilevel signaling. 
+
+Multilevel signaling is a digital signaling method that uses more than two signal levels to represent binary values. 
+
+Multilevel signaling can transmit more data per second than binary signaling because it can transmit more bits per symbol.
+
+For example, let’s say you want to send 8 bits of data using binary signaling. You would need to send 8 bits one at a time. With multilevel signaling, you could send all 8 bits at once by using 3 signal levels
+
+<10@> What are some other examples of multilevel signaling ?
+
+Multilevel signaling has many applications in communication systems.Some examples of multilevel signaling include:
+
+- Pulse Amplitude Modulation (PAM): PAM is a multilevel signaling technique that uses different amplitudes of pulses to represent different signal levels. PAM is used in many communication systems such as Ethernet and DSL.
+
+- Quadrature Amplitude Modulation (QAM): QAM is a multilevel signaling technique that uses both amplitude and phase modulation to represent different signal levels. QAM is used in many communication systems such as cable modems and digital television.
+
+- Frequency Shift Keying (FSK): FSK is a multilevel signaling technique that uses different frequencies to represent different signal levels. FSK is used in many communication systems such as wireless modems and radio broadcasting.
+
+<11@> What is DSL ?
+
+Digital Subscriber Line (DSL) is a family of technologies that are used to transmit digital data over telephone lines.
+
+DSL provides broadband (high-speed) Internet connections over conventional telephone lines. 
+
+In telecommunications marketing, the term DSL is widely understood to mean Asymmetric Digital Subscriber Line (ADSL), the most commonly installed DSL technology, for Internet access. 
+
+DSL service can be delivered simultaneously with wired telephone service on the same telephone line since DSL uses higher frequency bands for data.
+
+<12@> Cable vs DSL vs Fiber. 
+
+Cable, DSL and Fiber are three types of internet connections that differ in download and upload speeds, prices, and amount of bandwidth. 
+
+DSL (Digital Subscriber Line) uses existing phone lines to transmit data and has a download speed range of 1-10 Mbps. 
+
+Cable internet uses existing cable TV lines to transmit data and has a download speed range of 5-50 Mbps. 
+
+Fiber-optic internet uses fiber-optic cables to transmit data and has a download speed range of 250-1000 Mbps.
+
+Fiber is by far the fastest type of internet connection, but cable internet will generally be fast enough for most users.
+
+Cable comes in at second place. Although you can find cable connections as fast as 1 Gbps, they’re not as common as fiber connections with similar speeds. DSL is generally the slowest of the three types of internet connections
+
+<13@> What is LAN , and what is ethernet for simple explain ?
+
+A Local Area Network (LAN) is a computer network that interconnects computers within a limited area such as a residence, school, laboratory, university campus or office building . 
+
+Ethernet is a family of wired computer networking technologies commonly used in local area networks (LAN), metropolitan area networks (MAN) and wide area networks (WAN) . 
+
+Ethernet works as a decentralized network while LAN works as a centralized network .
+
+
+<14@> are ethernet and LAN the same thing ?
+
+Ethernet and LAN (Local Area Network) are not the same thing. 
+
+Though the concept of LAN comes from Ethernet, they have different working functions. 
+
+Ethernet works as a decentralized network while LAN works as a centralized network
+
+<15@> what is the UART TTL in arduino ?
+
+UART is a communication protocol used for serial communication between two devices.
+
+TTL UART will output (and input) only TTL levels, essentially 0 bit = 0V and 1 bit = 5V. 
+
+Serial communication on pins TX/RX uses TTL logic levels (5V or 3.3V depending on the board).
+
+<16@> what is OpenWrt
+
+OpenWrt is an open-source project for embedded operating systems based on Linux. 
+
+It is primarily used on embedded devices to route network traffic. 
+
+The main components are Linux, util-linux, musl, and BusyBox.
+
+All components have been optimized to be small enough to fit into the limited storage and memory available in home routers
+
+<17@> Linux, util-linux, musl, and BusyBox. what are they ? when do we use them ?
+
+- Linux is an open-source operating system that is based on Unix and was first released in 1991 by Linus Torvalds. 
+
+It is used in servers, desktops, smartphones, and other devices.
+
+- Util-linux is a collection of Linux utilities that are essential for the operation of a Linux system. 
+
+It includes tools for file system management, disk management, and system administration.
+
+- Musl is a lightweight implementation of the C standard library. 
+
+It is designed for embedded systems and other systems with limited resources. 
+
+Musl is used as an alternative to GNU libc.
+
+- BusyBox is a software suite that provides several Unix utilities in a single executable file. 
+
+It includes tools for file management, process management, and system administration. 
+
+BusyBox is often used in embedded systems and other systems with limited resources.
+
+<18@> What is GNU ?
+
+GNU is a free software mass collaboration project that was announced by Richard Stallman on September 27, 1983. 
+
+It is an extensive collection of free software that can be used as an operating system or can be used in parts with other operating systems.
+
+The use of the completed GNU tools led to the family of operating systems popularly known as Linux
+
+<19@> ISO C libary
+
+The ISO C library is a library that provides the core libraries for the C programming language. 
+
+It is designed to be a backwards compatible, portable, and high-performance library.
+
+<20@> usb com driver
+
+A USB COM driver is a driver that enables a USB device to appear as an additional COM port available to the PC. 
+
+There are several types of USB drivers available depending on the device and operating system being used
+
+COM stands for Component Object Model.It is a binary-interface standard for software components introduced by Microsoft in 1993.
+
+<21@> What is a COM port?
+
+A COM port (communications port) is a type of serial port used to connect devices such as a modem.
+
+Usually, communication ports are designated as COM1, COM2, COM3, and COM4 on computers running Microsoft Windows
+
+<22@> What is a MODEM ?
+
+A modem is a device that connects a computer or a network to the internet. 
+
+It converts information between digital and analog formats. 
+
+This process is called modulation and demodulation, which is the full form of modem. 
+
+A modem can be connected via a phone line, cable, or fiber. It can also be installed within the computer
+
+<23@> modulation and demodulation process in modem
+
+Modulation is the process of influencing data information on the carrier, while demodulation is the recovery of original information at the distant end of the carrier.
+
+A modem is an equipment that performs both modulation and demodulation.
+
+In modulation, a high-frequency signal called a carrier wave is modified by a low-frequency signal called a modulating wave. 
+
+The modulating wave contains the information that needs to be transmitted. 
+
+The carrier wave is then transmitted over a communication channel. 
+
+At the receiving end, demodulation takes place where the original information is recovered from the modulated signal.
+
+<24@> What is Modulation ? Why Modulation is Required ? Types of Modulation Explained.
+
+Modulation is the process by which data/information is converted into electrical/digital signals for transferring that signal over a medium. 
+
+It increases strength for maximum reach of the signals. The process of extracting information/data from the transmitted signal is called demodulation.
+
+Modulation is necessary in communication because it allows for faster transmission of signals. 
+
+Modulation and its types play a crucial role in the rapid transmission of signals from the sender to the receiver.
+
+Modulation is the superimposition of the signal wave (carrying the message) with a high-frequency carrier signal to ensure faster transmission of the signal.
+
+There are different types of modulation schemes such as Amplitude Modulation (AM), Frequency Modulation (FM), Phase Modulation (PM), and Quadrature Amplitude Modulation (QAM). Each type has its own advantages and disadvantages depending on the application.
+
+<25@> amplitude,phase,frequency
+
+Amplitude, phase and frequency are all important parameters in digital modulation techniques. 
+
+- Amplitude refers to the height of the wave 
+
+- phase refers to the position of the wave relative to a fixed point
+
+- frequency refers to the number of waves that pass a fixed point in a given amount of time.
+
+<26@> what is bandwidth ?
+
+Bandwidth refers to the amount of data that can be transmitted over a network connection in a given amount of time. 
+
+It is usually measured in bits per second (bps), kilobits per second (kbps), or megabits per second (Mbps).
+
+For example, if you have a 100 Mbps connection, it means that you can transfer up to 100 megabits of data per second.
+
+<27@> carrier wave in modem
+
+A carrier wave is a radio-frequency wave that carries information. 
+
+The information is attached to the carrier wave by means of a modulation process that involves the variation of one of the carrier-frequency characteristics, such as its amplitude, its frequency, or its duration. 
+
+In a modem, a digital signal changes some characteristic of a carrier wave.
+
+A modem (modulator–demodulator) is a network hardware device that modulates one or more carrier wave signals to encode digital information for transmission and demodulates signals to decode the transmitted information
+
+<28@> Modem & wifi router combos
+
+Modem and Wi-Fi router combos are devices that combine a modem and a router into one unit. 
+
+This can be a great option for those who want to save space and reduce clutter in their home or office. 
+
+<29@> different type of modems
+
+There are several types of modems available, including:
+
+Telephone modem
+Digital subscriber Line (DSL)
+Cable modem
+Satellite modem
+
+Each type of modem has its own unique features and capabilities.
+
+For example: 
+
+- A telephone modem is used to connect a computer through telephone lines to access the network of other computers. 
+
+- A digital subscriber line provides high-speed internet connection through telephone lines. 
+
+- A cable modem allows high-speed data access via a cable TV (CATV) network. 
+
+- A satellite modem provides internet connection through satellite dishes
+
+<30@> internet service provider
+
+An Internet Service Provider (ISP) is a company that provides access to the internet and other services to its customers. 
+
+ISPs can be organized in various forms, such as commercial, community-owned, non-profit, or otherwise privately owned. 
+
+They provide services for accessing, using, managing, or participating in the internet.
+
+ISPs may also provide software packages (such as browsers), e-mail accounts, and a personal website or home page. 
+
+ISPs can host websites for businesses and can also build the websites themselves. 
+
+ISPs are all connected to each other through network access points
+
+<31@> how does isp work with modem to provide internet to households ?
+
+An ISP provides a connection to the internet for a monthly fee. 
+
+The ISP connects you to the internet very much the same way your home network connects your PC to the router, using IP (Internet Protocol). 
+
+A modem helps translate data between your ISP and your computer. 
+
+Essentially, a modem is like a translator that converts data from one form to another so that it can be transmitted over a phone line or cable.
+
+A Wi-Fi router transmits data across all the devices within your network
+
+<32@> Telephone modem Digital subscriber Line (DSL) Cable modem Satellite modem => how much bps ?
+
+The speed of a modem depends on the type of modem and the technology it uses.
+
+A telephone modem uses your phone line to connect to the internet and has a maximum speed of 56 kilobits per second (Kbps).
+
+DSL (Digital Subscriber Line) uses your phone line as well but it’s faster than a telephone modem because it uses a different frequency range than voice calls. DSL can reach speeds of up to 100 Mbps.
+
+Cable modems use your cable TV network to connect to the internet and can reach speeds of up to 1 Gbps.
+
+Satellite modems use satellite technology to connect to the internet and can reach speeds of up to 25 Mbps.
+
+<33@> tiwsted pair cable, fiber optic cable, coaxial cable 
+
+- Twisted pair cable, fiber optic cable, and coaxial cable are all types of cables used for transmitting data. 
+
+- Twisted pair cable is made up of a pair of insulated copper wire and is the most common and cheapest option. Data are transmitted as current pulses through electrical conductor
+
+twisted pair cables are still used for nowadays. They remain the most popular type of Ethernet connectivity wiring
+
+- Fiber optic cable transmits data as pulses of light go through tiny tubes of glass. 
+
+The transmission capacity of optical fiber cable is 26,000 times higher than that of twisted pair cable.Data are transmitted as light pulses through Fiber optic cable
+
+- Coaxial cable is made up of solid copper, stranded copper or copper plated steel wire surrounded by an insulating layer and all enclosed by a shield. 
+
+It has a higher bandwidth than twisted pair cable and is used for high-speed connections. Data are transmitted as current pulses through electrical conductor
+
+Coaxial cables are used in a variety of applications including telecommunications, cable television,computer networks. Magnetic Resonance Imaging (MRI) machines.
+
+- Coaxial cables have 80 times more transmission capacity than twisted-pair cables. 
+
+The transmission capacity of optical fiber cable is 26,000 times higher than that of twisted pair cable
+
+<34@> different between dsl modem and telephone
+modem ?
+
+- A DSL modem and a telephone modem are different devices used for connecting to the internet.
+
+- A digital subscriber line (DSL) modem is used to connect your devices to the DSL, which provides the source of the internet. 
+
+It uses telephone lines for internet distribution and connectivity. A DSL modem typically uses an Ethernet cable to connect to the computer or router.
+
+- A telephone modem is a device used to connect a computer or router to a telephone line which provides the digital data connection for dial-up Internet service
+
+- Dial-up speeds max out at about 56Kbps which is about 10 times slower than the download speed with DSL internet access. 
+
+DSL is almost 200 times faster than dial-up or more. Even the slowest DSL connection is about 10-20Mbps.
+Some ISPs offer plans with DSL speeds of up to 100Mbps
+
+<35@> Broad band internet
+
+Broadband internet is another name for high-speed internet service, usually defined as 25Mbps or faster. 
+
+There are four major types of broadband internet: cable, DSL, fiber, and satellite. 
+
+The average broadband speed in the US is 124Mbps, but DSL is much slower at about 35Mbps, and fiber is the fastest at 1,000Mbps.
+
+<36@> PSTN
+
+PSTN stands for Public Switched Telephone Network. It is a system that transfers communication through telephone lines.
+
+This is the system that has been in general use since the late 1800s.Using underground copper wires for communication
+
+PSTN is made up of switches at centralized points on a network that function as nodes to enable communication between two points on the network. 
+
+A call is placed after being routed through multiple switches. Voice signals can then travel over the connected phone lines.
+
+It’s the traditional “landline” phone network that uses circuit switching to connect calls via telephone poles and lines across the world. 
+
+While much of today’s communications are transmitted via internet-based networks, PSTN still plays an important role in many areas of the world
+
+<37@> What is telco ?
+
+Telco is short for “telecommunications company”. 
+
+It refers to a company that provides telecommunications services such as telephony and data communications. 
+
+Telcos are also known as communication service providers (CSPs) that transport information electronically through telephony and data communication services in the networking industry. 
+
+Since the invention of mobile telephony, most telcos have also become internet service providers (ISPs)
+
+<38@> Local loop
+
+In telephony, the local loop is the physical link or circuit that connects from the demarcation point of the customer premises to the edge of the common carrier or telecommunications service provider’s network. 
+
+It is also referred to as the local tail, subscriber line or in the aggregate as the last mile. 
+
+The local loop supports voice and/or data communications applications in various ways such as variants of digital subscriber line (DSL). 
+
+The wiring used in the local loop is usually unshielded twisted-pair (UTP) cabling, and the transmission method is analog transmission
+
+<39@> What is UTP ?
+
+UTP stands for Unshielded Twisted Pair.
+
+It is a type of cable that is used in telecommunications for transmitting data.
+ 
+UTP cables are made up of pairs of wires that are twisted together to reduce interference from other wires and external sources.
+
+<40@> what is CLEC ?
+
+A Competitive Local Exchange Carrier (CLEC) is a telecommunications provider company that competes with other already established carriers. 
+
+It is also known as a mini telephone company. 
+
+CLECs are authorized to interconnect their local network with the Public Switched Telephone Network (PSTN). 
+
+They often compete with each other and other already established carriers
+
+<41@> is binary an digital singal or analog signal ?
+
+Binary signals are digital signals with two distinguishable levels.
+ 
+A digital signal is a signal that represents data as a sequence of discrete values; at any given time it can only take on, at most, one of a finite number of values.
+
+Therefore, binary signals are digital signals and not analog signals.
+
+<42@> beside voice signal as analog signal. is there any more examples of aalog signal ?
+
+there are many examples of analog signals.
+
+Some examples of analog signals include human voices and natural sounds, old land-line telephones, audio tapes, old televisions (intensity and color information per scan line), VCRs (same as TV), radio signals, and analog watches
+
+<43@> Local Loops CLEC/ISP Overview
+
+Originally, there was only one phone company in town. And, they dug the street up and laid copper wires to every builder and out to every neighborhood
+
+As the city grew. They also build copper cables out to office buildings in the suburbs
+
+Then, in the early 1990s, CLEC arrived and began to build competitive networks. They build fiber optic network that initially targeted the business community
+
+They also interconnected to regional telcoes to use their copper wires to connect with their customers
+
+In the mid 1990s. Internet service providers came long with ISPs. They use the copper wires of the phone company to reach the home in the neighborhoods for internet access
+
+They also use copper wires and fiber-optic-cable of the phone company to reach business customers
+
+<44@> All OS have their own libary ?
+
+Yes, all operating systems have their own libraries. 
+
+An operating system is a powerful and usually extensive program that controls and manages the hardware and other software on a computer.
+
+All computers and computer-like devices require operating systems, including your laptop, tablet, desktop, smartphone, smartwatch, and router. 
+
+The operating system provides a set of libraries that programs can use to perform tasks such as reading and writing files, connecting to networks, and displaying graphics
+
+<45@> What is DSL and how does it use an analog signal for transmitting ?
+
+Digital subscriber line (DSL) is a family of technologies that are used to transmit digital data over telephone lines. 
+
+In telecommunications marketing, the term DSL is widely understood to mean asymmetric digital subscriber line (ADSL), the most commonly installed DSL technology, for Internet access.
+
+DSL service can be delivered simultaneously with wired telephone service on the same telephone line. This is possible because DSL uses higher frequency bands for data. 
+
+On the customer premises, a DSL filter on each non-DSL outlet blocks any high-frequency interference to enable simultaneous use of the voice and DSL services.
+
+ADSL uses an analog carrier to encode a digital signal. An ADSL device includes a modem - the input to the modem on the sending side is digital, the modem converts it to analog, the remote side converts it back to digital
+
+<46@> What is the difference between ADSL and DSL ?
+
+DSL is the generic term for Digital Subscriber Line Services while ADSL is just one of its types.
+
+DSL denotes an internet that uses digital connections between a modem and a phone line. 
+
+ADSL is Asymmetric Digital Subscriber Line. 
+
+DSL technology has equal uploading and downloading speeds. 
+
+On the other hand, ADSL technology has a higher downloading speed and lower uploading speed
+
+<47@> What is CI/CD ?
+
+CI/CD stands for Continuous Integration/Continuous Delivery.
+
+It is a software development practice that aims to reduce the time between writing code and deploying it to production. 
+
+Continuous Integration is the practice of frequently integrating code changes into a shared repository. 
+
+Continuous Delivery is the practice of ensuring that code changes can be deployed to production at any time
+
+There are many popular CI/CD tools available. Some of the most popular ones include Jenkins, GitLab, AWS CodeDeploy, Octopus Deploy, Bamboo, CircleCI and TeamCity
+
+GitHub has its own native CI/CD tool called GitHub Actions that runs alongside your code in GitHub
+
+<48@> Network Types: LAN, WAN, PAN, CAN, MAN, SAN, WLAN
+
+- Personal Area Network (PAN)
+A PAN is the most basic type of computer network and is restrained to a single person.
+
+it is a small network that is used for connecting devices such as smartphone, table, laptop,... 
+
+And they all conneting each other by using bluetooth - infrared - NFC
+
+They can also connect each other by using wired connection such as usb cable
+
+It is generally use for transfering small files such as music - videos ...
+
+-Local Area Network (LAN)
+A LAN is a network that connects computers and devices in a limited geographical area such as home, school, or office building
+
+The most common type of LAN is ethernet LAN. Where 2 or more computer are connected to ethernet cable using switch
+
+Another type of LAN is called WLAN (wireless area network). WLAN will be set up by having at least 2 devices that use wireless communication to form LAN.
+Typicall type of WLAN will have a wifi router or wireless access point
+
+- CAN (campus area network)
+A Campus Area Network (CAN) is a network that consists of many local area networks (LANs) within a limited geographic area, such as an educational or corporate campus. 
+
+A CAN is smaller than a wide area network (WAN) or metropolitan area network (MAN). 
+
+It provides more control over network resources and typically relies on a centralized hub to which other locations connect. A CAN may also connect to the public Internet
+
+-Metropolitan Area Network (MAN)
+A MAN is a network that covers a larger geographic area by interconnecting a group of LANs
+
+-Wide Area Network (WAN)
+A WAN is a network that covers a large geographic area such as cities, countries or even continents
+
+-Wireless Local Area Network (WLAN)
+A WLAN is a wireless local area network that uses radio waves to connect devices such as laptops and smartphones to the Internet and to each other within a limited area such as home or office1
+
+-System Area Network (SAN)
+A SAN is a high-speed network that provides block-level access to data storage
+
+-Storage Area Network (SAN)
+Special high-speed network that store and provide access to large amount of data.
+
+It is a type of network that use for data storage. 
+
+This network consist of multiple disk arrays,switches,servers. 
+
+SAN is also be use because it is not affected by network traffic. Such as bottlenecks can happends to LAN. 
+
+Because SANs are not really a part of LAN. it is a network all by itself
+
+- Home Area Network (HAN)
+ A HAN is a type of LAN that is used in homes
+
+11*** Type of arduinos
+
+<1@> arduino uno (standar arduino)
+
+Arduino UNO is a microcontroller board based on the ATmega328P. 
+
+It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz ceramic resonator, a USB connection, a power jack, an ICSP header and a reset button. 
+
+The UNO is the most used and documented board of the whole Arduino family
+
+Arduino UNO became the industry standard for development boards with its unique pin header arrangement that makes it compatible with most shields on the market.
+
+Its ease of usage and above specifications made it stood out and quickly rose to the top as others made iterations of it. 
+
+The board is considered as the most used board and a standard board used by the rookie in their projects
+
+
+<2@> Arduino pro
+
+Arduino Pro is a microcontroller board based on the ATmega3281. 
+
+It comes in both 3.3V/8MHz and 5V/16MHz versions.
+
+It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a battery power jack, a power switch, a reset button, and holes for mounting a power jack, an ICSP header, and pin headers.
+
+Arduino Pro is intended for advanced users who require flexibility and low-cost.
+
+It comes with the minimum of components (no on-board USB or pin headers) to keep the cost down. 
+
+It’s a good choice for a board you want to leave embedded in a project
+
+
+<3@> arduino mega 2560 R3
+
+Arduino Mega 2560 R3 is a microcontroller board based on the ATmega2560. 
+
+It has 54 digital input/output pins (of which 15 can be used as PWM outputs), 16 analog inputs, 4 UARTs (hardware serial ports), a 16 MHz crystal oscillator, a USB connection, a power jack, an ICSP header, and a reset button. 
+
+It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with an AC-to-DC adapter or battery to get started.
+
+The Arduino Mega 2560 is ideal for projects that require more input/output pins and more processing power than the Arduino Uno. 
+
+It is also suitable for projects that require more memory space than the Arduino Uno
+
+
+<4@> Arduino MKR1000
+
+Arduino MKR1000 is a powerful board that combines the functionality of the Zero and the Wi-Fi Shield. 
+
+It is ideal for makers wanting to design IoT projects with minimal previous experience in networking. 
+
+The board features an Arm® Cortex®-M0 32-bit SAMD21 processor and an ECC508 crypto-chip for security. 
+
+It also has a USB port for battery charging, programming and debugging
+
+Arduino MKR1000 is a great choice for any beginner, maker or professional to get started with Internet of Things (IoT). 
+
+It is ideal for makers wanting to design IoT projects with minimal previous experience in networking. 
+
+The board is part of the MKR family, where you can choose from a large variety of shields to build projects out of the box with minimal effort.
+
+You can use Arduino MKR1000 for a variety of IoT projects such as home automation, smart agriculture, smart cities, and more
+
+<5@> arduino Yun 
+
+The Arduino Yun board is used when you want to use a microcontroller board based on the ATmega32u4 and the Atheros AR9331. 
+
+It has built-in Ethernet and WiFi support, a USB-A port, micro-SD card slot, 20 digital input/output pins (7 of them can be used as PWM outputs and 12 as analog inputs), a 16 MHz crystal oscillator, a micro USB connection, an ICSP header, and a 3 reset buttons
+
+<6@> what is ATmega32u4 and the Atheros AR9331 ?
+
+The ATmega32u4 is a microcontroller that provides a dedicated UART TTL (5V) serial communication. 
+
+It also allows for serial (CDC) communication over USB and appears as a virtual com port to software on the computer.
+
+The chip also acts as a full speed USB 2.0 device, using standard USB COM drivers.
+
+The Atheros AR9331 SoC (system on a chip) is a processor that supports a Linux distribution based on OpenWrt named Linino OS.
+
+It runs a version of Linux and can be used to run more complex programs
+
