@@ -21,9 +21,13 @@
 
 6/ temperature & max_tokens <6@,1***>
 
+7/ the 'temperature' parameter for openai.Completion.create(). how much temperature is supposed to be high and low ? <7@,1***>
+
 2*** build CHAT BOX GPT
 
 1/ Build CHAT BOX GPT with OPEN A.I (APPLIED CODE) <1@,2***>
+
+2/ How to use the ChatGPT API with Python <2@,2***>
 
 3*** basic instruction to buil CHAT BOX GPT with OPEN A.I
 
