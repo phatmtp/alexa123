@@ -1,0 +1,130 @@
+[1] Components & Tools Required to Build Wireless Arduino Bluetooth Robot
+[2] explanation
+[3] connect arduino uno with components & programing
+[4] Build wheel robot
+[5] control wheel robot
+
+
+
+
+1*** Components & Tools Required to Build Wireless Arduino Bluetooth Robot
+
+1/ Arduino Uno <1@,1***>
+
+2/ HC05 Module <2@,1***>
+
+3/ L298N Motor driver <3@,1***>
+
+4/ NeoPixel LED <4@,1***>
+
+5/ Lithium ion 18650 battery with protection circuit <5@,1***>
+
+6/ BO Motors with wheels (quantity: 4) 
+<6@,1***>
+
+7/ Perf board big <7@,1***>
+
+8/ Perf board small <8@,1***>
+
+9/ Toggle switch <9@,1***>
+
+10/ DC female jack <10@,1***>
+
+11/ Relimate conncector pair <11@,1***>
+
+12/ Male bergstrip <12@,1***>
+
+13/ Female Bergstip <13@,1***>
+
+14/ Single Strand wires of various colors
+<14@,1***>
+
+15/ Sunboard of medium thickness 
+<15@,1***>
+
+
+2*** Explanation
+
+1/ what is ceramic resonator ? <1@,2***>
+
+2/ what is piezoelectric ? <2@,2***>
+
+3/ what is an electronic oscillator circuit ? <3@,2***>
+
+4/ VCC meaning in arduino <4@,2***>
+
+5/ Baut rate <5@,2***>
+
+6/ NL & CR in arduino <6@,2***>
+
+7/ AT command in arduino <7@,2***>
+
+8/ how does bluetooth work HC-05 ? <8@,2***>
+
+9/ complementary metal oxide semiconductor (cmos) 
+<9@,2***>
+
+10/ CSR bluecore 04 <10@,2***>
+
+11/ edge connectors circuit boards <11@,2***>
+
+12/ HC-05 module master and slave mode <12@,2***>
+
+13/ connect HC-05 to arduino uno board <13@,2***>
+
+13'/ MCU pin on the arduino <13'@,2***>
+
+14/ HC-05 Bluetooth Module | Change Name and Password 
+<14@,2***>
+
+15/ voltage devider <15@,2***>
+
+16/ what is vcc ? <16@,2***>
+
+17/ what is emf ? <17@,2***>
+
+18/ A Simple Oscillator Circuit <18@,2***>
+
+19/ atmega 328p <19@,2***>
+
+20/ AVR RISC <20@,2***>
+
+21/ ICSP header arduino <21@,2***>
+
+22/ difference between VIN pin and 5v pin <22@,2***>
+
+23/ difference between state pin and key pin hc05 module <23@,2***>
+
+24/ AT command mode HC-05 Bluetooth module <24@,2***>
+
+25/ why connect rx pin & tx pin of HC05 module to pin ~10 & pin ~11 of arduino uno (25@,2***)
+
+
+3*** connect arduino uno with components & programing
+
+1/ connect arduino uno to HC05 module <1@,3***>
+
+2/ connect L298N motor to arduino uno <2@,3***>
+
+3/ connect L298N motor driver to 4 motors <3@,3***>
+
+4/ example of how to control the motors with the Arduino <4@,3***>
+
+5/ set up wheels robot with Hc05 - L298n - 9 volt battery - arduino uno - 4 motors with 4 wheels 
+
+
+4*** Build wheel robot
+
+1/ connect arduino uno with L298N & HC05 & 4 pixel leds & 9 volt battery <1@,4***>
+
+2/ the full code of connecting Arduino Uno with L298N, HC-05, 4 pixel LEDs, and 9 volt battery <1@,4***>
+
+
+5*** control wheel robot
+
+1/ arduino_bluetooth_bot_main <1@,5***>
+
+2/ basic example code to get you started with controlling your wheel car using the HC-05 module and L298N motor driver & 9 volt battery & arduino uno & 4 motors with 4 wheels <2@,5***>
+
+
+

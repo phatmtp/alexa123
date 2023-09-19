@@ -1,0 +1,978 @@
+[1] Components & Tools Required to Build Wireless Arduino Bluetooth Robot
+[2] explanation
+[3] connect arduino uno with components & programing
+[4] Build wheel robot
+[5] control wheel robot
+
+
+1*** Components & Tools Required to Build Wireless Arduino Bluetooth Robot
+
+<1@> Arduino Uno 
+
+- Arduino UNO is a microcontroller board based on the ATmega328p chip
+
+It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz ceramic resonator, a USB connection, a power jack, an ICSP header and a reset button. 
+
+The UNO is the most used and documented board of the whole Arduino family
+
+Arduino UNO became the industry standard for development boards with its unique pin header arrangement that makes it compatible with most shields on the market.
+
+Its easy to use and above specifications made it stood out and quickly rose to the top as others made iterations of it. 
+
+The board is considered as the most used board and a standard board used by the rookie in their projects
+
+- The Arduino UNO board is primarily used over other Arduino products because of the following reasons:
+
+The board can be easily connected to the other computer system via USB port.
+
+The microcontroller used in the board I.e. ATmega328p has the flexibility provided to the board.
+
+The board pins are capable of functioning for constant power supply of 5 v
+
+<2@> HC05 Module 
+
+The HC-05 is a Bluetooth module that connects to the serial port of a microcontroller, which allows the microcontroller to communicate with other devices over a Bluetooth connection.
+
+It can add two-way (full-duplex) wireless functionality to your projects. 
+
+(Two-way (full-duplex) wireless functionality refers to the capability of a communication link to support connections in both transmit and receive directions at the same time and over the entire frequency band. 
+
+In contrast, a link that can support the connection in only one direction at a time is called one-way or half-duplex.)
+
+The HC-05 module has 6 pins:
+
+- VCC: 5V power supply  -> 5v pin (input pin)
+
+- GND: Ground           -> GND pin
+
+- TXD: Transmit data pin -> TXD pin
+
+- RXD: Receive data pin  -> RXD pin
+
+- EN: Enable/key pin 
+(The KEY pin is used to toggle the module between data mode and command mode and it also used to show paired devices) 
+
+- STATE: State pin
+
+(The STATE pin on the HC-05 Bluetooth module is connected to the onboard LED.The LED is used to indicate when there is an active connection. This means the Arduino can connect to the STATE pin and determine when we have a connection)
+
+You can use this module to communicate between two microcontrollers like Arduino or communicate with any device with Bluetooth functionality like a Phone or Laptop.
+
+The HC05 is a Bluetooth module that works on Serial Protocol (RX/TX) for sending and receiving data
+
+The HC-05 module is a Bluetooth SPP (Serial Port Protocol) module that communicates with the Arduino via the Serial Communication
+
+<3@> L298N Motor driver 
+
+The L298N is a dual H-Bridge motor driver which allows speed and direction control of two DC motors at the same time. 
+
+The module can drive DC motors that have voltages between 5 and 35V, with a peak current up to 2A.
+
+It is a high voltage, high current dual full-bridge motor driver module for controlling DC motor and stepper motor. 
+
+This module consists of an L298N dual-channel H-Bridge motor driver IC. It can control both the speed and rotation direction of two DC motors
+
+Arduino uno     L298N 
+ 
+Pin 10          Tx
+
+Pin 11          Rx
+
++5v             Vcc
+
+GND             GND
+
+<4@> NeoPixel LED 
+
+NeoPixel LEDs are digital LEDs which have 3 LED in each package for RGB and own IC.
+ 
+They are digitally addressable LEDs and give us the control on large numbers of LEDs using digital signals. 
+
+The NeoPixel LEDs are RGB LED lights with a built driver IC that makes these lights addressable and programmable
+
+<5@> Lithium ion 18650 battery with protection circuit 
+
+Lithium-ion 18650 batteries are rechargeable batteries that are commonly used in electronic devices.
+
+A protection circuit is an electronic circuit that is built into the battery pack to protect the battery from overcharging, over-discharging, and short-circuiting. 
+
+The protection circuit is designed to prevent the battery from being damaged or destroyed by these events. 
+
+The protection circuit is usually built into the battery pack and is not user-replaceable
+
+<6@> BO Motors with wheels (quality: 4) 
+
+BO Motors with wheels are a type of low-cost geared DC motor that is commonly used in robotics. 
+
+BO in BO Motors stands for "Battery Operated"
+
+The BO motor gives good torque and rpm at lower operating voltages, which is its biggest advantage.
+
+The wheels are made up of high-quality rubber which gives maximum traction while operating. 
+
+BO motors with wheels are available in different sizes and specifications, and they can be used in various applications such as robotics, automation, and DIY projects
+
+<7@> Perf board big 
+
+Perfboard is a material for prototyping electronic circuits.
+
+DOT PCB stands for "Dotted Printed Circuit Board
+ 
+It is a thin, rigid sheet with holes pre-drilled at standard intervals across a grid, usually a square grid of 2.54 mm (0.1 in) spacing. 
+
+These holes are ringed by round or square copper pads. 
+
+Perfboard is used to build electronic circuits by soldering components onto the board. It is also called DOT PCB
+
+<8@> Perf board small 
+
+A small perfboard is a perfboard that is smaller in size than the standard perfboard. 
+
+The size of a perfboard can be customized by cutting it to the size you need. 
+
+You can also buy small perfboards that are already cut to a specific size
+
+<9@> Toggle switch 
+
+A toggle switch is an electrical switch that is actuated by a mechanical lever, handle, or rocking mechanism.
+
+It is used to control the flow of electricity in a circuit. The switch has two positions: on and off. 
+
+When the switch is in the on position, the circuit is closed and electricity flows through it. 
+
+When the switch is in the off position, the circuit is open and electricity does not flow through it.
+
+<10@> DC female jack 
+
+A DC female jack is a type of electrical connector that is used to connect a DC power source to an electronic device. 
+
+It has a female connector that can be plugged into a male DC jack. 
+
+The female connector is generally a receptacle that receives and holds the male connector. 
+
+It is usually a standard 2.1mm female head that can connect to the male DC jack
+
+<11@> Relimate conncector pair 
+
+Relimate connectors are a type of wire-to-board connectors that are commonly used in development or microcontroller boards. 
+
+They can be used as inter-circuit programming cables with female connectors on both sides. 
+
+Polarized male connectors are also provided
+
+<12@> Male bergstrip 
+
+A male Berg strip is a type of connector that is commonly found in all kinds of circuit boards. 
+
+It is also called a header strip, header pins or breakaway headers. This connector can be cut to the length required. 
+
+It has a pitch of 2.54 mm (the distance between two pins)
+
+<13@> Female Bergstrip 
+
+female Berg Strip connector. 
+
+It is a 40 pin single row female berg strip/header with an industry-standard spacing of 2.54mm and is designed for soldering directly into printed circuit boards (PCB). 
+
+It can be cut into any desired size with the wire cutter
+
+<14@> Single Strand wires of various colors
+
+<15@> Sunboard of medium thickness 
+
+Sunboard is a type of foam board that is made of polystyrene foam sandwiched between two layers of paper.
+
+It is lightweight and easy to cut and shape. 
+
+Sunboard comes in different thicknesses ranging from 2mm to 25mm
+
+
+2*** Explanation
+
+<1@> what is ceramic resonator ?
+
+A ceramic resonator is an electronic component consisting of a piece of a piezoelectric ceramic material with two or more metal electrodes attached.
+
+When connected in an electronic oscillator circuit, resonant mechanical vibrations in the device generate an oscillating signal of a specific frequency. 
+
+it's purpose is generate specific frequency for device
+
+Ceramic resonators are made of high stability piezoelectric ceramics that function as a mechanical resonator. 
+
+They are used in various applications such as automotive electronics, communications, personal computing, and medical/healthcare equipment
+
+<2@> what is piezoelectric ?
+
+Piezoelectricity is the electric charge that accumulates in certain solid materials—such as crystals, certain ceramics, and biological matter such as bone, DNA, and various proteins—in response to applied mechanical stress.
+
+A ceramic resonator is an electronic component consisting of a piece of a piezoelectric ceramic material with two or more metal electrodes attached.
+
+When connected in an electronic oscillator circuit, resonant mechanical vibrations in the device generate an oscillating signal of a specific frequency
+
+<3@> what is an electronic oscillator circuit?
+
+An electronic oscillator circuit is an electronic circuit that produces a periodic, oscillating electronic signal, often a sine wave or a square wave or a triangle wave.
+
+Oscillators convert direct current (DC) from a power supply to an alternating current (AC) signal.
+
+When connected in an electronic oscillator circuit, resonant mechanical vibrations in the device generate an oscillating signal of a specific frequency
+
+<4@> VCC meaning in arduino
+
+VCC stands for voltage common collector. 
+
+It is the voltage supply pin used to power the microcontroller and other components on the board.
+
+<5@> Baut rate
+
+Baud rate refers to number of signal or voltage level changes per second. 
+
+Unit of baud rate is bauds per second(bps)
+
+For example baud rate is 9600 means 9600 signal level changes are happening within a second
+
+<6@> NL & CR in arduino
+
+In Arduino, both NL & CR means that the Serial Monitor sends both \r and then \n in the end
+
+\r and \n are escape sequences that represent the ASCII characters Carriage Return (CR) and Line Feed (LF), respectively.
+
+Carriage Return (CR) is a control character that returns the cursor to the beginning of the line without advancing to the next line. 
+
+Line Feed (LF) is a control character that advances the cursor to the next line without returning to the beginning of the line.
+
+They are used to control the user experience of Arduino programming
+
+<7@> AT command in arduino
+
+AT commands are used to communicate with various modules such as ESP8266 Wi-Fi module and HC-05 Bluetooth Module
+
+<8@> how does bluetooth work HC-05 ?
+
+The HC-05 Bluetooth module is a Bluetooth SPP (Serial Port Protocol) module that communicates with the microcontroller via the Serial Communication. 
+
+The HC05 Bluetooth Module consists of CSR Bluecore 04 outer single-chip Bluetooth system, and that chip having CMOS (complementary metal-oxide-semiconductor) technology.
+
+The module uses Frequency-Hopping Spread spectrum (FHSS) radio technology to send data over the air
+
+<9@> complementary metal oxide semiconductor (cmos)
+
+CMOS is an integrated circuit design on a printed circuit board (PCB) that uses semiconductor technology
+
+CMOS is the semiconductor technology used in the transistors that are manufactured into most of today’s computer microchips.
+
+The phrase “metal–oxide–semiconductor” is a reference to the physical structure of MOS field-effect transistors, having a metal gate electrode placed on top of an oxide insulator, which in turn is on top of a semiconductor material
+
+<10@> CSR bluecore 04
+
+The CSR Bluecore 04 is an external single chip of HC-05 Bluetooth module designed as a Bluetooth SPP module for transparent wireless serial connection setup.
+
+It has an integrated antenna with an edge connector and connects to the last device on power as default. It supports android mobile Bluetooth and can be used as both master and slave devices
+
+<11@> edge connectors circuit boards
+
+Edge connectors are a style of connector system in which a pattern of exposed copper regions at the periphery of a printed circuit board constitutes one-half of a mating connector pair.
+
+They are generally used for connecting one PCB to another, the edge connector is plugged into a socket on another PCB thus making the connection
+
+<12@> HC-05 module master and slave mode
+
+The HC-05 Bluetooth module provides switching mode between master and slave mode which means it is able to use neither receiving nor transmitting data.
+ 
+A slave connects to a master. A master can be a PC with a Bluetooth radio in it / plugged into USB, or it can be a “master” HC-05 module. Note that the HC-05 can work in either master or slave mode
+
+In Bluetooth communication, a slave connects to a master. 
+
+A master can be a PC with a Bluetooth radio in it / plugged into USB, or it can be a “master” HC-05 module. 
+
+The master is the device that initiates the connection and the slave is the device that accepts the connection.
+
+<13@> connect HC-05 to arduino uno board
+
+To connect HC-05 to Arduino Uno board, you can follow these steps:
+
+- Connect the GND pin of the HC-05 to the ground connection of your project.This can be connected to the GND pin on the Arduino UNO.
+- Connect the VCC pin of the HC-05 to the 5V pin on the Arduino UNO.
+- Connect the TXD pin of HC-05 to the TXD pin of the MCU (Arduino UNO PIN 0).
+- Connect the RXD pin of HC-05 to the RXD pin of the MCU (Arduino UNO PIN 1).
+You can use pins 10 and 11 of the Arduino to connect the HC-05 and use the SoftwareSerial library to communicate with the module
+
+# Another way to connect HC-05 to arduino uno
+-> vcc to 3.3 pin, key to 5 pin, GND to Ground pin, RXD pin to the RXD pin of the MCU (Arduino UNO PIN 1), the TXD pin to the TXD pin of the MCU (Arduino UNO PIN 0).
+
+There are several way to connect HC-05 to arduino uno. Because some tutorials may suggest connecting VCC to 3.3 voltage pin and ground to 5 voltage pin because some HC-05 modules have a voltage regulator that can handle up to 6 volts input. So it depends on the specific module you are using.
+
+<13'> MCU pin on the arduino
+
+The MCU pin on an Arduino is the pin that is connected to the microcontroller unit (MCU) on the board. The MCU is the chip that does all of the processing on the Arduino. The MCU pin is typically labeled "GND" or "Ground".
+
+The MCU pin can be used for a variety of purposes, such as:
+
+* Grounding the Arduino to prevent electrical noise
+* Providing power to external devices
+* Connecting to other Arduino boards or microcontrollers
+
+The MCU pin is an important part of the Arduino and should be used carefully. When connecting the MCU pin to another device, it is important to make sure that the voltage levels are compatible.
+
+Here is a table of the MCU pins on some common Arduino boards:
+
+| Arduino Board | MCU Pin |
+|---|---|
+| Arduino Uno | Digital Pin 0 |
+| Arduino Nano | Digital Pin 1 |
+| Arduino Mega | Digital Pin 53 |
+| Arduino Due | Digital Pin 2 |
+
+<14@> HC-05 Bluetooth Module | Change Name and Password
+
+After connecting the HC-05 to arduino uno, we will open Arduino IDE and following these steps: 
+
+- choose Tools -> choose port:COM 13 -> choose both NL & CR -> choose 38400 baudrate
+-> Type: AT and send (to get connection between HC-05 and arduino uno ) 
+-> Type: AT+name (to get the name of HC-05) 
+-> Type: AT+ADDR (to get default address) 
+-> Type: AT+VERSION (to get version of HC-05) 
+-> AT+UART (to get the baut rate) 
+-> Type: UART+role (to control the bluetooth module into slave more or master mode)
+-> Type: AT+PSWD (to get the current password of bluetooth module)
+-> Type: AT+name=... (to change the name)
+-> Type: AT+PSWD="..." (to change the password)
+-> Type: AT+RESET(It will reset the edit mode)
+
+<15@> voltage devider
+
+A voltage divider is a simple circuit that takes a higher voltage and converts it to a lower one by using a pair of resistors. The output voltage is a fixed fraction of its input voltage. The divide-down ratio is determined by two resistors.
+
+The formula for calculating the output voltage is based on Ohm’s Law and is shown below:
+
+Vout = Vs * R2 / (R1 + R2)
+
+where: Vs is the source voltage, measured in volts (V) R1 is the resistance of the 1st resistor, measured in Ohms (Ω) R2 is the resistance of the 2nd resistor, measured in Ohms (Ω)
+
+<16@> what is vcc ?
+
+vcc is a voltage level that is used to power digital circuits.It is the voltage between the collector and the common point of a transistor. 
+
+The letter “V” on a circuit stands for the supply voltage. The letters “CC” indicate that the supply voltage is positive or negative. 
+
+If the charge is positive, its circuit is a Negative-Positive-Negative circuit, and if negative, it is a Positive-Negative-Positive circuit
+
+Devices that require more than one battery are an example of a positive-negative circuit.
+
+<17@> what is emf ? 
+ 
+EMF is the energy transfer to an electric circuit per unit of electric charge, measured in volts.
+
+<18@> A Simple Oscillator Circuit
+
+An oscillator circuit is an electronic circuit that produces a periodic, oscillating electronic signal, often a sine wave or a square wave or a triangle wave
+
+An oscillator circuit generates an AC (alternating current) signal. The circuit converts DC (direct current) from a power supply to an AC signal
+
+# There are three types of oscillator circuits: RC, LC and crystal oscillators
+
+- RC oscillators (relaxation circuit) use a resistor and capacitor to determine the frequency of oscillation.
+
+- LC oscillators use an inductor and capacitor to determine the frequency of oscillation. The circuit will alternately store energy in the capacitors (electrical energy) and in the inductor
+
+- Crystal oscillators use a quartz crystal resonator to determine the frequency of oscillation. Bluetooth technology uses a crystal oscillator circuit.
+
+Crystal oscillators are more stable than LC or RC oscillators because the crystal’s resonant frequency is much more stable than an LC or RC circuit
+
+<19@> atmega 328p
+
+The ATmega328p is a high-performance 8-bit AVR RISC-based microcontroller that combines:
+
+- 32 KB ISP Flash memory with read-while-write capabilities 
+
+(Read-while-write capabilities mean that the microcontroller can read from the memory while it is being programmed.)
+
+(ISP stands for “In-System Programming)
+
+- 1024B EEPROM
+- 2KB SRAM
+- 23 general-purpose I/O lines
+- 32 general-purpose working registers
+- three flexible timer/counters with compare modes
+
+(The ATmega328P has three flexible timer/counters with compare modes.
+ 
+# A timer is a device that counts down from a specified time interval and generates an interrupt when the count reaches zero. 
+
+# A counter is a device that counts up or down from a specified value and generates an interrupt when the count reaches a specified value. 
+
+# Compare mode is a feature that allows the timer/counter to generate an interrupt when the count matches a specified value.
+
+# timer/counters and compare modes are often used in safety purpose for critical applications. They can be used to generate periodic interrupts for tasks such as monitoring sensors or controlling actuators. 
+
+# They can also be used to generate pulse-width modulated (PWM) signals for controlling the speed of motors or the brightness of LEDs.)
+
+- internal and external interrupts
+- serial programmable USART
+- a byte-oriented two-wire serial interface
+
+(# The ATmega328P has a byte-oriented two-wire serial interface. This interface is also known as the I2C (Inter-Integrated Circuit) interface.
+
+# It is a simple and efficient protocol for communicating between microcontrollers and peripheral devices such as sensors and displays. 
+
+# The two-wire interface uses a clock signal (SCL) and a data signal (SDA) to transmit data between devices)
+
+- SPI serial port
+
+(# SPI stands for Serial Peripheral Interface)
+
+# It is a synchronous serial data protocol used by microcontrollers for communicating with one or more peripheral devices quickly over short distances)
+
+- a 6-channel 10-bit A/D converter (8-channels in TQFP and QFN/MLF packages)
+- programmable watchdog timer with internal oscillator
+- 5 software selectable power saving modes
+
+<20@> AVR RISC
+
+(AVR stands for “Advanced Virtual RISC” . RISC stands for “Reduced Instruction Set Computer)
+
+RISC architecture is designed to execute computer instructions using a simplified instruction set that is faster and more efficient than the complex instruction sets used by CISC processors (Complex Instruction Set Computer) 
+
+<21@> ICSP header arduino
+
+ICSP stands for In-Circuit Serial Programming. It is a programming header for the Arduino consisting of MOSI, MISO, SCK, RESET, VCC, GND.
+
+It allows you to upload software to your MCU (microcontroller unit) without having to pull it out every time
+
+so which mean that the arduino board can be program because of ICSP. It’s a very useful feature for programming the Arduino board
+
+- MOSI stands for Master Out Slave In. It is a pin used for data transfer from the master device to the slave device. 
+
+- MISO stands for Master In Slave Out. It is a pin used for data transfer from the slave device to the master device. 
+
+- SCK stands for Serial Clock. It is a pin used to synchronize the data transfer between the master and slave devices .
+
+- VCC stands for Voltage Common Collector. It is a pin used to supply power to the microcontroller unit.
+
+- GND stands for Ground. It is a pin used as a reference point for all other voltages in the circuit.
+
+<22@> difference between VIN pin and 5v pin
+
+The 5V pin provides a power with limitation on the amperage capacity. The VIN pin provides the power based on the status of arduino consumes components
+
+<23@> difference between state pin and key pin hc05 module
+
+- The HC-05 Bluetooth module has two pins that are used to toggle between Data Mode and AT command mode.
+
+The Key/EN pin is used to toggle between the two modes. When it is set high, the module is in AT command mode, and when it is set low, the module is in Data mode. 
+
+- The State pin of the HC-05 Bluetooth module is connected to the onboard LED. It indicates the status of the module.
+
+When the LED is blinking slowly, it means that the module is not connected to any device. When it is blinking fast, it means that the module is connected to a device
+
+<24@> AT command mode HC-05 Bluetooth module
+
+AT command mode is used to change the default settings of the Bluetooth module. 
+
+It allows you to change the device name, device role (master or slave), password of the device, and other settings. 
+
+To enter AT command mode on the HC-05 Bluetooth module, you need to connect the Key/EN pin to high (3.3V or 5V) for a few seconds while the module is powered on. The LED on the module will blink slowly when it is in AT command mode
+
+<25@> why connect rx pin & tx pin of HC05 module to pin ~10 & pin ~11 of arduino uno ?
+
+The HC-05 Bluetooth module can be connected directly to the RX and TX pins of the Arduino Uno. However, it is recommended to use a voltage divider circuit to reduce the voltage level of the HC-05 module’s TX pin to 3.3V before connecting it to the RX pin of the Arduino Uno. 
+
+This is because the HC-05 module operates at 3.3V while the Arduino Uno operates at 5V. Connecting the HC-05 module’s TX pin directly to the RX pin of the Arduino Uno may damage the module.
+
+The reason why some people connect the HC-05 module’s RX and TX pins to digital pins 10 and 11 of the Arduino Uno is that these pins are part of the hardware serial port of the Arduino Uno. 
+
+This allows you to use the SoftwareSerial library to communicate with other devices using other digital pins
+
+
+3*** connect arduino uno with components & programing
+
+<1@> connect arduino uno to HC05 module
+
+# The HC-05 Bluetooth module’s RX pin supports only 3.3V while the Arduino Uno’s TX pin has 5V output. 
+Therefore, a voltage divider is needed to connect the two pins without burning the module. 
+
+# some people use the 3.3V pin in the Arduino Uno instead of making a voltage divider
+
+# 3.3v pin is an output pin
+
+# 5v pin is an output pin
+
+# The RX pin on the HC-05 Bluetooth module is an input pin that accepts data from the transmitting device
+ 
+# The TX pin on the Arduino Uno is an output pin that sends data to the receiving device.
+
+# the direction of the signal flow is from the HC-05 Bluetooth module to the Arduino Uno.
+
+HC05							arduino uno
+
+enable pin  	->			3.3v pin	
+VCC				->			5v pin		
+GND				->			GND	
+TXD				->			TXD
+RXD				->			RXD
+State			->
+
+<2@> connect L298N motor to 1 or 2 motor
+
+The L298N motor driver can be connected to 1 or 2 motors. To connect 1 motor, you would connect the motor's power wires to the Vcc and Gnd terminals on the L298N, and the motor's signal wires to the IN1 and IN2 terminals. 
+
+To connect 2 motors, you would connect the motors' power wires to the Vcc and Gnd terminals, and the motors' signal wires to the IN1, IN2, IN3, and IN4 terminals.
+
+-> Here is a diagram of how to connect 1 motor to the L298N:
+
+```
+Vcc ---- Motor Power Wire (positive)
+Gnd ---- Motor Power Wire (negative)
+IN1 ---- Motor Signal Wire
+IN2 ---- Motor Signal Wire
+```
+
+Here is a diagram of how to connect 2 motors to the L298N:
+
+```
+Vcc ---- Motor Power Wire 1 (positive)
+Gnd ---- Motor Power Wire 1 (negative)
+IN1 ---- Motor Signal Wire 1
+IN2 ---- Motor Signal Wire 1
+IN3 ---- Motor Signal Wire 2
+IN4 ---- Motor Signal Wire 2
+```
+
+The IN1 and IN2 terminals control the direction of motor A, and the IN3 and IN4 terminals control the direction of motor B. The higher the voltage on the IN pin, the faster the motor will turn in that direction.
+
+The L298N can also be used to control the speed of the motors. The speed of the motor is controlled by the PWM signal on the ENA and ENB terminals. The higher the PWM signal, the faster the motor will turn.
+
+
+<3@> connect L298n motor driver to 4 motors 
+
+Connect the power supply to the L298N motor driver. The power supply voltage should be at least 12V and should be able to provide enough current for the motors.
+
+Connect the motors to the L298N motor driver. Each motor should be connected to two terminals on the L298N motor driver. 
+
+The terminals are labeled OUT1, OUT2, OUT3, and OUT4.
+Connect the Arduino to the L298N motor driver. The Arduino will be used to control the motors. 
+
+The Arduino pins that are connected to the L298N motor driver are labeled ENA, IN1, IN2, IN3, IN4, and ENB.
+
+
+L298N Motor Driver Pin	   Arduino Pin
+
+		ENA									9 or 3 (PWM)
+     IN1										8
+     IN2										7
+     ENB										3 or 5 (PWM)
+     IN3										5
+     IN4										4
+
+
+The ENA and ENB pins are the enable pins. These pins need to be HIGH in order to turn on the motors. The IN1, IN2, IN3, and IN4 pins are the direction pins. These pins control the direction of the motors.
+
+Once the connections are made, you can start controlling the motors with the Arduino. There are many ways to do this. You can use the Arduino's built-in functions, or you can use a library.
+
+<4@> example of how to control the motors with the Arduino
+
+void setup() {
+  pinMode(ENA, OUTPUT);
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(ENB, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+}
+
+void loop() {
+  // Turn on motor A
+  digitalWrite(ENA, HIGH);
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+
+  // Turn on motor B
+  digitalWrite(ENB, HIGH);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+
+  delay(1000);
+
+  // Stop motors
+  digitalWrite(ENA, LOW);
+  digitalWrite(ENB, LOW);
+}
+
+<5@> set up wheels robot with Hc05 - L298n - 9 volt battery - arduino uno - 4 motors with 4 wheels 
+
+The HC-05 is a Bluetooth module that will enable you to control your car wirelessly through your smartphone or other Bluetooth devices. It's like having a remote control for your car, but without the physical remote!
+
+To connect the HC-05 module to your Arduino Uno, follow these steps:
+
+Find the VCC and GND pins on the HC-05 module. Connect the VCC pin to the 5V pin on your Arduino, and the GND pin to any of the GND pins on your Arduino.
+
+Locate the TXD and RXD pins on the HC-05 module. Connect the TXD pin to the RX pin on your Arduino, and the RXD pin to the TX pin on your Arduino. Keep in mind that the TX pin on the HC-05 should be connected to the RX pin on the Arduino, and vice versa.
+
+Now that we have the HC-05 module connected, let's move on to the L298N motor driver. This motor driver will allow us to control the four motors that power your four wheels.
+
+To connect the L298N motor driver, follow these steps:
+
+Locate the motor outputs on the L298N module. Connect the motors to these outputs. Each motor will have two connections, one to the "Motor A" outputs, and the other to the "Motor B" outputs. Make sure the connections are secure.
+
+Find the power supply inputs on the L298N module. Connect the positive terminal of your 9V battery to the positive input, and the negative terminal to the negative input. This will provide power to your motors.
+
+Look for the ENA and ENB pins on the L298N module. Connect these pins to any available digital pins on your Arduino. These pins will control the speed of your motors.
+
+Make sure all connections are secure and double-check any wiring before moving forward.
+
+Now, let's talk about programming. We'll need to write some code to communicate with the HC-05 module and control the motors through the L298N motor driver.
+
+You'll want to start by including the necessary libraries for Bluetooth communication and motor control. For Bluetooth communication, use the SoftwareSerial library, and for motor control, use the AFMotor library.
+
+Then, you can write code to receive commands from your smartphone via Bluetooth and translate them into actions for your motors. For example, if you receive the letter 'F', you can instruct the motors to move forward, and if you receive 'L', you can make the car turn left, and so on.
+
+4*** Build wheel robot
+
+<1@> connect arduino uno with L298N & HC05 & 4 pixel leds & 9 volt battery
+
+1/ the steps on how to connect Arduino Uno with L298N, HC-05, 4 pixel LEDs, and 9 volt battery:
+
+- Connect the power supply to the L298N motor driver. The power supply voltage should be at least 12V and should be able to provide enough current for the motors and the LEDs.
+
+- Connect the motors to the L298N motor driver. Each motor should be connected to two terminals on the L298N motor driver. The terminals are labeled OUT1, OUT2, OUT3, and OUT4.
+
+- Connect the 4 pixel LEDs to the Arduino Uno. The LEDs can be connected to any digital pins on the Arduino Uno.
+
+- Connect the HC-05 Bluetooth module to the Arduino Uno. The HC-05 module can be connected to any digital pin on the Arduino Uno.
+
+- Connect the 9 volt battery to the Arduino Uno. The positive terminal of the battery should be connected to the VIN pin on the Arduino Uno, and the negative terminal of the battery should be connected to the GND pin on the Arduino Uno.
+
+2/ The table of the connections:
+
+Device								Pin
+
+L298N Motor Driver				ENA
+L298N Motor Driver				IN1
+L298N Motor Driver				IN2
+L298N Motor Driver				ENB
+L298N Motor Driver				IN3
+L298N Motor Driver				IN4
+4 Pixel LEDs						D1
+4 Pixel LEDs						D2
+4 Pixel LEDs						D3
+4 Pixel LEDs						D4
+HC-05 Bluetooth Module			TX
+HC-05 Bluetooth Module			RX
+Arduino Uno							VIN
+Arduino Uno							GND
+
+<2@> the full code of connecting Arduino Uno with L298N, HC-05, 4 pixel LEDs, and 9 volt battery
+
+// Define the pins for the L298N motor driver
+const int ENA = 9;
+const int IN1 = 8;
+const int IN2 = 7;
+const int ENB = 3;
+const int IN3 = 5;
+const int IN4 = 4;
+
+// Define the pins for the 4 pixel LEDs
+const int D1 = 10;
+const int D2 = 11;
+const int D3 = 12;
+const int D4 = 13;
+
+// Define the pin for the HC-05 Bluetooth module
+const int BT_TX = 10;
+const int BT_RX = 11;
+
+void setup() {
+  // Set the pins for the L298N motor driver as outputs
+  pinMode(ENA, OUTPUT);
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(ENB, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+
+  // Set the pins for the 4 pixel LEDs as outputs
+  pinMode(D1, OUTPUT);
+  pinMode(D2, OUTPUT);
+  pinMode(D3, OUTPUT);
+  pinMode(D4, OUTPUT);
+
+  // Set the baud rate for the serial port
+  Serial.begin(9600);
+
+  // Initialize the HC-05 Bluetooth module
+  Serial.println("AT");
+  delay(500);
+}
+
+void loop() {
+  // Read data from the serial port
+  if (Serial.available() > 0) {
+    char data = Serial.read();
+
+    // Turn on the motors and LEDs based on the data received
+    if (data == '1') {
+      digitalWrite(ENA, HIGH);
+      digitalWrite(IN1, HIGH);
+      digitalWrite(IN2, LOW);
+
+      digitalWrite(ENB, HIGH);
+      digitalWrite(IN3, HIGH);
+      digitalWrite(IN4, LOW);
+
+      digitalWrite(D1, HIGH);
+      digitalWrite(D2, HIGH);
+      digitalWrite(D3, HIGH);
+      digitalWrite(D4, HIGH);
+    } else if (data == '0') {
+      digitalWrite(ENA, LOW);
+      digitalWrite(IN1, LOW);
+      digitalWrite(IN2, LOW);
+
+      digitalWrite(ENB, LOW);
+      digitalWrite(IN3, LOW);
+      digitalWrite(IN4, LOW);
+
+      digitalWrite(D1, LOW);
+      digitalWrite(D2, LOW);
+      digitalWrite(D3, LOW);
+      digitalWrite(D4, LOW);
+    }
+  }
+}
+
+
+5*** control wheel robot
+
+<1@> arduino_bluetooth_bot_main
+
+As we all know the Bluetooth module uses serial communication to communicate with the Arduino, and as the Arduino has only one serial port or TX, and RX port we need to use SoftwareSerial.h library of the Arduino to communicate with the Bluetooth module. 
+
+So in the void setup() function, we begin hardware serial at 9600 baud for debugging and we open software serial at 38400 baud to communicate with the Bluetooth. Then we check if the Bluetooth module is working or not by sending AT command to the Bluetooth module. If the Bluetooth module returns an OK command, then surely the Bluetooth module is working exactly as intended. Once that was done we called LED_setup() function to set up the neo pixel LEDs which we will discuss later.
+
+<The code>
+
+#include <SoftwareSerial.h>
+
+SoftwareSerial mySerial(10, 11); // RX, TX
+void setup() {
+  // Open serial communications and wait for port to open:
+  Serial.begin(9600);
+  mySerial.begin(38400);
+  while (!Serial) {
+    ; // wait for serial port to connect. Needed for native USB port only
+  }
+  Serial.println("Sending AT...");
+  mySerial.write("AT");
+  if (mySerial.available()>0) {
+    Serial.write(mySerial.read());
+  }
+  // set the data rate for the SoftwareSerial port
+    Serial.println("loop begins");
+     LED_setup();
+}
+
+
+Next, we have to initialize three global variables, the first one is called rcd and it's a character type variable that will hold the received data from the Bluetooth module. 
+
+Next, we define an integer type variable spd that will hold the speed data of the car. Then we have a long type variable time_now  variable which we will be using to hold time data. Now the code is very simple. 
+
+We check the rcd variable that it is receiving and execute an if condition accordingly. We continue this process for all the RGB LEDs and robot movements. And that marks the end of our loop function.
+
+<THE CODE>
+
+void loop() { // run over and over
+  if (mySerial.available()) {
+    rcd = mySerial.read();
+    Serial.write(rcd);
+  }
+  unsigned long time_now = 0;
+  if (rcd == 'O')
+  {
+    R_LED(1);
+    L_LED(1);
+    F_LED(1);
+    B_LED(1);
+  }
+  if (rcd == 'o')
+  {
+    R_LED(0);
+    L_LED(0);
+    F_LED(0);
+    B_LED(0);
+  }
+  if (rcd == 'X')
+  { L_LED(1);
+  }
+  if (rcd == 'x')
+  {
+    L_LED(0);
+  }
+  if (rcd == 'P')
+  {
+    R_LED(1);
+  }
+  if (rcd == 'p')
+  { R_LED(0);
+  }
+  if (rcd == 'W')
+  { F_LED(1);
+  }
+  if (rcd == 'w')
+  { F_LED(0);
+  }
+  if (rcd == 'U')
+  { B_LED(1);
+  }
+  if (rcd == 'u')
+  { B_LED(0);
+  }
+  if (rcd == '0')
+  { spd = 80;
+  }
+  if (rcd == '1')
+  { spd = 100;
+  }
+  if (rcd == '3')
+  { spd = 120;
+  }
+  if (rcd == '5')
+  { spd = 180;
+  }
+  if (rcd == 'q')
+  { spd = 255;
+  }
+  if (rcd == 'F')
+  { Forward();
+    time_now = millis();
+    while (millis() < time_now + 100) {}
+  }
+  else if (rcd == 'B')
+  { time_now = millis();
+    while (millis() < time_now + 100) {}
+    Backward();
+  }
+  else if (rcd == 'I')
+  { time_now = millis();
+    while (millis() < time_now + 100) {}
+    FdRight();
+  }
+  else if (rcd == 'J')
+  { time_now = millis();
+    while (millis() < time_now + 100) {}
+    BkRight();
+  }
+  else if (rcd == 'R')
+  { time_now = millis();
+    while (millis() < time_now + 100) {}
+    SharpRight();
+  }
+  else if (rcd == 'L')
+  { time_now = millis();
+    while (millis() < time_now + 100) {}
+   SharpLeft();
+  }
+  else if (rcd == 'G')
+  { time_now = millis();
+    while (millis() < time_now + 100) {}
+   FdLeft();
+  }
+  else if (rcd == 'H')
+  { time_now = millis();
+    while (millis() < time_now + 100) {}
+    BkLeft();
+  }
+  else
+    Stop();
+}
+
+<2@> basic example code to get you started with controlling your wheel car using the HC-05 module and L298N motor driver & 9 volt battery & arduino uno & 4 motors with 4 wheels 
+
+# This code sets up the motors using the AFMotor library and initializes the Bluetooth communication using the SoftwareSerial library. It then listens for commands from the HC-05 module and performs appropriate actions on the motors based on the received commands.
+
+# Make sure your Arduino board is connected to your computer, select the correct board and port in the Arduino IDE, and then hit the upload button to upload the code to your Arduino.
+
+# And there you have it! With this code, you'll be able to control your wheel car using commands sent via Bluetooth.
+
+<The code>
+
+#include <AFMotor.h>
+#include <SoftwareSerial.h>
+
+AF_DCMotor motor1(1); // Connecting Motor 1 to M1 of L298N
+AF_DCMotor motor2(2); // Connecting Motor 2 to M2 of L298N
+AF_DCMotor motor3(3); // Connecting Motor 3 to M3 of L298N
+AF_DCMotor motor4(4); // Connecting Motor 4 to M4 of L298N
+
+SoftwareSerial bluetooth(10, 11); // HC-05 pins
+
+void setup() {
+  Serial.begin(9600);
+  bluetooth.begin(9600);
+}
+
+void loop() {
+  if (bluetooth.available()) {
+    char command = bluetooth.read();
+    
+    // Moving forward
+    if (command == 'F') {
+      motor1.setSpeed(255);
+      motor2.setSpeed(255);
+      motor3.setSpeed(255);
+      motor4.setSpeed(255);
+      
+      motor1.run(FORWARD);
+      motor2.run(FORWARD);
+      motor3.run(FORWARD);
+      motor4.run(FORWARD);
+    }
+    // Moving backward
+    else if (command == 'B') {
+      motor1.setSpeed(255);
+      motor2.setSpeed(255);
+      motor3.setSpeed(255);
+      motor4.setSpeed(255);
+      
+      motor1.run(BACKWARD);
+      motor2.run(BACKWARD);
+      motor3.run(BACKWARD);
+      motor4.run(BACKWARD);
+    }
+    // Turning left
+    else if (command == 'L') {
+      motor1.setSpeed(200);
+      motor2.setSpeed(200);
+      motor3.setSpeed(200);
+      motor4.setSpeed(200);
+      
+      motor1.run(BACKWARD);
+      motor2.run(FORWARD);
+      motor3.run(BACKWARD);
+      motor4.run(FORWARD);
+    }
+    // Turning right
+    else if (command == 'R') {
+      motor1.setSpeed(200);
+      motor2.setSpeed(200);
+      motor3.setSpeed(200);
+      motor4.setSpeed(200);
+      
+      motor1.run(FORWARD);
+      motor2.run(BACKWARD);
+      motor3.run(FORWARD);
+      motor4.run(BACKWARD);
+    }
+    // Stopping
+    else if (command == 'S') {
+      motor1.setSpeed(0);
+      motor2.setSpeed(0);
+      motor3.setSpeed(0);
+      motor4.setSpeed(0);
+      
+      motor1.run(RELEASE);
+      motor2.run(RELEASE);
+      motor3.run(RELEASE);
+      motor4.run(RELEASE);
+    }
+  }
+}

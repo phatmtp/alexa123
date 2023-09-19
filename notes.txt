@@ -1,0 +1,21 @@
+3/ TTL in arduino ?
+
+5/ COM13 in arduino
+
+9/ Hopping Spread spectrum (FHSS) radio technology
+
+10/ MCU in arduino
+
+11/ time variant signal 
+
+12/ ENA pin & ENB pin arduino 
+
+14/ SoftwareSerial.h
+
+
+
+
+
+
+
+
