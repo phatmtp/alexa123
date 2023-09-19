@@ -1,8 +1,6 @@
-1*** explanation
-
-2*** build the cpu
-
-
+[1] explanation
+[2] information
+[3] instruction
 
 
 1*** explanation
@@ -404,4 +402,248 @@ Here are some of the pros and cons of the Core i5-7200U CPU:
 Overall, the Core i5-7200U is a good CPU for users who need a balance of performance, battery life, and price. However, if you are looking for the best possible performance, I recommend that you consider a newer CPU.
 
 If you are considering purchasing a laptop with a Core i5-7200U CPU, I recommend that you do some research to make sure that it is the right laptop for your needs. You should also consider the other specifications of the laptop, such as the amount of RAM, storage, and display.
+
+<18@> base clock speed & boost clock speed 
+
+Base clock speed and boost clock speed are two different ways to measure the speed of a CPU or GPU.
+
+**Base clock speed** is the default clock speed at which your CPU or GPU operates most of the time. It is the speed at which the component is guaranteed to run without any errors.
+
+**Boost clock speed** is the maximum clock speed at which your CPU or GPU can run for short periods of time. It is a feature that allows the component to temporarily increase its speed when performing demanding tasks.
+
+Boost clock speed is typically higher than base clock speed, but it is not guaranteed to be available at all times. The actual boost clock speed that your CPU or GPU can achieve will depend on a number of factors, including the temperature of the component, the power consumption of the system, and the workload.
+
+Here is an example of how base clock speed and boost clock speed might be used in practice:
+
+* A CPU with a base clock speed of 3.0 GHz and a boost clock speed of 4.0 GHz might run at 3.0 GHz most of the time, but it might boost to 4.0 GHz when running a demanding game or video editing application.
+* A GPU with a base clock speed of 1.0 GHz and a boost clock speed of 1.2 GHz might run at 1.0 GHz most of the time, but it might boost to 1.2 GHz when running a graphics-intensive game.
+
+In general, higher base clock speed and boost clock speed will result in better performance. However, it is important to note that there are other factors that can also affect performance, such as the number of cores, the amount of cache, and the architecture of the CPU or GPU.
+
+When choosing a CPU or GPU, it is important to consider the base clock speed and boost clock speed, but you should also compare other factors such as the price, the number of cores, and the amount of cache.
+
+<19@> DIMM 
+
+DIMM stands for Dual In-Line Memory Module. It is a type of computer memory module that is used in desktop computers, laptops, servers, and other devices. DIMM modules are typically long, thin strips of printed circuit board with RAM chips soldered to them.
+
+DIMM modules are inserted into slots on the motherboard. Each slot can hold one or more DIMM modules, depending on the motherboard. The number of DIMM slots and the maximum capacity of each slot will vary depending on the motherboard model.
+
+DIMM modules come in a variety of speeds and capacities. The speed of a DIMM module is measured in MHz (Megahertz). The higher the MHz, the faster the DIMM module can transfer data. The capacity of a DIMM module is measured in GB (Gigabytes). The higher the GB, the more data the DIMM module can store.
+
+When choosing DIMM modules for your computer, it is important to make sure that they are compatible with your motherboard. You can check the motherboard manufacturer's website for a list of compatible DIMM modules.
+
+Here are some of the benefits of using DIMM modules:
+
+* Fast data transfer speeds: DIMM modules can transfer data at very high speeds, which can improve the performance of your computer.
+* High capacities: DIMM modules can support high capacities, which means that you can store more data on your computer.
+* Easy to install: DIMM modules are easy to install and remove.
+* Widely available: DIMM modules are widely available and affordable.
+
+If you are building a new computer or upgrading an existing computer, it is important to choose the right DIMM modules for your needs. Consider the speed, capacity, and compatibility of the DIMM modules before making a purchase.
+
+<20@> different between DIMM and RAM 
+
+DIMM and RAM are two different things, but they are closely related.
+
+**RAM** stands for Random Access Memory. It is a type of volatile memory that is used to store data that is currently being used by the CPU. RAM is essential for the operation of a computer, as it allows the CPU to quickly access the data that it needs.
+
+**DIMM** stands for Dual In-Line Memory Module. It is a type of computer memory module that contains one or more RAM chips. DIMM modules are inserted into slots on the motherboard to provide the computer with RAM.
+
+In other words, RAM is the memory itself, while DIMM is the module that contains the RAM. DIMM modules are used to install RAM in computers.
+
+Here is a table that summarizes the key differences between DIMM and RAM:
+
+| Characteristic | DIMM | RAM |
+|---|---|---|
+| Type | Module | Memory |
+| Purpose | To provide the computer with RAM | To store data that is currently being used by the CPU |
+| Form | Long, thin strip of printed circuit board with RAM chips soldered to it | Small, rectangular chips |
+| Installation | Inserted into slots on the motherboard | Soldered to DIMM modules |
+
+When choosing DIMM modules for your computer, it is important to make sure that they are compatible with your motherboard. You can check the motherboard manufacturer's website for a list of compatible DIMM modules.
+
+<21@> vector graphic 
+
+Vector graphics are digital images that are created using geometric shapes and mathematical formulas. They are made up of points, lines, curves, and shapes that are defined mathematically. This means that vector graphics can be scaled to any size without losing quality.
+
+Vector graphics are different from raster graphics, which are made up of pixels. Raster graphics are often referred to as bitmaps. Pixels are tiny squares of color, and the image quality of a raster graphic is determined by the number of pixels it has. The more pixels a raster graphic has, the higher its resolution and the sharper it will look. However, raster graphics can become blurry when they are scaled up.
+
+Vector graphics have a number of advantages over raster graphics. They are scalable, which means that they can be resized without losing quality. They are also relatively small in file size, because they only store the mathematical formulas that define the image. Vector graphics are often used for logos, illustrations, and other types of digital artwork.
+
+Here are some examples of vector graphics:
+
+* Logos
+* Illustrations
+* Icons
+* Fonts
+* Diagrams
+* Line art
+* Cartoons
+* 3D graphics
+
+Vector graphics are created using vector graphics software, such as Adobe Illustrator, CorelDRAW, and Inkscape. These programs allow users to create and edit vector graphics using a variety of tools and features.
+
+Vector graphics are used in a wide range of applications, including:
+
+* Web design
+* Graphic design
+* Print design
+* Advertising
+* Video editing
+* Animation
+* 3D graphics
+* Engineering
+* Architecture
+
+Vector graphics are a versatile and powerful tool for creating digital images. They offer a number of advantages over raster graphics, including scalability, small file size, and high quality.
+            
+2*** information
+
+<1@> Core i5-11600K
+
+The Intel Core i5-11600K is a 6-core, 12-thread desktop processor that was released in March 2021. It is the flagship processor in Intel's 11th generation Rocket Lake-S family. The i5-11600K has a base clock speed of 3.9 GHz and a boost clock speed of 4.9 GHz. It also has 12 MB of L3 cache.
+
+The i5-11600K is a popular choice for gamers and enthusiasts because it offers excellent performance at a reasonable price. It is also overclockable, which means that users can further increase its performance by adjusting its clock speed and voltage.
+
+Here are some of the key features of the Intel Core i5-11600K:
+
+* 6 cores, 12 threads
+* Base clock speed of 3.9 GHz
+* Boost clock speed of 4.9 GHz
+* 12 MB of L3 cache
+* Intel Hyper-Threading
+* Intel Turbo Boost 3.0
+* Intel Thermal Velocity Boost
+* Intel UHD Graphics 750
+* Overclockable
+
+The Intel Core i5-11600K is a great choice for users who need a powerful and versatile CPU. It is well-suited for gaming, video editing, 3D rendering, and other demanding tasks.
+
+<2@> Core i5-11400F 
+
+The Intel Core i5-11400F is a 6-core, 12-thread desktop processor that was released in March 2021. It is the successor to the popular Core i5-10400F and is based on Intel's 11th generation Rocket Lake-S architecture.
+
+The Core i5-11400F has a base clock speed of 2.6 GHz and a boost clock speed of 4.4 GHz. It also has 12 MB of L3 cache. The processor does not have integrated graphics, so users will need to purchase a separate graphics card to use it.
+
+The Core i5-11400F is a great choice for users who need a powerful and versatile CPU for gaming, video editing, 3D rendering, and other demanding tasks. It is also a good choice for users who are looking for a good value for their money.
+
+Here are some of the key features of the Intel Core i5-11400F:
+
+* 6 cores, 12 threads
+* Base clock speed of 2.6 GHz
+* Boost clock speed of 4.4 GHz
+* 12 MB of L3 cache
+* Intel Hyper-Threading
+* Intel Turbo Boost 3.0
+* Intel Thermal Velocity Boost
+* Overclockable (with compatible motherboard)
+
+The Intel Core i5-11400F is a great choice for a wide range of users and is one of the best mid-range CPUs on the market. It offers excellent performance at a reasonable price.
+
+<3@> DDR4 ram 
+
+DDR4 RAM is the fourth generation of double data rate synchronous dynamic random-access memory (SDRAM). It is the most common type of RAM used in today's computers. DDR4 RAM is faster and more efficient than DDR3 RAM, and it can support higher capacities.
+
+DDR4 RAM modules are typically 288 pins and have a notch at one end to prevent them from being inserted incorrectly. DDR4 RAM modules can be found in a variety of speeds and capacities, with the most common speeds being 3200MHz and 3600MHz.
+
+DDR4 RAM is compatible with most modern motherboards, but it is important to check the compatibility of your motherboard before purchasing DDR4 RAM.
+
+Here are some of the benefits of using DDR4 RAM:
+
+* Faster speeds: DDR4 RAM can operate at speeds of up to 5000MHz or higher, which is significantly faster than DDR3 RAM.
+* Higher capacities: DDR4 RAM modules can support capacities of up to 128GB, which is twice the capacity of DDR3 RAM modules.
+* Lower power consumption: DDR4 RAM consumes less power than DDR3 RAM, which can help to improve the battery life of laptops and other mobile devices.
+
+If you are building a new computer or upgrading your existing computer, DDR4 RAM is the best choice for RAM. It is faster, more efficient, and more powerful than DDR3 RAM.
+
+DDR4 RAM modules can support capacities of up to 128GB, which is equal to 134,217,728 bytes. However, most DDR4 RAM modules that are available for purchase are smaller than 128GB. For example, 16GB DDR4 RAM modules are very common.
+
+The amount of DDR4 RAM that you need will depend on your specific needs. If you are planning on using your computer for basic tasks such as web browsing and email, you may be able to get by with 8GB of RAM. However, if you are planning on using your computer for more demanding tasks such as gaming, video editing, or 3D rendering, you will need more RAM.
+
+Here are some general guidelines for how much DDR4 RAM you need:
+
+Basic tasks such as web browsing and email: 8GB
+Gaming and other demanding tasks: 16GB or more
+Professional applications such as video editing and 3D rendering: 32GB or more
+
+<4@> DDR3 ram 
+
+DDR3 RAM is the third generation of double data rate synchronous dynamic random-access memory (SDRAM). It was released in 2007 and was the most common type of RAM used in computers until DDR4 RAM became popular in the mid-2010s.
+
+DDR3 RAM modules are typically 240 pins and have a notch at one end to prevent them from being inserted incorrectly. DDR3 RAM modules can be found in a variety of speeds and capacities, with the most common speeds being 1333MHz and 1600MHz.
+
+DDR3 RAM is no longer the most popular type of RAM, but it is still widely used in older computers. It is also a good choice for budget-minded consumers, as DDR3 RAM is typically less expensive than DDR4 RAM.
+
+Here are some of the benefits of using DDR3 RAM:
+
+* Affordable: DDR3 RAM is typically less expensive than DDR4 RAM.
+* Widely compatible: DDR3 RAM is compatible with most motherboards that were manufactured in the past decade.
+* Good performance: DDR3 RAM offers good performance for most tasks, including gaming, video editing, and web browsing.
+
+If you are building a new computer on a budget or upgrading an older computer, DDR3 RAM is a good choice. It is affordable, widely compatible, and offers good performance.
+
+However, if you are building a high-end gaming computer or a computer that will be used for demanding tasks such as video editing or 3D rendering, DDR4 RAM is a better choice. DDR4 RAM is faster and more efficient than DDR3 RAM, and it can support higher capacities.
+
+
+DDR3 RAM modules can support capacities of up to 16GB, which is equal to 17,179,869,184 bytes. However, most DDR3 RAM modules that are available for purchase are smaller than 16GB. For example, 8GB DDR3 RAM modules are very common.
+
+The amount of DDR3 RAM that you need will depend on your specific needs. If you are planning on using your computer for basic tasks such as web browsing and email, you may be able to get by with 4GB of RAM. However, if you are planning on using your computer for more demanding tasks such as gaming, video editing, or 3D rendering, you will need more RAM.
+
+Here are some general guidelines for how much DDR3 RAM you need:
+
+Basic tasks such as web browsing and email: 4GB
+Gaming and other demanding tasks: 8GB or more
+Professional applications such as video editing and 3D rendering: 16GB or more
+
+<5@> base clock speed & boost clock speed 
+
+Base clock speed and boost clock speed are two different ways to measure the speed of a CPU or GPU.
+
+**Base clock speed** is the default clock speed at which your CPU or GPU operates most of the time. It is the speed at which the component is guaranteed to run without any errors.
+
+**Boost clock speed** is the maximum clock speed at which your CPU or GPU can run for short periods of time. It is a feature that allows the component to temporarily increase its speed when performing demanding tasks.
+
+Boost clock speed is typically higher than base clock speed, but it is not guaranteed to be available at all times. The actual boost clock speed that your CPU or GPU can achieve will depend on a number of factors, including the temperature of the component, the power consumption of the system, and the workload.
+
+Here is an example of how base clock speed and boost clock speed might be used in practice:
+
+* A CPU with a base clock speed of 3.0 GHz and a boost clock speed of 4.0 GHz might run at 3.0 GHz most of the time, but it might boost to 4.0 GHz when running a demanding game or video editing application.
+* A GPU with a base clock speed of 1.0 GHz and a boost clock speed of 1.2 GHz might run at 1.0 GHz most of the time, but it might boost to 1.2 GHz when running a graphics-intensive game.
+
+In general, higher base clock speed and boost clock speed will result in better performance. However, it is important to note that there are other factors that can also affect performance, such as the number of cores, the amount of cache, and the architecture of the CPU or GPU.
+
+When choosing a CPU or GPU, it is important to consider the base clock speed and boost clock speed, but you should also compare other factors such as the price, the number of cores, and the amount of cache.
+
+<6@> high-end gaming computer 
+
+A high-end gaming computer is a computer that is able to run the latest games at the highest settings and resolutions. It typically has a powerful CPU, GPU, and plenty of RAM.
+
+Here are some of the key components of a high-end gaming computer:
+
+* **CPU:** The CPU is the brain of the computer and is responsible for processing all of the data. For a high-end gaming computer, you will want a CPU with at least 6 cores and 12 threads. Some popular options include the Intel Core i7-13700K and the AMD Ryzen 9 7950X.
+
+* **GPU:** The GPU is responsible for rendering the graphics in games. For a high-end gaming computer, you will want a GPU that is capable of running the latest games at the highest settings. Some popular options include the Nvidia GeForce RTX 4090 and the AMD Radeon RX 7900 XTX.
+
+* **RAM:** RAM is used to store data that is currently being used by the CPU. For a high-end gaming computer, you will want at least 16GB of RAM. However, if you are planning on playing the latest games at the highest settings, you may want to consider getting 32GB of RAM or more.
+
+* **Storage:** For a high-end gaming computer, you will want to use an SSD for your primary storage drive. SSDs are much faster than traditional hard drives, which will result in shorter loading times and better overall performance. You may also want to consider getting a secondary hard drive for storing large files such as games and videos.
+
+In addition to the above components, you will also need a motherboard, power supply, case, and cooling system. When choosing these components, it is important to make sure that they are compatible with each other.
+
+Here is an example of a high-end gaming computer build:
+
+* CPU: Intel Core i9-13900K
+* GPU: Nvidia GeForce RTX 4090
+* RAM: 32GB DDR5-5600
+* Storage: 1TB M.2 NVMe SSD, 4TB hard drive
+* Motherboard: ASUS ROG MAXIMUS Z790 HERO
+* Power supply: Corsair RMx 1000W 80+ Gold
+* Case: Corsair iCUE 5000X RGB
+* Cooling system: Corsair H150i ELITE LCD AIO
+
+This build is capable of running the latest games at the highest settings and resolutions. It is also a good choice for users who need a powerful computer for other demanding tasks such as video editing and 3D rendering.
+
+Please note that this is just an example build. There are many other ways to build a high-end gaming computer. When choosing components, it is important to consider your budget and your specific needs.
+
+
 
