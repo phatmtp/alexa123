@@ -132,7 +132,7 @@ Here are some examples of neural network applications:
 
 Neural networks are a rapidly growing field of machine learning. As the technology continues to improve, neural networks will be used to solve even more problems in the future.
 
-[6] why ChatGPT is only available ?
+[6] why ChatGPT is only available as a cloud-based service ?
 
 ChatGPT is only available as a cloud-based service because the large language model that powers it requires a lot of computing power and storage space. Cloud computing provides the scalability and flexibility that ChatGPT needs to run efficiently.
 
@@ -371,7 +371,7 @@ A perceptron has three main components:
 
 * **Bias:** This is a constant that is added to the weighted sum of the inputs before it is passed to the activation function.
 
-The perceptron works by computing a weighted sum of its input nodes and then passing that sum to an activation function. The activation function determines the output of the perceptron. A common activation function is the step function, which outputs 1 if the weighted sum is positive and 0 if the weighted sum is negative.
+The perceptron works by computing a weighted sum of its input nodes and then passing that sum to an activation function. The activation function determines the output of the perceptron. A common activation function is the step function, which outputs 1 if the weighted sum is positive and 0 if the weighted sum is negative
 
 The perceptron can be trained to classify data by adjusting the weights and bias. The training process is called the perceptron learning algorithm. The perceptron learning algorithm works by iteratively presenting the perceptron with examples of the data that it is supposed to classify. For each example, the perceptron computes an output. If the output is incorrect, the weights and bias are adjusted so that the output is correct for the next iteration.
 
@@ -429,7 +429,7 @@ Here's a simplified step-by-step process:
 2. The perceptron calculates the weighted sum of the inputs.
 3. This sum is then passed through an activation function, which decides the final output of the perceptron.
 4. The output is compared to the desired output (e.g., whether the image is an apple or an orange).
-5. Based on the comparison, the weights are adjusted to improve the perceptron's accuracy.
+5. Based on the comparison, the weights and the bias are adjusted to improve the perceptron's accuracy.
 6. Steps 2 to 5 are repeated multiple times until the perceptron can make accurate predictions.
 
 By training the perceptron on a large dataset with known outputs (correct classifications), it learns to make increasingly accurate predictions.
