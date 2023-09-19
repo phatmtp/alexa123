@@ -626,6 +626,18 @@ You'll want to start by including the necessary libraries for Bluetooth communic
 
 Then, you can write code to receive commands from your smartphone via Bluetooth and translate them into actions for your motors. For example, if you receive the letter 'F', you can instruct the motors to move forward, and if you receive 'L', you can make the car turn left, and so on.
 
+<6@> connect 2 dc motors with L298n & arduino uno 
+
+2 terminals of motor 1 -----> output 1 & 2
+2 terminals of motor 2 -----> output 3 & 4
+dc power possitive terminal -----> 5v pin (12v pin if the power supply is more than 5v)
+dc power negative terminal -----> GND pin
+pin ~6 , pin 7 -----> IN1 pin, IN2 pin (from arduino to L298N)
+pin 8 , pin ~9 -----> IN3 pin, IN4 pin (from arduino to L298N)
+pin ~5 -----> ENA pin (from arduino to L298N)
+pin ~10 -----> ENB pin (from arduino to L298N)
+
+
 4*** Build wheel robot
 
 <1@> connect arduino uno with L298N & HC05 & 4 pixel leds & 9 volt battery
