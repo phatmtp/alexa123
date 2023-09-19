@@ -1,6 +1,6 @@
-1*** explanation
-
-2*** build the cpu
+[1] explanation
+[2] information
+[3] instruction
 
 
 
@@ -15,11 +15,25 @@
 7/ Intel HD Graphics <7@,1***>
 8/ hyper-threading <8@,1***>
 9/ single-threaded application <9@,1***>
-10/ Data mining software
-11/ application or software that using parallelized tasks 
-12/ parallelized task
-13/ pentium 4
-14/ Core i5-11600K
-15/ core TM 
-16/ intel(R) Core(TM) i5-7200U CPU @ 2.50GHz 2.71 GHz
-17/ different between duo & hyper thread cpu ?
+10/ Data mining software <10@,1***>
+11/ application or software that using parallelized tasks <11@,1***>
+12/ parallelized task <12@,1***>
+13/ pentium 4 <13@,1***>
+14/ Core i5-11600K <14@,1***>
+15/ core TM <15@,1***>
+16/ intel(R) Core(TM) i5-7200U CPU @ 2.50GHz 2.71 GHz <16@,1***>
+17/ different between duo & hyper thread cpu ? <17@,1***>
+18/ base clock speed & boost clock speed <18@,1***>
+19/ DIMM <19@,1***>
+20/ different between DIMM and RAM <20@,1***>
+21/ vector graphic <21@,1***>
+
+2*** information
+
+1/ Core i5-11600K <1@,2***>
+2/ Core i5-11400F <2@,2***>
+3/ DDR4 ram <3@,2***>
+4/ DDR3 ram <4@,2***>
+5/ base clock speed & boost clock speed <5@,2***>
+6/ high-end gaming computer <6@,2***>
+
