@@ -110,8 +110,9 @@
 
 4/ example of how to control the motors with the Arduino <4@,3***>
 
-5/ set up wheels robot with Hc05 - L298n - 9 volt battery - arduino uno - 4 motors with 4 wheels 
+5/ set up wheels robot with Hc05 - L298n - 9 volt battery - arduino uno - 4 motors with 4 wheels <5@,3***>
 
+6/ connect 2 dc motors with L298n & arduino uno <6@,3***>
 
 4*** Build wheel robot
 
