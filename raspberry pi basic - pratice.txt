@@ -11,6 +11,8 @@
 4/ GPIO pins <4@,1***>
 5/ what is actuator ? <5@,1***>
 6/ how does an actuator work ? <6@,1***>
+7/ what is stepper motor ? <7@,1***>
+8/ ARM cpu <8@,1***>
 
 2*** information
 
