@@ -13,6 +13,8 @@
 7/ flask libary in python ? <7@,1***>
 8/ @app.route('/chatbot', methods=['POST']) <8@,1***>
 9/ what does POST requests in this case ? <9@,1***>
+10/ what is post request ? <10@,1***>
+11/ what is endpoint ? <11@,1***>
 
 2*** instruction
 
