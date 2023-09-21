@@ -1,1 +1,19 @@
+[1] explanation
+[2] instruction
+[3] build the A.I chatbox
 
+1*** explanation
+
+1/ what is Transformers ? <1@,1***>
+2/ what does flask requests mean ? <2@,1***>
+3/ what is flask web applicaiton ? <3@,1***>
+4/ TPUs in computer science <4@,1***>
+5/ flask <5@,1***>
+6/ request module from flask libary in python <6@,1****>
+7/ flask libary in python ? <7@,1***>
+8/ @app.route('/chatbot', methods=['POST']) <8@,1***>
+9/ what does POST requests in this case ? <9@,1***>
+
+2*** instruction
+
+1/ let's create a Flask web application to serve as our chatbot's API <1@,2***>
