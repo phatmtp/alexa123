@@ -15,7 +15,13 @@
 9/ what does POST requests in this case ? <9@,1***>
 10/ what is post request ? <10@,1***>
 11/ what is endpoint ? <11@,1***>
+12/ why do we need `index()` function for create the root URL ? <12@,1***>
 
 2*** instruction
 
 1/ let's create a Flask web application to serve as our chatbot's API <1@,2***>
+2/ Build the HTML template for a simple chatbot web app that uses jQuery and Flask <2@,2***>
+
+
+
+
