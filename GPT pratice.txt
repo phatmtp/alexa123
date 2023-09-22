@@ -21,4 +21,6 @@
 [21] evaluation and iteration
 [22] various metrics like response coherence, relevancy, fluency
 [23] NAND gate
-
+[24] Feedforward neural network
+[25] application that use  Feedforward neural network
+[26] what is feedback loops ?
