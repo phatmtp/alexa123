@@ -135,7 +135,9 @@ how to know the 'main','temp' of json file. shall we click to it to find out ?  
 
 39/ averaged_perceptron_tagger <39@,1***>
 
-40/ what is label dataset ?
+40/ what is label dataset ? <40@,1***>
+
+41/ Enabling Windows Long Path support <41@,1***>
 
 2*** basic tutorial to build alexa
 
