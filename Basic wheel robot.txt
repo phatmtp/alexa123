@@ -483,6 +483,36 @@ The reason why some people connect the HC-05 module’s RX and TX pins to digita
 
 This allows you to use the SoftwareSerial library to communicate with other devices using other digital pins
 
+<26@> HC05 bluetooth module
+
+The HC05 is a popular Bluetooth module that can be used to add Bluetooth connectivity to a variety of devices, including microcontrollers, Arduino boards, and other electronic projects. It's a compact module that's easy to use and integrates well with many different platforms.
+Here are some key features of the HC05 Bluetooth module:
+
+* Bluetooth version: 2.0 (not compatible with Bluetooth 3.0 or later)
+* Operating frequency: 2402-2480 MHz
+* Range: Up to 10 meters (33 feet)
+* Data transfer rate: 721 kbps
+* Supported protocols: SPP (Serial Port Profile), DUN (Dial-Up Networking), FAX (Facsimile), LAP (LAN Access Point), and HSP (Headset Profile)
+* Power consumption: Typically around 10-20 mA in idle mode, up to 50 mA during transmission
+* Dimensions: 19.5mm x 15.5mm x 3.5mm (0.76" x 0.61" x 0.14")
+The HC05 module typically comes with a breakout board that has a series of pins for connecting to external devices. These pins include:
+* VCC: Power supply voltage (typically 3.3V or 5V)
+* GND: Ground
+* TX: Transmit data pin (connected to the microcontroller or computer)
+* RX: Receive data pin (connected to the microcontroller or computer)
+* EN: Enable pin (used to turn on/off the module)
+* CLK: Clock pin (used for synchronizing data transfer)
+* DAT: Data pin (used for transmitting/receiving data)
+
+To use the HC05 Bluetooth module, you'll need to pair it with a Bluetooth device (such as a smartphone or computer) and then establish a connection using a serial port profile (SPP). Once connected, you can send and receive data using the module's TX and RX pins.
+I hope this information helps! Let me know if you have any other questions about the HC05 Bluetooth module.
+
+(1. Key Pin (also called "EN" or "Enable Pin"): This pin is used to enable or disable the Bluetooth transmission. When the key pin is pulled high (i.e., connected to VCC), the Bluetooth transmission is enabled. When it's pulled low (i.e., connected to GND), the transmission is disabled. This pin can be used to control the Bluetooth connectivity of the module remotely.
+
+2. State Pin (also called "ST" or "Status Pin"): This pin indicates the status of the Bluetooth connection. It's an output pin that provides a digital signal indicating whether the module is in the idle state, connecting state, or connected state. The state pin can be used to monitor the status of the Bluetooth connection and take appropriate action based on the connection state.
+
+In summary, the key pin controls the Bluetooth transmission, while the state pin indicates the status of the Bluetooth connection. Both pins are useful for integrating the HC05 Bluetooth module into your project and customizing its behavior according to your needs.)
+
 
 3*** connect arduino uno with components & programing
 
@@ -505,12 +535,12 @@ Therefore, a voltage divider is needed to connect the two pins without burning t
 
 HC05							arduino uno
 
-enable pin  	->			3.3v pin	
+enable pin  			->			3.3v pin	
 VCC				->			5v pin		
 GND				->			GND	
 TXD				->			TXD
 RXD				->			RXD
-State			->
+State				->
 
 <2@> connect L298N motor to 1 or 2 motor
 
