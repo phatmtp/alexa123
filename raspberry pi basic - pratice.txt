@@ -13,6 +13,10 @@
 6/ how does an actuator work ? <6@,1***>
 7/ what is stepper motor ? <7@,1***>
 8/ ARM cpu <8@,1***>
+9/ BoardCom <9@,1***>
+10/ IOT application <10@,1***>
+11/ micro sd storage of raspberry pi <11@,1***>
+12/ if that is the primary storage of raspberry pi. so, where is the enternal storage of raspberry pi ? does it require external storage or something ? <12@,1***>
 
 2*** information
 
