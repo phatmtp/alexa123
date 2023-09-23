@@ -99,6 +99,7 @@
 
 25/ why connect rx pin & tx pin of HC05 module to pin ~10 & pin ~11 of arduino uno (25@,2***)
 
+26/ HC05 bluetooth module <26@,2***>
 
 3*** connect arduino uno with components & programing
 
