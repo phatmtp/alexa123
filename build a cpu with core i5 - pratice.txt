@@ -32,7 +32,9 @@
 24/ L1,L2,L3 cache <24@,1***>
 25/ relationshop between cache and ram <25@,1***>
 26/ GPUs (Graphics Processing Units) <26@,1***>
-
+27/ different between SSDs & HDDs  in computer science ? <27@,1***>
+28/ speed of ram, such as DDR4 can support up to 3600 - 3800 MHZ. what does that mean ? <28@,1***>
+29/ categorization of how fast 3.6-3.8 billion times per second is for different purposes <29@,1***>
 
 2*** information
 
