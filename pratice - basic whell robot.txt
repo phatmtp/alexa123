@@ -5,8 +5,6 @@
 [5] control wheel robot
 
 
-
-
 1*** Components & Tools Required to Build Wireless Arduino Bluetooth Robot
 
 1/ Arduino Uno <1@,1***>
@@ -100,6 +98,11 @@
 25/ why connect rx pin & tx pin of HC05 module to pin ~10 & pin ~11 of arduino uno (25@,2***)
 
 26/ HC05 bluetooth module <26@,2***>
+
+27/ IOREF pin on arduino uno  <27@,2***>
+
+28/ is PWM an example of ADC ? <28@,2***>
+
 
 3*** connect arduino uno with components & programing
 
