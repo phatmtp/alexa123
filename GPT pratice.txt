@@ -1,3 +1,9 @@
+1*** explanation
+2*** information
+
+
+1*** explanation
+
 [1] how does chat gpt work ?
 [2] The transformer algorithm
 [3] the steps of creating your own Chatbot GPT
@@ -22,5 +28,16 @@
 [22] various metrics like response coherence, relevancy, fluency
 [23] NAND gate
 [24] Feedforward neural network
-[25] application that use  Feedforward neural network
+[25] application that use Feedforward neural network
 [26] what is feedback loops ?
+[27] feedback loops of Neural learning 
+[28] does feedback loop apply on perceptron neural network ?
+[29] what kind of transformer model architesture that RNNs is using ?
+[30] FNNs (feedforward neural networks) can use transformer model architectures
+[31] state-of-the-art transformer models
+[32] supervised learning 
+
+2*** information
+
+[1] replica A.I chatbot
+[2] C.ai beta
