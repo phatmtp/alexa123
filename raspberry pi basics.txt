@@ -183,7 +183,9 @@ The stator contains electromagnets that create a magnetic field, while the rotor
 
 <8@> ARM cpu 
 
-ARM CPU, or Advanced RISC Machine CPU, is a family of reduced instruction set computing (RISC) instruction set architectures for computer processors. It is the most pervasive processor architecture in the world, with more than 250 billion Arm-based chips shipped by its partners over the past three decades in products ranging from sensors, wearables and smartphones to supercomputers.
+ARM CPU, or Advanced RISC Machine CPU, is a family of reduced instruction set computing (RISC) instruction set architectures for computer processors. 
+
+Written by Chatsonic processor architecture in the world, with more than 250 billion Arm-based chips shipped by its partners over the past three decades in products ranging from sensors, wearables and smartphones to supercomputers.
 
 ARM processors are well-known for their energy efficiency and performance, making them ideal for a wide range of devices, including:
 
@@ -310,6 +312,28 @@ Here are some examples of when you might need external storage for your Raspberr
 * Taking time-lapse photos
 
 If you are unsure whether or not you need external storage for your Raspberry Pi, it is always best to err on the side of caution and get an external storage device. You can always add more storage later if needed.
+
+<13@> inside jumper wires. it can conduct 2 tasks: current transmition and data transmition ?
+
+Jumper wires are commonly used in electronics to establish connections between components on a breadboard or circuit board. They are primarily used for transmitting electrical current rather than data. 
+
+Jumper wires provide a pathway for the flow of electricity between different points in a circuit, allowing the current to reach the desired components. While data transmission is possible through wires, jumper wires are not specifically designed or optimized for this purpose. Their main function is to facilitate the flow of electric current within a circuit. 
+
+HDMI (High-Definition Multimedia Interface) cables are a type of digital cable used for transmitting high-quality audio and video signals between devices such as televisions, monitors, and audio/video receivers. 
+
+HDMI cables are designed to carry uncompressed digital data, including both audio and video signals, over a single cable. These cables use a combination of copper wires and specialized connectors to transmit the signals in a digital format. HDMI cables are commonly used for connecting devices like Blu-ray players, gaming consoles, and set-top boxes to displays, providing high-definition audio and video transmission.
+
+HDMI cables are primarily used for transmitting high-quality audio and video signals between devices [1]. While HDMI cables do carry a small amount of electricity, it is not enough to power devices like external displays. 
+
+The power delivered by HDMI is insufficient to run monitors, TVs, and PCs. HDMI cables can carry both digital video and audio signals, and the latest technology is HDMI 2.1 which supports resolutions up to 8K and data transfer speeds up to 48 Gbps. Most consumer devices use a 19-pin type A HDMI connector
+
+<14@> what is Blu-ray ?
+
+Blu-ray is a high-definition optical disc format used for storing and playing back high-quality video and audio content. It was developed as the successor to DVDs and offers significantly greater storage capacity, allowing for better video and audio quality. 
+
+Blu-ray discs can hold up to 25GB (single-layer) or 50GB (dual-layer) of data, compared to the 4.7GB capacity of DVDs. Blu-ray players and drives use a blue-violet laser to read and write data on the disc, hence the name "Blu-ray." 
+
+It has become the standard for high-definition video playback and is widely used in home entertainment systems.
 
 
 2*** information
