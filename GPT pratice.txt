@@ -36,6 +36,7 @@
 [30] FNNs (feedforward neural networks) can use transformer model architectures
 [31] state-of-the-art transformer models
 [32] supervised learning 
+[33] regularization, early stopping, and cross-validation to prevent overfitting in machine learning
 
 2*** information
 
