@@ -1,4 +1,4 @@
-[1] Components & Tools Required to Build Wireless Arduino Bluetooth Robot
+ [1] Components & Tools Required to Build Wireless Arduino Bluetooth Robot
 [2] explanation
 [3] connect arduino uno with components & programing
 [4] Build wheel robot
@@ -550,6 +550,50 @@ Here is a table that summarizes the key differences between PWM and ADC:
 | Common applications | Motor control, LED dimming, servo control | Sensor readout, data acquisition, image processing |
 
 PWM and ADC are both important tools for controlling and monitoring analog devices. However, they are two different technologies with different purposes.
+
+<29@> AF_DCMotor motor meaning ?
+
+In the Arduino code you provided, the `AF_DCMotor` object represents a DC motor. The `AF` stands for "Arduino For." The `DCMotor` part of the name indicates that the object is for controlling a DC motor.
+
+The `AF_DCMotor` object provides a number of methods for controlling a DC motor, including:
+
+* `setSpeed()`: Set the speed of the motor.
+* `run()`: Start or stop the motor.
+* `run(direction)`: Start the motor in a specified direction.
+* `run(direction, speed)`: Start the motor in a specified direction and speed.
+
+In the code you provided, the `AF_DCMotor` objects are used to control the four DC motors in the wheel car. The `AF_DCMotor` objects are initialized with the following code:
+
+```
+AF_DCMotor motor1(1); // Connecting Motor 1 to M1 of L298N
+AF_DCMotor motor2(2); // Connecting Motor 2 to M2 of L298N
+AF_DCMotor motor3(3); // Connecting Motor 3 to M3 of L298N
+AF_DCMotor motor4(4); // Connecting Motor 4 to M4 of L298N
+```
+
+The `1`, `2`, `3`, and `4` parameters in the `AF_DCMotor()` constructor specify the pins on the Arduino that are connected to the motor driver.
+
+In the loop() function, the `AF_DCMotor` objects are used to control the car's movement. The following code shows how to use the `AF_DCMotor` objects to move the car forward:
+
+```
+motor1.run(FORWARD);
+motor2.run(FORWARD);
+motor3.run(FORWARD);
+motor4.run(FORWARD);
+```
+
+This code will start all four motors in the forward direction.
+
+The following code shows how to use the `AF_DCMotor` objects to turn the car left:
+
+```
+motor1.run(BACKWARD);
+motor2.run(FORWARD);
+motor3.run(BACKWARD);
+motor4.run(FORWARD);
+```
+
+This code will start the front two motors in the backward direction and the rear two motors in the forward direction. This will cause the car to turn left.
 
 
 3*** connect arduino uno with components & programing
