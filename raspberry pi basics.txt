@@ -335,6 +335,54 @@ Blu-ray discs can hold up to 25GB (single-layer) or 50GB (dual-layer) of data, c
 
 It has become the standard for high-definition video playback and is widely used in home entertainment systems.
 
+<15@> different between USB flash drive & USB hard drive
+
+USB flash drives and USB hard drives are both portable storage devices, but they have some key differences. Here are the main differences between USB flash drives and USB hard drives:
+
+- Storage Capacity: USB hard drives generally have larger storage capacities compared to USB flash drives. USB hard drives can range from a few hundred gigabytes to several terabytes, while USB flash drives typically have capacities ranging from a few gigabytes to a few hundred gigabytes.
+
+- Physical Size: USB flash drives are smaller and more compact compared to USB hard drives. Flash drives are designed to be lightweight and easily fit into pockets or attach to keychains, making them highly portable. USB hard drives are larger and bulkier due to the mechanical components inside.
+
+- Durability: USB flash drives are generally more durable than USB hard drives. Flash drives have no moving parts, which makes them more resistant to physical shocks and drops. USB hard drives, on the other hand, have spinning disks and mechanical components that can be more susceptible to damage from drops or impacts.
+
+- Speed: USB hard drives are typically faster at bulk data transfers compared to USB flash drives. Hard drives can read and write files more quickly, making them suitable for tasks that involve transferring large files or working with multimedia content. Flash drives, on the other hand, excel at accessing small bits of data quickly, making them ideal for tasks that require quick access to files or running portable applications.
+
+- Lifespan: USB hard drives generally have a longer lifespan compared to USB flash drives. Flash drives have a limited number of read/write cycles before they may start to degrade, while hard drives can last longer under constant use.
+
+In summary, USB flash drives are more compact, durable, and suitable for everyday file storage and portability. USB hard drives offer larger storage capacities, faster bulk data transfers, and are better suited for tasks that involve working with large files or multimedia content. The choice between the two depends on your specific needs and preferences.
+
+<16@> what if i wanna play AAA games. which one is better ?
+
+If you want to play AAA games, USB hard drives are generally a better option compared to USB flash drives. Here's why:
+
+Storage Capacity: AAA games often require a significant amount of storage space. USB hard drives offer larger capacities, allowing you to store more games. This is especially important as AAA games can range from tens of gigabytes to over a hundred gigabytes in size.
+
+Speed: AAA games typically have large file sizes, and USB hard drives generally provide faster data transfer speeds compared to USB flash drives. This means that games stored on a USB hard drive will load faster and have smoother gameplay, reducing loading times and potential lag.
+
+Performance: USB hard drives can offer better performance when running AAA games. They typically have faster read and write speeds, allowing for quicker access to game files and reducing potential stuttering or frame rate drops during gameplay.
+
+Longevity: AAA games are often updated with patches and expansions, which can increase their file size over time. USB hard drives provide more room for future game installations and updates.
+
+However, it's important to note that USB hard drives are not as fast as internal hard drives or solid-state drives (SSDs) connected via SATA or NVMe interfaces. If you have the option, installing games on an internal or external SSD will provide even better performance compared to USB hard drives.
+
+In summary, if you want to play AAA games, a USB hard drive with ample storage capacity and faster data transfer speeds would be the better choice compared to a USB flash drive.
+
+<17@> TMDS explain
+
+TMDS stands for "Transition-Minimized Differential Signaling," which is the underlying technology used in HDMI cables to transmit high-speed digital signals. It is a signaling method that allows for the reliable transmission of digital audio and video data over copper wires. Here's a breakdown of how TMDS works:
+
+- Differential Signaling: TMDS uses a differential signaling scheme, which means that it transmits data as the difference in voltage between two wires rather than relying on an absolute voltage level. This approach helps to minimize the impact of external noise and interference on the transmitted signals.
+
+- Transition-Minimization: TMDS is designed to minimize the number of signal transitions, specifically the number of rapid voltage level changes, that occur during data transmission. By reducing the number of transitions, TMDS helps to reduce the overall electromagnetic interference (EMI) generated by the signal and ensures more reliable data transmission.
+
+- Data Encoding: Before transmission, the audio and video data is encoded using a specific algorithm. TMDS uses an encoding scheme that converts the original digital data into a series of binary 1s and 0s, which are then transmitted over the HDMI cable. This encoding helps to ensure efficient and accurate transmission of the data while maintaining compatibility with the HDMI specification.
+
+- Clock Signal: TMDS incorporates a separate clock signal that is transmitted alongside the data signals. The clock signal provides timing information that allows the receiving device to properly interpret and reconstruct the transmitted data. By including the clock signal, TMDS ensures synchronization between the transmitting and receiving devices, resulting in accurate audio and video reproduction.
+
+- Error Correction: To enhance the reliability of data transmission, TMDS employs error correction techniques. These techniques involve adding redundant data to the transmitted signals, which allows the receiving device to detect and correct any errors that may occur during transmission. Error correction helps to ensure that the received data matches the original data, minimizing the impact of signal degradation or interference.
+
+By utilizing the TMDS technology, HDMI cables can transmit high-quality digital audio and video signals over relatively long distances while maintaining signal integrity and minimizing potential issues caused by noise or interference. This makes TMDS a crucial component of HDMI cables, enabling the seamless transmission of multimedia content between devices.
+
 
 2*** information
 
@@ -611,6 +659,27 @@ Here are some of the advantages of using a Raspberry Pi Zero 2 W:
 * It is a well-supported device with a large community of users and developers.
 
 If you are looking for a very low-cost, very small, and very versatile single-board computer, the Raspberry Pi Zero 2 W is a great option to consider.
+
+<9@> HDMI cable 
+
+Inside an HDMI (High-Definition Multimedia Interface) cable, you will find several components that work together to transmit audio and video signals between devices. Here are the main components inside an HDMI cable:
+
+- Copper Wires: HDMI cables contain multiple copper wires that carry the audio, video, and control signals. These wires are responsible for transmitting the digital signals between the connected devices.
+
+- Data Channels: HDMI cables have multiple data channels that carry different types of information. These channels include separate paths for video, audio, and various control signals. The specific configuration of these channels varies depending on the HDMI version (e.g., HDMI 1.4, HDMI 2.0, HDMI 2.1).
+
+While it is true that HDMI cables primarily consist of copper wires, they are not just carrying current like traditional electrical wires. Instead, HDMI cables utilize these copper wires to transmit digital signals that represent audio, video, and control data. Here's a more detailed explanation:
+
+- Video Signals: HDMI cables transmit digital video signals using a data transmission method called TMDS (Transition-Minimized Differential Signaling). Within the cable, there are three sets of twisted pairs of copper wires dedicated to carrying the red, green, and blue (RGB) video signals. These signals are encoded and transmitted as a series of 1s and 0s representing the color and brightness information of each pixel.
+
+- Audio Signals: HDMI cables also transmit digital audio signals alongside video. The audio data is encoded and transmitted over a separate set of copper wires within the cable. The specific configuration of audio channels depends on the audio format being transmitted, ranging from stereo to multi-channel surround sound.
+
+- Control Signals: In addition to audio and video, HDMI cables also carry control signals that enable communication between devices. These control signals include commands for functions like power on/off, input selection, volume control, and device synchronization. Copper wires within the HDMI cable are dedicated to transmitting these control signals, allowing for seamless device interaction.
+
+It's important to note that HDMI cables use a digital signaling method, meaning the data is transmitted as discrete digital signals rather than analog electrical currents. This digital format ensures high-quality and lossless transmission of audio and video data, resulting in a clear and accurate representation of the original content.
+
+The design and configuration of the copper wires within an HDMI cable, along with the use of advanced encoding techniques, allow for the transmission of complex digital signals, including audio, video, and control data. This enables HDMI cables to provide a single cable solution for connecting various multimedia devices while maintaining high-quality signal integrity.
+
 
 
 3*** instruction
