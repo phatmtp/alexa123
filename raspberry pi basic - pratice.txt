@@ -19,6 +19,9 @@
 12/ if that is the primary storage of raspberry pi. so, where is the enternal storage of raspberry pi ? does it require external storage or something ? <12@,1***>
 13/ inside jumper wires. it can conduct 2 tasks: current transmition and data transmition ? <13@,1***>
 14/ what is Blu-ray ? <14@,1***>
+15/ different between USB flash drive & USB hard drive <15@,1***>
+16/ what if i wanna play AAA games. which one is better ? <16@,1***>
+17/ TMDS explain <17@,1***>
 
 2*** information
 
@@ -30,6 +33,7 @@
 6/ raspberry pi model B <6@,2***>
 7/ Raspberry Pi 3 Model B+ <7@,2***>
 8/ Raspberry Pi Zero 2 W <8@,2***>
+9/ HDMI cable <9@,2***>
 
 
 3*** instruction
