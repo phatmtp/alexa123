@@ -842,5 +842,45 @@ This build is capable of running the latest games at the highest settings and re
 
 Please note that this is just an example build. There are many other ways to build a high-end gaming computer. When choosing components, it is important to consider your budget and your specific needs.
 
+<7@> what kind of ram does macbook air 12 inch using ?
 
+The MacBook Air 12-inch uses LPDDR3 memory. LPDDR3 is a type of low-power double data rate memory that is designed to be smaller and more energy-efficient than traditional DDR3 memory. This makes it ideal for use in thin and light laptops like the MacBook Air 12-inch.
+
+The MacBook Air 12-inch was discontinued in 2019, so all MacBook Air 12-inch models use LPDDR3 memory.
+
+LPDDR3 memory is also used in other thin and light laptops, as well as smartphones and tablets. It is a common type of memory in mobile devices because of its small size and low power consumption.
+
+<8@> The Oppo Realme 3 uses LPDDR4X memory
+
+The Oppo Realme 3 uses LPDDR4X memory. LPDDR4X is a type of low-power double data rate memory that is faster and more energy-efficient than LPDDR3 memory. It is also more affordable, which makes it a good choice for budget-friendly smartphones like the Oppo Realme 3.
+
+LPDDR4X memory is also used in other mid-range and high-end smartphones, as well as some laptops and tablets. It is a common type of memory in mobile devices because of its good balance of performance, power consumption, and cost.
+
+Here is a table comparing LPDDR3 and LPDDR4X memory:
+
+| Feature | LPDDR3 | LPDDR4X |
+|---|---|---|
+| Data rate | 1600-2133 Mbps | 4266 Mbps |
+| Power consumption | High | Low |
+| Cost | High | Low |
+
+Overall, LPDDR4X memory is a better choice than LPDDR3 memory for most devices. It is faster, more energy-efficient, and more affordable.
+
+<9@> The Google Pixelbook with 16GB of RAM and 512GB of SSD uses LPDDR3 memory
+
+The Google Pixelbook with 16GB of RAM and 512GB of SSD uses LPDDR3 memory. LPDDR3 is a type of low-power double data rate memory that is designed to be smaller and more energy-efficient than traditional DDR3 memory. This makes it ideal for use in thin and light laptops like the Pixelbook.
+
+LPDDR3 memory is also used in other thin and light laptops, as well as smartphones and tablets. It is a common type of memory in mobile devices because of its small size and low power consumption.
+
+Here is a table comparing LPDDR3 and LPDDR4X memory:
+
+| Feature | LPDDR3 | LPDDR4X |
+|---|---|---|
+| Data rate | 1600-2133 Mbps | 4266 Mbps |
+| Power consumption | High | Low |
+| Cost | High | Low |
+
+Overall, LPDDR4X memory is a better choice than LPDDR3 memory for most devices. It is faster, more energy-efficient, and more affordable. However, the Pixelbook was released in 2017, before LPDDR4X memory was widely available. As a result, it uses LPDDR3 memory.
+
+The Pixelbook is still a capable laptop, but it is starting to show its age. If you are looking for the latest and greatest in terms of performance and features, you may want to consider a newer laptop that uses LPDDR4X memory.
 
