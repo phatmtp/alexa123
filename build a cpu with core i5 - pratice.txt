@@ -21,7 +21,6 @@
 13/ pentium 4 <13@,1***>
 14/ Core i5-11600K <14@,1***>
 15/ core TM <15@,1***>
-16/ intel(R) Core(TM) i5-7200U CPU @ 2.50GHz 2.71 GHz <16@,1***>
 17/ different between duo & hyper thread cpu ? <17@,1***>
 18/ base clock speed & boost clock speed <18@,1***>
 19/ DIMM <19@,1***>
@@ -38,10 +37,14 @@
 
 2*** information
 
+16/ intel(R) Core(TM) i5-7200U CPU @ 2.50GHz 2.71 GHz <16@,1***>
 1/ Core i5-11600K <1@,2***>
 2/ Core i5-11400F <2@,2***>
 3/ DDR4 ram <3@,2***>
 4/ DDR3 ram <4@,2***>
 5/ base clock speed & boost clock speed <5@,2***>
 6/ high-end gaming computer <6@,2***>
+7/ what kind of ram does macbook air 12 inch using ? <7@,2***>
+8/ The Oppo Realme 3 uses LPDDR4X memory <8@,2***>
+9/ The Google Pixelbook with 16GB of RAM and 512GB of SSD uses LPDDR3 memory <9@,2***>
 
