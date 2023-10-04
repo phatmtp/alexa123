@@ -34,6 +34,7 @@
 27/ different between SSDs & HDDs  in computer science ? <27@,1***>
 28/ speed of ram, such as DDR4 can support up to 3600 - 3800 MHZ. what does that mean ? <28@,1***>
 29/ categorization of how fast 3.6-3.8 billion times per second is for different purposes <29@,1***>
+30/ what is cache line <30@,1***>
 
 2*** information
 
@@ -47,4 +48,4 @@
 7/ what kind of ram does macbook air 12 inch using ? <7@,2***>
 8/ The Oppo Realme 3 uses LPDDR4X memory <8@,2***>
 9/ The Google Pixelbook with 16GB of RAM and 512GB of SSD uses LPDDR3 memory <9@,2***>
-
+10/ where does cache located in cpu ? are they belonging to the processor ? let's take core i5 as the example <10@,2***>
