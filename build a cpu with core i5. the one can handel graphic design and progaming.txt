@@ -693,6 +693,20 @@ Here are some additional things to consider when choosing RAM speed:
 
 Ultimately, the decision of whether or not to use high-speed RAM is up to you and your budget. If you are looking for the best possible performance, then 3.6-3.8 billion times per second RAM is a good option to consider. However, if you are on a budget or you do not use any demanding applications or games, then you may want to save your money and use slower RAM.
 
+<30@> what is cache line ?
+
+A cache line is the smallest portion of data that can be transferred between a cache and main memory. Cache lines are typically 32, 64, or 128 bytes in size. When a processor needs to access data in main memory, it first checks to see if the data is already in the cache. If it is, the processor can access the data directly from the cache, which is much faster than accessing data from main memory. If the data is not in the cache, the processor must fetch the data from main memory and store it in the cache for future use.
+
+Cache lines are important for performance because they allow the processor to access frequently used data much faster than it could if it had to access all data from main memory. Cache lines also improve performance by reducing the number of times the processor has to access main memory.
+
+Here are some examples of how cache lines can improve performance:
+
+* If a processor is executing a loop, the cache will likely contain the data that the processor needs to access in the loop. This means that the processor will not have to access main memory for every iteration of the loop.
+* If a processor is executing multiple threads, each thread can have its own cache. This means that multiple threads can access data in parallel, without having to wait for each other to access main memory.
+* If a processor is accessing a large array of data, the cache will likely contain the most recently accessed elements of the array. This means that the processor will not have to access main memory for every element of the array.
+
+Cache lines are a key component of modern processors, and they play a vital role in improving performance.
+
 
 2*** information
 
@@ -883,4 +897,22 @@ Here is a table comparing LPDDR3 and LPDDR4X memory:
 Overall, LPDDR4X memory is a better choice than LPDDR3 memory for most devices. It is faster, more energy-efficient, and more affordable. However, the Pixelbook was released in 2017, before LPDDR4X memory was widely available. As a result, it uses LPDDR3 memory.
 
 The Pixelbook is still a capable laptop, but it is starting to show its age. If you are looking for the latest and greatest in terms of performance and features, you may want to consider a newer laptop that uses LPDDR4X memory.
+
+<10@ >where does cache located in cpu ? are they belonging to the processor ? let's take core i5 as the example 
+
+Yes, the cache is located on the CPU die itself, in close proximity to the processor cores. This allows for very fast access to frequently used data and instructions.
+
+In a Core i5 processor, there are typically two levels of cache: L1 and L2. The L1 cache is the smallest and fastest, and it is located directly next to the processor cores. The L2 cache is larger and slower than the L1 cache, but it is still much faster than main memory.
+
+The L1 cache is usually divided into two parts: an instruction cache and a data cache. The instruction cache stores copies of the most recently executed instructions, and the data cache stores copies of the most recently used data.
+
+The L2 cache is usually shared by all of the processor cores. This means that all of the cores can access the data in the L2 cache, even if they are executing different threads.
+
+The specific size and configuration of the cache in a Core i5 processor will vary depending on the specific model. However, most Core i5 processors have at least 32 KB of L1 cache and 256 KB of L2 cache.
+
+Some high-end Core i5 processors also have L3 cache. L3 cache is a shared cache that is located on the CPU die itself. It is larger and slower than the L1 and L2 caches, but it is still much faster than main memory.
+
+L3 cache can be very beneficial for applications that access large amounts of data, such as video editing and 3D rendering. It can also be beneficial for applications that run multiple threads in parallel.
+
+Overall, the cache is an important part of the CPU that helps to improve performance by providing fast access to frequently used data and instructions.
 
