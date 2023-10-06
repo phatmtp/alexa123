@@ -23,6 +23,9 @@
 
 7/ the 'temperature' parameter for openai.Completion.create(). how much temperature is supposed to be high and low ? <7@,1***>
 
+8/ Meaning of query in programming ? <8@,1***>
+
+
 2*** build CHAT BOX GPT
 
 1/ Build CHAT BOX GPT with OPEN A.I (APPLIED CODE) <1@,2***>
