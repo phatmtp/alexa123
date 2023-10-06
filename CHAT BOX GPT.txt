@@ -227,6 +227,43 @@ Here are some examples of how different temperature settings can affect the outp
 
 As you can see, the temperature parameter has a significant impact on the creativity and randomness of the generated text.
 
+[8@] Meaning of query in programming ?
+
+In programming, a query is a request for information from a data source, such as a database or a file. Queries can be used to retrieve specific data, perform calculations on data, or manipulate data.
+
+Queries are typically written in a specific query language, such as Structured Query Language (SQL) for databases. SQL queries can be used to perform a wide range of operations, such as:
+
+* Selecting specific data from a database table
+* Filtering data based on certain criteria
+* Joining data from multiple tables
+* Grouping data and performing calculations on groups
+* Inserting, updating, or deleting data
+
+Queries can also be used to request information from other types of data sources, such as files or APIs. For example, a query could be used to read a file line by line, or to retrieve data from a web service.
+
+Queries are an essential part of many programming applications. They allow developers to efficiently retrieve and manipulate data, which can save time and improve the performance of their applications.
+
+Here is a simple example of a SQL query:
+
+```sql
+SELECT * FROM customers WHERE country = 'USA';
+```
+
+This query will select all of the data from the `customers` table where the `country` column is equal to `USA`.
+
+Another example is a query that could be used to read a file line by line:
+
+```python
+def read_file(filename):
+  with open(filename, 'r') as f:
+    for line in f:
+      yield line
+```
+
+This function uses a generator to read the file line by line. The `yield` statement returns the current line of the file and then suspends the function until the next time it is called. This allows the function to be used in a for loop to iterate over the lines of the file.
+
+Queries are a powerful tool that can be used to efficiently retrieve and manipulate data in a variety of programming applications.
+
 
 2*** build CHAT BOX GPT
 
