@@ -103,6 +103,18 @@
 
 28/ is PWM an example of ADC ? <28@,2***>
 
+29/ meaning of d1 d2 d3 d4 <29@,2***>
+
+30/ const int ENA = 9;
+    const int IN1 = 8;
+    const int IN2 = 7;
+    const int ENB = 3;
+    const int IN3 = 5;
+    const int IN4 = 4;   <30@,2***>
+
+31/ IN1 & IN2 connected to pin 8 & pin 7, IN3 & IN4 connected to pin 5 & pin 4,  i noted that only pin 5 is PWM. So you mean that only 1 pWM pin is enough to control speed motor <31@,2***>
+
+32/ what if i connent to 2 PWM pins. will it burn and damage l298n or arudino uno or motor <32@,2***>
 
 3*** connect arduino uno with components & programing
 
@@ -117,6 +129,7 @@
 5/ set up wheels robot with Hc05 - L298n - 9 volt battery - arduino uno - 4 motors with 4 wheels <5@,3***>
 
 6/ connect 2 dc motors with L298n & arduino uno <6@,3***>
+
 
 4*** Build wheel robot
 
