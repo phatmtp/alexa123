@@ -323,7 +323,7 @@ HDMI (High-Definition Multimedia Interface) cables are a type of digital cable u
 
 HDMI cables are designed to carry uncompressed digital data, including both audio and video signals, over a single cable. These cables use a combination of copper wires and specialized connectors to transmit the signals in a digital format. HDMI cables are commonly used for connecting devices like Blu-ray players, gaming consoles, and set-top boxes to displays, providing high-definition audio and video transmission.
 
-HDMI cables are primarily used for transmitting high-quality audio and video signals between devices [1]. While HDMI cables do carry a small amount of electricity, it is not enough to power devices like external displays. 
+HDMI cables are primarily used for transmitting high-quality audio and video signals between devices. While HDMI cables do carry a small amount of electricity, it is not enough to power devices like external displays. 
 
 The power delivered by HDMI is insufficient to run monitors, TVs, and PCs. HDMI cables can carry both digital video and audio signals, and the latest technology is HDMI 2.1 which supports resolutions up to 8K and data transfer speeds up to 48 Gbps. Most consumer devices use a 19-pin type A HDMI connector
 
