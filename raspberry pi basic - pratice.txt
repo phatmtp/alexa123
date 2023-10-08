@@ -35,7 +35,6 @@
 8/ Raspberry Pi Zero 2 W <8@,2***>
 9/ HDMI cable <9@,2***>
 
-
 3*** instruction
 
 1/ if i wanna build a mini pc. which raspberry pi model should i need ? <1@,3***>
