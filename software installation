@@ -1,1 +1,192 @@
+[1] topic
+[2] information
+[3] explanation
+
+
+1*** topic
+
+<1@> The code snippet attempts to activate Windows 11 without a license
+
+<THE CODE>
+
+@echo off
+title Windows 11 ALL version activator BY Tech Tricks XYZ&cls&echo ************************************ &echo Tech Tricks XYZ &echo.&echo ************************************ &echo Windows 11 activation...
+cscript //nologo c:\windows\system32\slmgr.vbs /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99 >nul
+cscript //nologo c:\windows\system32\slmgr.vbs /ipk 3KHY7-WNT83-DGQKR-F7HPR-844BM >nul
+cscript //nologo c:\windows\system32\slmgr.vbs /ipk 7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH >nul
+cscript //nologo c:\windows\system32\slmgr.vbs /ipk PVMJN-6DFY6-9CCP6-7BKTT-D3WVR >nul
+cscript //nologo c:\windows\system32\slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX >nul
+cscript //nologo c:\windows\system32\slmgr.vbs /ipk MH37W-N47XK-V7XM9-C7227-GCQG9 >nul
+cscript //nologo c:\windows\system32\slmgr.vbs /ipk NW6C2-QMPVW-D7KKK-3GKT6-VCFB2 >nul
+cscript //nologo c:\windows\system32\slmgr.vbs /ipk NW6C2-QMPVW-D7KKK-3GKT6-VCFB2 >nul
+cscript //nologo c:\windows\system32\slmgr.vbs /ipk 2WH4N-8QGBV-H22JP-CT43Q-MDWWJ >nul
+cscript //nologo c:\windows\system32\slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43 >nul
+cscript //nologo c:\windows\system32\slmgr.vbs /ipk DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4 >nul
+cscript //nologo c:\windows\system32\slmgr.vbs /ipk WNMTR-4C88C-JK8YV-HQ7T2-76DF9 >nul
+cscript //nologo c:\windows\system32\slmgr.vbs /ipk 2F77B-TNFGY-69QQF-B8YKP-D69TJ >nul
+echo ************************************ &echo.&echo.&set i=1
+:server
+if %i%==1 set KMS_Sev=kms.chinancce.com
+if %i%==2 set KMS_Sev=NextLevel.uk.to
+if %i%==3 set KMS_Sev=GuangPeng.uk.to
+if %i%==4 set KMS_Sev=AlwaysSmile.uk.to
+if %i%==5 set KMS_Sev=kms.chinancce.com 
+if %i%==6 set KMS_Sev=kms.shuax.com
+if %i%==7 exit
+cscript //nologo c:\windows\system32\slmgr.vbs /skms %KMS_Sev% >nul
+cscript //nologo c:\windows\system32\slmgr.vbs /ato | find /i "successfully" && (echo.&  ************************************ & echo. & choice /n /c YN /m "Do you want to restart your PC now [Y,N]?" & if errorlevel 2 exit) || (echo The connection to the server failed! Trying to connect to another one... & echo Please wait... & echo. & echo. & set /a i+=1 & goto server)
+shutdown.exe /r /t 00
+
+
+2*** information
+
+<1@> what is slmgr.vbs ?
+
+Slmgr.vbs is a VBScript file that is used to manage Windows product activation. It can be used to perform a variety of tasks, such as:
+
+* Checking the activation status of Windows
+* Activating Windows with a license key
+* Changing the product key
+* Uninstalling the product key
+* Reactivating Windows with a new key
+* Obtaining information about the volume licensing status of Windows
+
+Slmgr.vbs is a powerful tool, but it is important to use it carefully, as it can also be used to disable Windows activation.
+
+To use slmgr.vbs, you need to open a command prompt window and run the file with the appropriate options. For example, to check the activation status of Windows, you would run the following command:
+
+```
+cscript slmgr.vbs /dlv
+```
+
+This would display a window with information about the activation status of Windows, including the product key, the activation type, and the expiration date.
+
+You can find more information about slmgr.vbs and its options in the Microsoft documentation: https://learn.microsoft.com/en-us/windows-server/get-started/activation-slmgr-vbs-options.
+
+## Warning
+
+It is important to note that slmgr.vbs is a powerful tool, and it can be used to disable Windows activation. It is therefore important to use it carefully and only when necessary. If you are unsure about how to use slmgr.vbs, it is best to consult with a qualified IT professional.
+
+<2@> the 32-bit version of cmd.exe on a 64-bit version of Windows
+
+
+3*** explanation
+
+<1@> The code snippet attempts to activate Windows 11 without a license
+
+Ah, I see. You're curious about how that code snippet attempts to activate Windows 11 without a license. Well, let me break it down for you.
+
+First, let's start by explaining what activation is. When you install Windows, it needs to verify that your copy of the operating system is genuine and properly licensed. Activation is the process of confirming this authenticity and applying a unique license key to your system.
+
+Now, the code snippet you provided seems to be attempting to activate Windows 11 by using various license keys. It uses a script called "slmgr.vbs", which is a legitimate script provided by Microsoft for managing Windows licenses.
+
+The snippet tries multiple license keys, such as "TX9XD-98N7V-6WMQ6-BX7FG-H8Q99" and "3KHY7-WNT83-DGQKR-F7HPR-844BM", to see if any of them work. However, it's important to note that these license keys are not genuine or authorized by Microsoft. They are likely to be randomly generated or obtained through unofficial means.
+
+The script attempts to activate Windows 11 by using a Key Management Server (KMS). These servers are typically used in enterprise environments to centrally manage software licensing. However, in this code snippet, it appears that unauthorized KMS servers are being used.
+
+It's crucial to understand that using unauthorized activation methods can pose risks. For instance, it may lead to security vulnerabilities, as the code is making changes to the system files. Additionally, it may violate Microsoft's terms of use and lead to legal consequences.
+
+My recommendation is to always obtain a legitimate license from Microsoft or authorized retailers to ensure a secure and legal activation of Windows. If you have further questions or require assistance with any other topic, feel free to ask!
+
+<2@> powershell
+
+PowerShell is a task automation and configuration management framework from Microsoft. It consists of a command-line shell, an associated scripting language, and a framework for processing cmdlets.
+
+PowerShell is a powerful tool that can be used to automate a wide variety of tasks, including:
+
+* Managing Windows systems and services
+* Configuring and deploying applications
+* Managing Active Directory
+* Automating IT helpdesk tasks
+* Orchestrating complex workflows
+
+PowerShell is also a popular scripting language for DevOps and continuous integration/continuous delivery (CI/CD) pipelines.
+
+Here are some examples of how PowerShell can be used:
+
+* Getting a list of all the running processes on a system:
+```powershell
+Get-Process
+```
+* Starting a new service:
+```powershell
+Start-Service MyService
+```
+* Creating a new user account:
+```powershell
+New-ADUser -Name JohnDoe -Password Password123
+```
+* Deploying a new application to a group of servers:
+```powershell
+Invoke-Command -ComputerName Server1,Server2,Server3 {
+  Install-Package MyApp
+}
+```
+* Generating a report of all the servers in a domain that are missing a particular security patch:
+```powershell
+Get-ADComputer -Filter * | Where-Object { !(Test-WmiQuery -ComputerName $_ -Query "root\cimv2\Security\Microsoft\Windows\CurrentVersion\SoftwareUpdate\ComputerUpdateStatus where ProductName='Windows 10' and RevisionNumber='19044.1889'") } | Select-Object -ExpandProperty Name
+```
+
+PowerShell is a powerful and versatile tool that can be used to automate a wide variety of tasks. It is a must-have for any Windows administrator or IT professional.
+
+<3@> PowerShell is similar to cmd
+
+Yes, PowerShell is similar to cmd in that it is a command-line interpreter that can be used to execute commands on a Windows system. However, PowerShell is more powerful and versatile than cmd, and it offers a number of advantages, such as:
+
+* PowerShell is object-oriented, which means that it can manipulate objects in the same way as a programming language. This makes it easier to automate complex tasks.
+* PowerShell has a rich set of built-in cmdlets that can be used to perform a wide variety of tasks, such as managing Windows systems, configuring applications, and administering Active Directory.
+* PowerShell is extensible, which means that you can create your own cmdlets to automate tasks that are not covered by the built-in cmdlets.
+* PowerShell is integrated with the .NET Framework, which means that you can use .NET classes and libraries in your PowerShell scripts.
+
+Here is a table that compares some of the key differences between PowerShell and cmd:
+
+| Feature | PowerShell | cmd |
+|---|---|---|
+| Object-oriented | Yes | No |
+| Built-in cmdlets | Rich set of cmdlets for managing Windows systems, applications, and Active Directory | Fewer built-in cmdlets |
+| Extensible | Yes | No |
+| Integrated with the .NET Framework | Yes | No |
+
+Overall, PowerShell is a more powerful and versatile command-line interpreter than cmd. It is a good choice for users who need to automate complex tasks or manage Windows systems and applications in a more efficient way.
+
+Here are some examples of tasks that are easier to do in PowerShell than in cmd:
+
+* Creating and managing objects, such as files, folders, and registry keys
+* Filtering and sorting data
+* Chaining commands together to perform complex tasks
+* Automating tasks with scripts
+
+If you are new to PowerShell, there are many resources available to help you learn. Microsoft offers a comprehensive PowerShell tutorial on its website, and there are also many books and articles available on the subject.
+
+<4@> VBS stands for Visual Basic Script
+
+VBS stands for Visual Basic Script. It is a scripting language developed by Microsoft that is modeled on Visual Basic. VBScript is used to automate tasks on Windows systems, such as managing files and folders, configuring applications, and interacting with the registry.
+
+VBScript is a lightweight language that is easy to learn and use. It can be used to create simple scripts or more complex applications. VBScript scripts can be executed from the command prompt, from within other applications, or as scheduled tasks.
+
+Here are some examples of how VBScript can be used:
+
+* Create a script to automatically open a set of files and applications every morning.
+* Write a script to monitor the status of a server and send an email notification if it goes down.
+* Create a script to deploy a new software package to a group of computers.
+* Write a script to automate the process of creating and managing user accounts.
+* Create a script to interact with the Windows registry to change system settings.
+
+VBScript is a powerful tool that can be used to automate a wide variety of tasks on Windows systems. It is a good choice for users who need to automate repetitive tasks or manage their systems more efficiently.
+
+Here is a simple example of a VBScript script:
+
+```vbscript
+' This script creates a new file called "hello.txt" and writes the text "Hello world!" to it.
+
+Set fso = CreateObject("Scripting.FileSystemObject")
+Set f = fso.CreateTextFile("hello.txt")
+f.WriteLine "Hello world!"
+f.Close
+```
+
+This script can be saved as a .vbs file and executed from the command prompt or from within another application.
+
+If you are interested in learning more about VBScript, there are many resources available online and in libraries.
+
 
