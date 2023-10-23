@@ -3,13 +3,12 @@
 [3] instruction
 
 
-
 1*** explanation
 
 1/ require components to build cpu with core i5 <1@,1***>
 2/ intel core i5 <2@,1***>
 3/ what does 6 cores and 12 threads mean to the intel core i5 <3@,1***>
-4/ clock speed of up to 4.8 GHz ? <4@,1***>
+4/ general guide to the ideal clock speed for different work tasks <4@,1***>
 5/ is 12 MB of cache memory of cpu core i5 supposed to be large or medium if compare to other cpu ? <5@,1***>
 6/ intergrated graphics of cpu core i5 <6@,1***>
 7/ Intel HD Graphics <7@,1***>
@@ -49,3 +48,6 @@
 8/ The Oppo Realme 3 uses LPDDR4X memory <8@,2***>
 9/ The Google Pixelbook with 16GB of RAM and 512GB of SSD uses LPDDR3 memory <9@,2***>
 10/ where does cache located in cpu ? are they belonging to the processor ? let's take core i5 as the example <10@,2***>
+11/ The Google Pixelbook with 16GB of RAM and 512GB of SSD. how much clock speed does it has ? <11,2***>
+12/ x86 microprocessors <12@,2***>
+
