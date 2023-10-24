@@ -50,4 +50,19 @@
 10/ where does cache located in cpu ? are they belonging to the processor ? let's take core i5 as the example <10@,2***>
 11/ The Google Pixelbook with 16GB of RAM and 512GB of SSD. how much clock speed does it has ? <11,2***>
 12/ x86 microprocessors <12@,2***>
+13/ 8008 microprocessor <13@,2***>
+14/ the MITS Altair 8800 microcomputer <14@,2***>
+15/ how the cpu work <15@,2***>
+16/ The CPU includes the ALU, registers, and the control unit <16@,2***>
+17/ the resisters <17@,2***>
+18/ main memory is typically RAM <18@,2***>
+19/ When the CPU needs to fetch an instruction <19@,2***>
+20/ The memory unit on the CPU chip <20@,2***>
+21/ there are five kind of registers, and they all located within the register unit on the cpu <21@,2***>
+
+
+
+
+
+
 
