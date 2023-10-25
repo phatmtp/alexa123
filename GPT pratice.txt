@@ -39,6 +39,9 @@
 [33] regularization, early stopping, and cross-validation to prevent overfitting in machine learning
 [34] the hyperparameters of the neural network, such as the learning rate and the number of epochs
 [35] different between parameter and arguement ?
+[36] long-term dependency 
+[37] transformer model architecture
+[38] long short-term memory (LSTM) networks
 
 2*** information
 
