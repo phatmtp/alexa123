@@ -339,7 +339,7 @@ NLP is a powerful tool that can be used to solve a variety of problems. As the f
 
 [14] recurrent connection & attention mechanism
 
-Sure. Recurrent connections and attention mechanisms are two important concepts in natural language processing (NLP).
+Recurrent connections and attention mechanisms are two important concepts in natural language processing (NLP).
 
 **Recurrent connections** are connections between the hidden states of a neural network. These connections allow the neural network to remember information from previous steps in the sequence. This is important for tasks such as machine translation and text summarization, where the meaning of a word or phrase can depend on the context in which it appears.
 
@@ -615,7 +615,7 @@ The highest probability in the output distribution would be the predicted class 
 
 Feedforward neural networks are a powerful tool for machine learning, and they are used in a wide variety of applications.
 
-[25] application that use  Feedforward neural network
+[25] application that use Feedforward neural network
 
 Feedforward neural networks (FNNs) are used in a wide variety of applications, including:
 
@@ -821,6 +821,71 @@ Argument: An argument is the actual value or expression that is passed to a func
 
 To summarize, parameters are the variables declared in a function or method, while arguments are the actual values or expressions passed to those parameters when the function is called. Parameters act as placeholders to receive the provided arguments and allow the function to operate on the given data.
 
+[36] long-term dependency 
+
+Long-term dependencies refer to the relationships between events or elements that occur far apart in time or space, but are still related to each other. For example, in language processing, understanding the meaning of a sentence may require knowledge of words that were mentioned several sentences earlier. These dependencies can be important in many fields, including natural language processing, machine learning, and cognitive science.
+
+[37] transformer model architecture
+
+The transformer model architecture is a neural network architecture that was first introduced in the paper "Attention Is All You Need" by Vaswani et al. in 2017. It has since become the dominant architecture for natural language processing (NLP) tasks, and has also been used successfully in other domains, such as machine translation, speech recognition, and computer vision.
+
+The transformer model is based on the self-attention mechanism, which allows the model to learn long-range dependencies in sequential data without relying on recurrent connections. This makes the transformer model much faster and more efficient to train than previous NLP models, such as recurrent neural networks (RNNs) and long short-term memory (LSTM) networks.
+
+The transformer model architecture can be divided into two main parts: the encoder and the decoder.
+
+* The encoder takes the input sequence and produces a sequence of hidden states, each of which represents the contextualized representation of the corresponding token in the input sequence.
+* The decoder takes the hidden states from the encoder and produces the output sequence, one token at a time.
+
+Each encoder and decoder layer in the transformer model consists of two sublayers:
+
+* A self-attention sublayer, which allows the model to attend to different parts of the input or output sequence in order to learn long-range dependencies.
+* A position-wise feed-forward sublayer, which adds additional non-linearity to the model.
+
+The transformer model architecture has been shown to achieve state-of-the-art results on a wide range of NLP tasks, including machine translation, text summarization, question answering, and sentiment analysis. It has also been used to develop large language models, such as GPT-3 and LaMDA, which can generate human-quality text and code.
+
+Here is a diagram of the transformer model architecture:
+
+The transformer model architecture is a powerful and versatile architecture that can be used for a wide range of NLP tasks. It is also relatively easy to train and deploy, making it a popular choice for both researchers and practitioners.
+
+[38] long short-term memory (LSTM) networks
+
+Long short-term memory (LSTM) networks are a type of recurrent neural network (RNN) architecture that is specifically designed to handle sequential data, such as time series, speech, and text. LSTM networks are capable of learning long-term dependencies in sequential data, which makes them well suited for tasks such as language modeling, machine translation, and time series forecasting.
+
+A traditional RNN has a single hidden state that is passed through time. This hidden state is updated at each time step based on the current input and the previous hidden state. However, this simple architecture can make it difficult for the network to learn long-term dependencies, as the information from previous time steps can be gradually washed out over time.
+
+LSTM networks address this problem by using a special type of hidden state called a cell state. The cell state is designed to retain information over long periods of time, and it is updated at each time step in a controlled way. This allows LSTM networks to learn long-term dependencies in sequential data, which makes them well suited for a wide range of tasks.
+
+LSTM networks are typically composed of four gates:
+
+* **Input gate:** This gate controls how much of the current input is added to the cell state.
+* **Forget gate:** This gate controls how much of the previous cell state is forgotten.
+* **Output gate:** This gate controls how much of the cell state is output from the LSTM unit.
+* **Cell gate:** This gate controls how the cell state is updated.
+
+The four gates are controlled by a set of learned parameters, which allows the LSTM network to learn how to best update its cell state based on the current input and the previous hidden state.
+
+LSTM networks have been used to achieve state-of-the-art results on a wide range of tasks, including:
+
+* Language modeling
+* Machine translation
+* Speech recognition
+* Text summarization
+* Question answering
+* Time series forecasting
+
+LSTM networks are a powerful tool for learning sequential data, and they have been used to solve a wide range of real-world problems.
+
+Here is a diagram of an LSTM unit:
+
+[Diagram of an LSTM unit]
+
+The LSTM unit consists of four gates: the input gate, the forget gate, the output gate, and the cell gate. The gates control how information flows into, out of, and through the cell state.
+
+LSTM networks are typically trained using a backpropagation algorithm. The backpropagation algorithm calculates the gradients of the loss function with respect to the network's parameters. These gradients are then used to update the network's parameters in order to reduce the loss function.
+
+LSTM networks can be implemented in a variety of programming languages, such as Python, PyTorch, and TensorFlow. There are also a number of pre-trained LSTM models that are available for download.
+
+If you are working on a task that involves sequential data, such as language modeling, machine translation, or time series forecasting, then LSTM networks should be considered as a potential solution.
 
 2*** information
 
