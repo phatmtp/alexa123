@@ -264,6 +264,44 @@ This function uses a generator to read the file line by line. The `yield` statem
 
 Queries are a powerful tool that can be used to efficiently retrieve and manipulate data in a variety of programming applications.
 
+[9@] If OpenAI is not available in your country, there are a number of other open source AI APIs that you can use
+
+If OpenAI is not available in your country, there are a number of other open source AI APIs that you can use. Some popular options include:
+
+* **Hugging Face Transformers:** This library provides a number of pre-trained AI models that can be used for a variety of tasks, including text classification, translation, and question answering.
+* **AllenNLP:** This library provides a number of tools for natural language processing, including named entity recognition, sentiment analysis, and machine translation.
+* **spaCy:** This library provides a number of tools for natural language processing, including tokenization, part-of-speech tagging, and named entity recognition.
+
+To use any of these APIs, you will need to install the corresponding library and create an account with the API provider. Once you have done this, you can follow the documentation for the API to generate text, translate languages, and answer your questions.
+
+Here is a simple example of how to use the Hugging Face Transformers library to generate text:
+
+```python
+import transformers
+
+# Load the GPT-Neo model
+model = transformers.GPTNeoModel.from_pretrained("EleutherAI/gpt-neo-1.3B")
+
+# Generate text
+text = model.generate(
+    input_ids=[0],
+    max_length=100,
+    num_beams=5,
+    repetition_penalty=2.0,
+    length_penalty=1.0,
+    early_stopping=True,
+)
+
+# Print the generated text
+print(text)
+```
+
+This code will generate 100 tokens of text from the GPT-Neo model. You can adjust the `max_length` and `num_beams` parameters to control the length and quality of the generated text.
+
+<10@> Numpy
+
+NumPy is a powerful Python library for numerical computing. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays. NumPy is widely used in various fields such as data science, machine learning, and scientific research.
+
 
 2*** build CHAT BOX GPT
 
