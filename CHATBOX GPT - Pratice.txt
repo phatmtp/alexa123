@@ -25,6 +25,10 @@
 
 8/ Meaning of query in programming ? <8@,1***>
 
+9/ If OpenAI is not available in your country, there are a number of other open source AI APIs that you can use <9@,2***>
+
+10/ Numpy <10@,2***>
+
 
 2*** build CHAT BOX GPT
 
