@@ -114,7 +114,16 @@
 
 31/ IN1 & IN2 connected to pin 8 & pin 7, IN3 & IN4 connected to pin 5 & pin 4,  i noted that only pin 5 is PWM. So you mean that only 1 pWM pin is enough to control speed motor <31@,2***>
 
-32/ what if i connent to 2 PWM pins. will it burn and damage l298n or arudino uno or motor <32@,2***>
+32/ It is dangerous to connect more than one PWM pin to the same input pin on the L298N <32@,2***>
+
+33/ one PWM pin is enough to control the L298N's motors <33@,2***>
+
+34/ You can still use one PWM pin to control two motors with the L298N <34@,2***>
+
+35/ connect 2 input pins of L298N to 2 pwn pins of arduino uno <35@,2***>
+
+36/ some cases where you should not connect the 2 input pins of the L298N to 2 PWM pins of the Arduino Uno <36@,2***>
+
 
 3*** connect arduino uno with components & programing
 
