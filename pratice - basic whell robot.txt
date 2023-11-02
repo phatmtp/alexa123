@@ -124,6 +124,15 @@
 
 36/ some cases where you should not connect the 2 input pins of the L298N to 2 PWM pins of the Arduino Uno <36@,2***>
 
+37/ when connecting 4 leds to arduino uno. so d1 , d2 will connect to digital pins and d3, d4 will connect to PWM pins <37@,2***>
+
+38/ why not just 1 pwm is enough ? <38@,2***>
+
+39/ Here are some tips on how to connect an Arduino Uno with 1, 2, 3, or 5 LEDs <39@,2***>
+
+40/ const int BT_TX 
+    const int BT_RX   <40@,2***>
+
 
 3*** connect arduino uno with components & programing
 
