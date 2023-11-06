@@ -1,0 +1,188 @@
+[1] information
+[2] explanation
+[3] isntruction
+
+
+1*** information
+
+<1@> The most famous AI created by C++ is TensorFlow
+
+The most famous AI created by C++ is **TensorFlow**. It is an open-source software library for numerical computation using data flow graphs. TensorFlow was originally developed by researchers and engineers working on the Google Brain project, but it has since been adopted by researchers and developers around the world for a wide variety of AI applications, including machine learning, deep learning, and natural language processing.
+
+TensorFlow is written primarily in C++, but it also has wrappers for other programming languages, such as Python, Java, and Go. This makes it accessible to a wide range of developers, regardless of their programming language expertise.
+
+TensorFlow is used by companies of all sizes, from startups to large enterprises, to develop AI-powered products and services. Some of the most notable examples include:
+
+* Google Search: TensorFlow is used to power Google Search's ranking algorithm, which helps to ensure that the most relevant results are returned for each search query.
+* Google Translate: TensorFlow is used to power Google Translate, which allows users to translate text between over 100 languages.
+* Google Photos: TensorFlow is used to power Google Photos' facial recognition and image search features.
+* Siri: TensorFlow is used to power Siri, Apple's voice assistant.
+* Amazon Alexa: TensorFlow is used to power Amazon Alexa, Amazon's voice assistant.
+
+In addition to these commercial applications, TensorFlow is also used by researchers at universities and research labs around the world to develop new AI algorithms and applications.
+
+Other notable AI systems created using C++ include:
+
+* Caffe: A deep learning framework developed by the Berkeley Vision and Learning Center.
+* PyTorch: A deep learning framework developed by Facebook AI Research.
+* Shogun: A machine learning library developed by the Shogun Machine Learning Toolbox.
+* Safurai: An AI-based IDE extension that helps developers with coding, debugging, refactoring, and documentation.
+
+C++ is a popular choice for developing AI systems because it is a high-performance language that offers fine-grained control over memory and computation. This is important for AI systems, which often need to process large amounts of data and perform complex calculations.
+
+<2@> c++ language model
+
+A C++ language model is a machine learning model that has been trained on a large corpus of C++ code. This allows the model to learn the statistical relationships between different C++ tokens, such as keywords, identifiers, operators, and punctuation.
+
+C++ language models can be used for a variety of tasks, such as:
+
+* **Code completion:** Suggesting completions for C++ code based on the context.
+* **Code refactoring:** Automatically refactoring C++ code to improve its readability and maintainability.
+* **Code analysis:** Detecting potential errors and security vulnerabilities in C++ code.
+* **Code generation:** Generating C++ code from natural language descriptions or other high-level specifications.
+
+C++ language models are still under development, but they have the potential to revolutionize the way that C++ code is written and maintained.
+
+Here are some examples of C++ language models:
+
+* **damlanisa/Language-Model:** A C++ language model for NLP research.
+* **rwkv-model:** A C++ language model based on the RWKV architecture.
+* **tensorflow-with-kenlm:** A TensorFlow library with KenLM integrated for beam search scoring.
+* **gLM:** A GPU language model based on btree backed tries.
+
+These language models can be used in a variety of ways, such as developing code completion plugins for IDEs, creating refactoring tools, or building code analysis systems.
+
+C++ language models have the potential to make C++ programming more accessible and efficient. They can help programmers to write more correct and robust code, and they can also automate many of the repetitive tasks that are involved in software development.
+
+<3@> Using the genetic algorithm and neural networks to create an artificial intelligence that learns to play the game Flappy Bird. Made in C++ and SFML
+
+To create an artificial intelligence that learns to play Flappy Bird using a genetic algorithm and neural networks in C++ and SFML, you can follow these steps:
+
+**Step 1: Create a neural network**
+
+The first step is to create a neural network. The neural network will be responsible for taking the game state as input and outputting an action (flap or not flap).
+
+The neural network can be any type of neural network, but a simple feedforward neural network with one hidden layer is often sufficient for Flappy Bird.
+
+**Step 2: Create a genetic algorithm**
+
+The genetic algorithm will be responsible for evolving the neural network over time. The genetic algorithm will start with a population of random neural networks and then select the best neural networks from each generation to produce the next generation.
+
+The genetic algorithm can use any type of crossover and mutation operators, but a simple selection operator that selects the neural networks with the highest scores is often sufficient for Flappy Bird.
+
+**Step 3: Train the neural network**
+
+Once you have created the neural network and the genetic algorithm, you can start training the neural network. The training process will involve playing Flappy Bird with the neural network and updating the neural network's parameters after each game.
+
+You can use a variety of different training strategies, but a simple strategy is to start with a simple game environment (e.g., a single pipe) and then gradually make the game environment more difficult (e.g., add more pipes, make the pipes narrower, etc.).
+
+**Step 4: Play Flappy Bird with the neural network**
+
+Once the neural network has been trained, you can play Flappy Bird with it. To do this, you will need to provide the neural network with the game state as input and then execute the action that the neural network outputs.
+
+You can use any type of game environment, but a simple environment is often sufficient for testing the neural network's performance.
+
+**Example code**
+
+Here is some example code in C++ and SFML for creating an artificial intelligence that learns to play Flappy Bird using a genetic algorithm and neural networks:
+
+```c++
+#include <SFML/Graphics.hpp>
+#include <vector>
+#include <random>
+
+using namespace sf;
+
+// Neural network class
+class NeuralNetwork {
+public:
+    NeuralNetwork(int inputSize, int hiddenSize, int outputSize) {
+        // Initialize the weights and biases of the neural network
+    }
+
+    Vector2f predict(const Vector2f& input) {
+        // Forward propagate the input through the neural network and return the output
+    }
+};
+
+// Genetic algorithm class
+class GeneticAlgorithm {
+public:
+    GeneticAlgorithm(int populationSize, int mutationRate) {
+        // Initialize the population of neural networks
+    }
+
+    NeuralNetwork select() {
+        // Select the best neural network from the population
+    }
+
+    NeuralNetwork crossover(NeuralNetwork parent1, NeuralNetwork parent2) {
+        // Create a new neural network by combining the genes of the two parent neural networks
+    }
+
+    NeuralNetwork mutate(NeuralNetwork neuralNetwork) {
+        // Mutate the neural network's weights and biases
+    }
+
+    void evolve() {
+        // Select the best neural networks from the population and use them to create the next generation
+    }
+};
+
+// Flappy bird game class
+class FlappyBirdGame {
+public:
+    FlappyBirdGame() {
+        // Initialize the game state
+    }
+
+    void update() {
+        // Update the game state
+    }
+
+    bool isGameOver() {
+        // Return true if the game is over, false otherwise
+    }
+
+    float getScore() {
+        // Return the player's score
+    }
+};
+
+int main() {
+    // Create a neural network
+    NeuralNetwork neuralNetwork(2, 10, 1);
+
+    // Create a genetic algorithm
+    GeneticAlgorithm geneticAlgorithm(100, 0.1);
+
+    // Create a Flappy bird game
+    FlappyBirdGame flappyBirdGame;
+
+    // Train the neural network
+    while (true) {
+        // Play Flappy bird with the neural network
+        while (!flappyBirdGame.isGameOver()) {
+            // Get the game state as input
+            Vector2f input = flappyBirdGame.getInput();
+
+            // Predict the neural network's output
+            Vector2f output = neuralNetwork.predict(input);
+
+            // Execute the action that the neural network outputs
+            flappyBirdGame.update(output);
+        }
+
+        // Update the neural network's parameters
+        neuralNetwork.update(flappyBirdGame.getScore());
+
+        // Evolve the neural network
+        geneticAlgorithm.evolve();
+    }
+
+<4@> The ideal library to build a.i chatbox by c++
+
+The ideal library for your project could depend on the specific features and functionalities you want in your chatbot. Here are some libraries that are commonly used for AI chat:
+1. Facebook's Fairseq library: Fairseq is a powerful and flexible library that can be used to build complex models for NLP and dialogue systems.
+2. Google's Tensorflow: Tensorflow is a popular library for deep learning and machine learning applications. It provides a user-friendly interface and a wide range of tools and tutorials to help you build your project.
+3. Amazon's Lex: Lex is a platform for building AI-powered chatbots and voice
