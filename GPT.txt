@@ -887,6 +887,38 @@ LSTM networks can be implemented in a variety of programming languages, such as 
 
 If you are working on a task that involves sequential data, such as language modeling, machine translation, or time series forecasting, then LSTM networks should be considered as a potential solution.
 
+[39] language model 
+
+A language model (LM) is a probabilistic model of a natural language that can generate probabilities of a series of words, based on text corpora in one or multiple languages it was trained on. LMs are used in many natural language processing (NLP) tasks, such as machine translation, text summarization, and question answering.
+
+LMs work by analyzing large amounts of text data to learn the statistical relationships between words. This information can then be used to generate new text, translate languages, or answer questions in a comprehensive and informative way.
+
+There are two main types of LMs:
+
+* **Statistical LMs:** These LMs learn the statistical relationships between words by counting the number of times they appear together in the training data.
+* **Neural network LMs:** These LMs use artificial neural networks to learn the statistical relationships between words. Neural network LMs are typically more accurate than statistical LMs, but they require more data to train.
+
+LMs are becoming increasingly sophisticated and powerful, and they are being used in a wide variety of applications, including:
+
+* **Machine translation:** LMs are used to translate text from one language to another.
+* **Text summarization:** LMs are used to generate summaries of long text documents.
+* **Question answering:** LMs are used to answer questions about text documents.
+* **Chatbots:** LMs are used to create chatbots that can converse with humans in a natural way.
+* **Creative text generation:** LMs are used to generate creative text formats, such as poems, code, scripts, musical pieces, email, and letters.
+
+LMs are a powerful tool for natural language processing, and they have the potential to revolutionize the way we interact with computers.
+
+Here are some examples of language models:
+
+* Bard
+* GPT-3
+* LaMDA
+* Megatron-Turing NLG
+* Wu Dao 2.0
+
+These language models are trained on massive datasets of text and code, and they can perform a wide variety of NLP tasks, including machine translation, text summarization, question answering, and creative text generation.
+
+
 2*** information
 
 [1] replica A.I chatbot
@@ -957,5 +989,51 @@ Here are some of the advantages of using PaLM 2 for Bard:
 * It is able to generate different creative text formats of text content, like poems, code, scripts, musical pieces, email, letters, etc.
 
 Overall, PaLM 2 is a powerful and versatile neural network architecture that is well-suited for a variety of tasks, including those that are required for Bard.
+
+[4] generative adversarial network (GAN)
+
+The kind of AI that is used in image and video generators is called a **generative adversarial network (GAN)**. GANs are a type of machine learning model that can be used to create synthetic data, such as images, videos, and text.
+
+GANs work by training two neural networks against each other. One neural network, called the generator, is trained to create new data. The other neural network, called the discriminator, is trained to distinguish between real and synthetic data.
+
+The training process works as follows:
+
+1. The generator creates a new image.
+2. The discriminator tries to determine if the image is real or synthetic.
+3. The generator and discriminator are both updated based on the discriminator's feedback.
+
+This process is repeated over and over again until the generator is able to create images that are indistinguishable from real images.
+
+Once the generator is trained, it can be used to generate new images simply by providing it with a text prompt. For example, you could prompt the generator to create an image of a "cat sitting on a beach" or a "dog playing fetch."
+
+GANs are still under development, but they have already been used to create a wide variety of impressive results, including:
+
+* Generating realistic images of people and places that do not exist.
+* Creating realistic videos of people talking and moving.
+* Translating images from one style to another, such as from a cartoon style to a realistic style.
+
+GANs are a powerful tool for creating synthetic data, and they have the potential to revolutionize many industries, including entertainment, design, and fashion.
+
+Here are some examples of image and video generators that use GANs:
+
+* DALL-E 2
+* Imagen
+* Parti
+* Dream by WOMBO
+* Deep Dream Generator
+
+These generators allow users to create images and videos simply by providing a text prompt. For example, you could prompt DALL-E 2 to create an image of "a cat sitting on a beach at sunset" or Parti to create a video of "a dog playing fetch in a park."
+
+[5] Capcom used AI to create the hardest Street Fighter boss
+
+Capcom has not publicly confirmed the type of neural network that they used to create boss.
+
+However, based on the information that is available, it is likely that Capcom used a **recurrent neural network (RNN)**. RNNs are a type of neural network that are well-suited for sequential data, such as text and speech. RNNs can learn long-term dependencies in data, which is important for creating a challenging and unpredictable opponent.
+
+Another possibility is that Capcom used a **convolutional neural network (CNN)**. CNNs are a type of neural network that are well-suited for image and video data. CNNs can learn spatial features in data, which could be useful for creating an opponent that can react to the player's position and movements.
+
+It is also possible that Capcom used a combination of RNNs and CNNs to create Gill's AI. This would allow the AI to learn both long-term dependencies and spatial features in the data, which could make it even more difficult to defeat.
+
+Ultimately, the type of neural network that Capcom used to create boss is unknown. However, based on the information that is available, it is likely that Capcom used a recurrent neural network, a convolutional neural network, or a combination of the two.
 
 
