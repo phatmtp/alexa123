@@ -25,9 +25,13 @@
 
 8/ Meaning of query in programming ? <8@,1***>
 
-9/ If OpenAI is not available in your country, there are a number of other open source AI APIs that you can use <9@,2***>
+9/ If OpenAI is not available in your country, there are a number of other open source AI APIs that you can use <9@,1***>
 
-10/ Numpy <10@,2***>
+10/ Numpy <10@,1***>
+
+11/ brief explanation of Building a.i chatbox by using Tensorflow <11@,1***>
+
+12/ tensorflow.keras.preprocessing.text & tensorflow.keras.preprocessing.sequence <12@,1***>
 
 
 2*** build CHAT BOX GPT
@@ -35,6 +39,9 @@
 1/ Build CHAT BOX GPT with OPEN A.I (APPLIED CODE) <1@,2***>
 
 2/ How to use the ChatGPT API with Python <2@,2***>
+
+3/ Build a.i chatbox by using Tensorflow <3@,2***>
+
 
 3*** basic instruction to buil CHAT BOX GPT with OPEN A.I
 
