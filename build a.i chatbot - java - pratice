@@ -7,6 +7,7 @@
 
 1/ Apache OpenNLP and Stanford NLP <1@,1***>
 2/ basic step to build a.i chatbot by java <2@,1***>
+3/ There are a number of popular AI systems that are created using Java and Apache OpenNLP or Stanford NLP <3@,1***>
 
 
 2*** explanation
@@ -18,5 +19,10 @@
 5/ here are two main types of arrays in Java: single-dimensional arrays and multi-dimensional arrays <5@,2***>
 6/ public static void main(String[] args) throws Exception <6@,2***>
 7/ System.out.println() <7@,2***>
+
+
+3*** instruction
+
+1/ Basic structure of A.i chatbox <1@,3***>
 
 
