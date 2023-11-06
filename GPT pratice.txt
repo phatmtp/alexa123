@@ -42,11 +42,14 @@
 [36] long-term dependency 
 [37] transformer model architecture
 [38] long short-term memory (LSTM) networks
+[39] language model 
 
 2*** information
 
 [1] replica A.I chatbot
 [2] C.ai beta
 [3] What kind of neural network does bard Google use ?
+[4] generative adversarial network (GAN)
+[5] Capcom used AI to create the hardest Street Fighter boss
 
 
