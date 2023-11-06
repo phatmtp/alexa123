@@ -47,6 +47,6 @@
 
 [1] replica A.I chatbot
 [2] C.ai beta
-
+[3] What kind of neural network does bard Google use ?
 
 
