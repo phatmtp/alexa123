@@ -66,6 +66,26 @@ Step 5: Test and Iterate
    - Test your chatbot by engaging in conversations with it, providing various input scenarios, and verifying that the responses are appropriate.
    - Continually iterate and improve your chatbot by reviewing user feedback and observing its behavior.
 
+<3@> There are a number of popular AI systems that are created using Java and Apache OpenNLP or Stanford NLP
+
+There are a number of popular AI systems that are created using Java and Apache OpenNLP or Stanford NLP. Here are a few examples:
+
+**Apache OpenNLP:**
+
+* Apache Mahout: A scalable machine learning library that includes a number of NLP algorithms, including tokenization, sentence detection, part-of-speech tagging, and named entity recognition. Apache Mahout is used by a variety of companies and organizations, including Google, Amazon, and Yahoo.
+* Apache Spark NLP: A library for developing and deploying NLP pipelines on Apache Spark. Apache Spark NLP includes a variety of pre-trained models, as well as tools for training custom models. Apache Spark NLP is used by a variety of companies and organizations, including Netflix, Airbnb, and Databricks.
+* Apache Lucene: A search engine library that can be used to index and search text data. Apache Lucene includes a number of NLP features, such as stemming, lemmatization, and stopword removal. Apache Lucene is used by a variety of companies and organizations, including Elasticsearch, Solr, and Hadoop.
+
+**Stanford NLP:**
+
+* CoreNLP: A suite of NLP tools that includes tokenization, sentence detection, part-of-speech tagging, named entity recognition, coreference resolution, and sentiment analysis. CoreNLP is used by a variety of companies and organizations, including Google, Facebook, and Microsoft.
+* GloVe: A word embedding algorithm that is used to represent words as vectors. GloVe vectors are used by a variety of NLP systems, including CoreNLP, spaCy, and BERT.
+* OpenIE: A system for extracting information from text in the form of triplets, such as (subject, predicate, object). OpenIE is used by a variety of companies and organizations, including Google, Facebook, and IBM.
+
+In addition to these specific examples, there are many other AI systems that use Apache OpenNLP or Stanford NLP in some way. For example, many chatbots and virtual assistants use these libraries to understand and respond to user queries.
+
+Overall, Apache OpenNLP and Stanford NLP are two of the most popular NLP libraries available. They are both open source, well-maintained, and used by a wide range of companies and organizations.
+
 
 2*** explanation
 
@@ -358,4 +378,69 @@ Here are some examples of how System.out.println() can be used in different cont
 * **Printing output to the user:** System.out.println() can be used to print output to the user, such as the results of a calculation or the status of a task.
 
 Overall, System.out.println() is a very versatile and useful method. It is one of the most important methods to know in Java.
+
+
+3*** instruction
+
+<1@> Basic structure of A.i chatbox
+
+<The code>
+
+import opennlp.tools.doccat.*;
+import opennlp.tools.util.*;
+
+public class chatbot {
+    public static void main(String[] args) throws Exception {
+        String[][] trainingData = {
+                {"Will it rain tomorrow?", "Yes, there's a chance of rain tomorrow. Don't forget your umbrella!"},
+                {"How's the weather in New York?", "Currently, it's partly cloudy with a temperature of 18°C in New York."},
+                {"Tell me the forecast for this weekend?", "This weekend will be mostly sunny with temperatures ranging from 20-25°C."}
+        };
+
+        // Train the model
+        DoccatModel model = trainModel(trainingData);
+
+        // Test the model
+        String textToCategorize = "Tell me the forecast for this weekend?";
+        String category = categorizeText(model, textToCategorize);
+        System.out.println("Category: " + category);
+    }
+
+    // Method for training the model
+    public static DoccatModel trainModel(String[][] trainingData) throws Exception {
+        // Prepare the training data sample stream
+        ObjectStream<DocumentSample> sampleStream = ObjectStreamUtils.createObjectStream(createDocumentSamples(trainingData));
+
+        // Set up the training parameters
+        TrainingParameters params = new TrainingParameters();
+        params.put(TrainingParameters.CUTOFF_PARAM, "2");
+        params.put(TrainingParameters.ITERATIONS_PARAM, "50");
+
+        // Train the model using DoccatTrainer
+        DoccatModel model = DocumentCategorizerME.train("en", sampleStream, params, new DoccatFactory());
+
+        return model;
+    }
+
+    // Method for categorizing new text using the trained model
+    public static String categorizeText(DoccatModel model, String text) {
+        DocumentCategorizerME categorizer = new DocumentCategorizerME(model);
+        double[] probabilities = categorizer.categorize(text.split(" "));
+        String category = categorizer.getBestCategory(probabilities);
+        return category;
+    }
+
+    // Helper method to create DocumentSamples from training data
+    private static DocumentSample[] createDocumentSamples(String[][] trainingData) {
+        DocumentSample[] documentSamples = new DocumentSample[trainingData.length];
+        for (int i = 0; i < trainingData.length; i++) {
+            documentSamples[i] = new DocumentSample(trainingData[i][1], trainingData[i][0].split(" "));
+        }
+        return documentSamples;
+    }
+}
+
+
+
+
 
