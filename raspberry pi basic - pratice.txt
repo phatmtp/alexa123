@@ -22,6 +22,11 @@
 15/ different between USB flash drive & USB hard drive <15@,1***>
 16/ what if i wanna play AAA games. which one is better ? <16@,1***>
 17/ TMDS explain <17@,1***>
+18/ quad-core processor <18@,1***>
+19/ a quad-core processor is not necessarily hyperthreaded <19@,1***>
+20/ physical cores & logical cores <20@,1***>
+21/ floating-point unit <21@,1***>
+22/ USB 3.0 <22@,1***>
 
 2*** information
 
