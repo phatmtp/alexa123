@@ -383,6 +383,124 @@ TMDS stands for "Transition-Minimized Differential Signaling," which is the unde
 
 By utilizing the TMDS technology, HDMI cables can transmit high-quality digital audio and video signals over relatively long distances while maintaining signal integrity and minimizing potential issues caused by noise or interference. This makes TMDS a crucial component of HDMI cables, enabling the seamless transmission of multimedia content between devices.
 
+<18@> quad-core processor
+
+A quad-core processor is a central processing unit (CPU) with four independent computational cores. Each core can execute instructions independently of the other cores, which can significantly improve the performance of multithreaded applications.
+
+Quad-core processors were first introduced in the early 2000s and quickly became the standard for most consumer and business PCs. Today, quad-core processors are still widely used in smartphones, tablets, and other mobile devices.
+
+Here are some of the benefits of using a quad-core processor:
+
+* **Improved performance for multithreaded applications:** Multithreaded applications are designed to take advantage of multiple cores by dividing their workload into multiple threads. Each thread can then be executed by a different core, which can significantly improve the performance of the application.
+* **Better multitasking:** Quad-core processors can handle multiple tasks simultaneously more efficiently than dual-core processors. This means that you can run multiple programs at the same time without experiencing a significant slowdown in performance.
+* **Smoother video playback:** Quad-core processors can decode and play high-definition video more smoothly and efficiently than dual-core processors. This is because quad-core processors can dedicate more processing power to video decoding, which can help to reduce or eliminate stuttering and frame drops.
+
+Quad-core processors are a good choice for most users, including those who use their computers for a variety of tasks such as web browsing, word processing, gaming, and video editing. However, if you need a computer for more demanding tasks such as 3D rendering or video encoding, you may want to consider a computer with a six-core or eight-core processor.
+
+Here are some examples of popular quad-core processors:
+
+* Intel Core i3
+* Intel Core i5
+* Intel Core i7
+* AMD Ryzen 3
+* AMD Ryzen 5
+* AMD Ryzen 7
+
+When choosing a quad-core processor, it is important to consider the clock speed, cache size, and other factors. The clock speed determines how quickly the processor can execute instructions, and the cache size determines how much data the processor can store temporarily. A higher clock speed and larger cache size will generally result in better performance.
+
+<19@> a quad-core processor is not necessarily hyperthreaded
+
+No, a quad-core processor is not necessarily hyperthreaded. Hyperthreading is a technology that allows a single physical CPU core to appear as two logical cores to the operating system. This can improve the performance of multithreaded applications by allowing them to use more cores.
+
+Not all quad-core processors support hyperthreading. Some quad-core processors, such as the Intel Core i3, do not support hyperthreading, while others, such as the Intel Core i5 and AMD Ryzen 5, do.
+
+If you are considering a quad-core processor, it is important to check to see if it supports hyperthreading. If you are planning on using multithreaded applications, then a quad-core processor with hyperthreading will generally perform better than a quad-core processor without hyperthreading.
+
+Here is a table that summarizes the difference between quad-core processors and hyperthreading:
+
+| Feature | Quad-core processor | Hyperthreading |
+|---|---|---|
+| Number of physical cores | 4 | 4 or more |
+| Number of logical cores | 4 | 8 or more |
+| Performance improvement for multithreaded applications | Yes | Yes, but more significant |
+| Multitasking | Good | Excellent |
+| Video playback | Good | Excellent |
+| Suitable for | Most users | Demanding users, such as gamers and video editors |
+
+<20@> physical cores & logical cores 
+
+**Physical cores** are the actual physical cores of the CPU. Each physical core is a separate processing unit that can execute instructions independently.
+
+**Logical cores** are a virtual representation of physical cores. They are created using a technology called hyperthreading, which allows a single physical core to appear as two logical cores to the operating system.
+
+Hyperthreading works by duplicating certain parts of the physical core, such as the instruction decoder and register file. This allows the operating system to schedule two threads to run on the same physical core, even though they are executing different instructions.
+
+Logical cores can improve the performance of multithreaded applications by allowing them to use more cores. However, it is important to note that logical cores are not as powerful as physical cores. This is because hyperthreading does not duplicate all parts of the physical core, such as the floating-point unit.
+
+**Here is a table that summarizes the difference between physical cores and logical cores:**
+
+| Feature | Physical core | Logical core |
+|---|---|---|
+| Definition | Actual physical core of the CPU | Virtual representation of a physical core created using hyperthreading |
+| Number of cores | One | Two or more |
+| Performance | More powerful | Less powerful |
+| Multithreaded performance | Good | Excellent |
+| Suitable for | Most users | Demanding users who need to run multiple multithreaded applications simultaneously |
+
+<21@> floating-point unit
+
+A floating-point unit (FPU) is a specialized processor that performs floating-point operations. Floating-point operations are arithmetic operations on numbers that have a decimal point, such as 1.23456 and 7.89012.
+
+FPUs are essential for many modern applications, such as scientific computing, engineering, and graphics. They can also improve the performance of other applications, such as web browsers and word processors.
+
+FPUs typically implement the following operations:
+
+* Addition
+* Subtraction
+* Multiplication
+* Division
+* Square root
+* Exponential
+* Logarithmic
+* Trigonometric functions
+
+Some FPUs also implement transcendental functions, such as the sine integral and the error function.
+
+FPUs can be implemented in hardware or in software. Hardware FPUs are typically more efficient than software FPUs, but they are also more expensive. Software FPUs are typically less expensive, but they can be slower than hardware FPUs.
+
+Most modern CPUs have a built-in FPU. However, some older CPUs do not have a built-in FPU. In these cases, a separate FPU chip can be installed.
+
+Here are some examples of applications that use FPUs:
+
+* Scientific computing software, such as MATLAB and Mathematica
+* Engineering software, such as AutoCAD and SolidWorks
+* Graphics software, such as Photoshop and Blender
+* Web browsers, to render web pages
+* Word processors, to perform complex calculations
+* Video games, to render 3D graphics
+
+FPUs are an essential part of modern computers, and they play a vital role in many applications.
+
+<22@> USB 3.0
+
+USB 3.0, also known as SuperSpeed USB, is a major revision of the Universal Serial Bus (USB) standard that provides significantly higher data transfer speeds than USB 2.0. It was first released in 2008 and has since become the standard for connecting external devices to computers.
+[Image of USB 3.0 logo]
+
+USB 3.0 has a theoretical maximum transfer speed of 5 Gbit/s, which is 10 times faster than USB 2.0. However, real-world transfer speeds are typically around 400-500 MB/s. This is still significantly faster than USB 2.0, which typically has transfer speeds of around 20-30 MB/s.
+
+USB 3.0 is backwards compatible with USB 2.0, so you can use USB 3.0 devices with older computers that only have USB 2.0 ports. However, you will not get the full benefit of the faster transfer speeds unless you are using both a USB 3.0 device and a USB 3.0 port.
+
+USB 3.0 is used for a wide variety of devices, including external hard drives, SSDs, optical drives, flash drives, printers, scanners, and many more. It is also used for connecting smartphones and tablets to computers.
+
+Here are some of the benefits of using USB 3.0:
+
+* Faster transfer speeds: USB 3.0 is up to 10 times faster than USB 2.0, which means that you can transfer files more quickly.
+* Better performance for external devices: USB 3.0 provides more power to external devices, which can improve their performance.
+* More efficient: USB 3.0 is more efficient than USB 2.0, which means that it uses less power.
+* Widely supported: USB 3.0 is supported by most modern computers and devices.
+
+If you are looking for the fastest way to connect external devices to your computer, then USB 3.0 is the best option. It is widely supported and offers significantly faster transfer speeds than USB 2.0.
+
 
 2*** information
 
@@ -689,8 +807,11 @@ The design and configuration of the copper wires within an HDMI cable, along wit
 If you want to build a mini PC, the best Raspberry Pi model for you will depend on your specific needs and budget. Here is a brief overview of the different models and what they offer:
 
 * **Raspberry Pi 4:** The Raspberry Pi 4 is the most powerful Raspberry Pi model available. It has a quad-core processor, up to 8GB of RAM, and a variety of ports, including HDMI, USB 3.0, and Ethernet. It is a good choice for building a mini PC that can be used for a variety of tasks, including gaming, streaming media, and running software development tools.
+
 * **Raspberry Pi 400:** The Raspberry Pi 400 is a Raspberry Pi 4 that is built into a keyboard. It is a good choice for building a mini PC that is easy to set up and use.
+
 * **Raspberry Pi 3 Model B+:** The Raspberry Pi 3 Model B+ is a less powerful than the Raspberry Pi 4, but it is still a good choice for building a mini PC. It has a quad-core processor, 1GB of RAM, and a variety of ports, including HDMI, USB 2.0, and Ethernet. It is a good choice for building a mini PC that will be used for basic tasks, such as browsing the web, checking email, and running productivity applications.
+
 * **Raspberry Pi Zero 2 W:** The Raspberry Pi Zero 2 W is the smallest and least expensive Raspberry Pi model available. It has a single-core processor, 512MB of RAM, and a micro-USB port. It is a good choice for building a mini PC that will be used for very basic tasks, such as running a web server or controlling a robot.
 
 If you are not sure which Raspberry Pi model is right for you, I recommend starting with the Raspberry Pi 4. It is the most powerful and versatile Raspberry Pi model available, and it can be used for a wide variety of tasks. If you are on a budget, the Raspberry Pi 3 Model B+ is a good option. It is less powerful than the Raspberry Pi 4, but it is still a good choice for building a mini PC that can be used for basic tasks.
