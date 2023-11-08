@@ -153,7 +153,7 @@
 
 1/ connect arduino uno with L298N & HC05 & 4 pixel leds & 9 volt battery <1@,4***>
 
-2/ the full code of connecting Arduino Uno with L298N, HC-05, 4 pixel LEDs, and 9 volt battery <1@,4***>
+2/ the full code of connecting Arduino Uno with L298N, HC-05, 4 pixel LEDs, and 9 volt battery <2@,4***>
 
 
 5*** control wheel robot
