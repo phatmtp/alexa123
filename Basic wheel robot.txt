@@ -1175,7 +1175,6 @@ void setup() {
   pinMode(ENB, OUTPUT);
   pinMode(IN3, OUTPUT);
   pinMode(IN4, OUTPUT);
-
   // Set the pins for the 4 pixel LEDs as outputs
   pinMode(D1, OUTPUT);
   pinMode(D2, OUTPUT);
