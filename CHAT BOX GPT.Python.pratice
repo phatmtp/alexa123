@@ -33,6 +33,12 @@
 
 12/ tensorflow.keras.preprocessing.text & tensorflow.keras.preprocessing.sequence <12@,1***>
 
+13/ tokenizer = Tokenizer()
+tokenizer.fit_on_texts(training_data)
+
+total_words = len(tokenizer.word_index) + 1
+input_sequences = tokenizer.texts_to_sequences(training_data) <13@,1***>
+
 
 2*** build CHAT BOX GPT
 
