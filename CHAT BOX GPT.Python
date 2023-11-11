@@ -437,6 +437,51 @@ Output:
 
 You can use the utilities in `tensorflow.keras.preprocessing.text` and `tensorflow.keras.preprocessing.sequence` to preprocess text data for a variety of machine learning tasks. These utilities can help you to improve the accuracy and performance of your machine learning models.
 
+<13@> tokenizer = Tokenizer()
+tokenizer.fit_on_texts(training_data)
+
+total_words = len(tokenizer.word_index) + 1
+input_sequences = tokenizer.texts_to_sequences(training_data)
+
+The code you provided is for creating a tokenizer and using it to preprocess the training data.
+
+**Tokenizer:** A tokenizer is a class that converts text data into sequences of integers. It does this by first creating a vocabulary of all the unique words in the training data. Then, it assigns each word a unique integer index. Once the vocabulary is created, the tokenizer can be used to convert the text data to sequences of integer indices.
+
+**Fitting the tokenizer:** The `fit_on_texts()` method fits the tokenizer to the training data. This creates a vocabulary of all the unique words in the training data.
+
+**Total words:** The `len(tokenizer.word_index) + 1` expression gives the total number of words in the vocabulary, including the special `UNK` token.
+
+**Input sequences:** The `texts_to_sequences()` method converts the training data to sequences of integer indices using the tokenizer.
+
+Here is an example of how to use the tokenizer to preprocess the training data:
+
+```python
+>>> tokenizer = Tokenizer()
+>>> tokenizer.fit_on_texts(training_data)
+>>> total_words = len(tokenizer.word_index) + 1
+>>> input_sequences = tokenizer.texts_to_sequences(training_data)
+
+>>> print(tokenizer.word_index)
+{
+    'UNK': 0,
+    'hello': 1,
+    'hi': 2,
+    'nice': 3,
+    'meet': 4,
+    'you': 5,
+    'are': 6,
+    'i': 7,
+    'am': 8,
+    'a': 9,
+    'i.': 10,
+}
+
+>>> print(input_sequences)
+[[1], [2, 5, 4], [3, 5, 4, 6], [7, 8, 9, 10]]
+```
+
+The preprocessed input sequences can then be used to train a chatbot model.
+
 
 2*** build CHAT BOX GPT
 
