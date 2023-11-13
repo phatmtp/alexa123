@@ -1,1 +1,216 @@
+[1] instruction
+[2] explanation
+
+
+1*** instruction
+
+<1@> basic structure of caculator
+
+<The code>
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char operation;
+    double num1, num2;
+
+    // Get input from the user
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter an operation (+, -, *, /): ";
+    cin >> operation;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    // Perform the calculation based on the selected operation
+    switch (operation) {
+        case '+':
+            cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
+            break;
+        case '-':
+            cout << num1 << " - " << num2 << " = " << num1 - num2 << endl;
+            break;
+        case '*':
+            cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
+            break;
+        case '/':
+            if (num2 != 0) {
+                cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+            } else {
+                cout << "Error: Division by zero is undefined." << endl;
+            }
+            break;
+        default:
+            cout << "Error: Invalid operation." << endl;
+            break;
+    }
+
+    return 0;
+}
+
+
+2*** explanation
+
+<1@> general explanation
+
+Certainly! Let's go through the code step by step:
+
+```cpp
+#include <iostream>
+
+using namespace std;
+```
+
+- `#include <iostream>`: This is a preprocessor directive that includes the input/output stream library, allowing us to use functions like `cout` and `cin`.
+
+- `using namespace std;`: This line allows us to use elements from the `std` (standard) namespace without needing to prefix them with `std::`.
+
+```cpp
+int main() {
+```
+
+- `int main()`: This is the main function where the program starts its execution. It returns an integer (`int`) indicating the status of the program to the operating system.
+
+```cpp
+    char operation;
+    double num1, num2;
+```
+
+- `char operation;`: Declares a variable `operation` of type `char` to store the mathematical operation entered by the user (`+, -, *, /`).
+
+- `double num1, num2;`: Declares two variables `num1` and `num2` of type `double` to store the two numbers entered by the user.
+
+```cpp
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter an operation (+, -, *, /): ";
+    cin >> operation;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+```
+
+- `cout << "Enter first number: ";`: Displays a message asking the user to enter the first number.
+
+- `cin >> num1;`: Reads the user's input and stores it in the variable `num1`.
+
+- Similar steps are performed for the operation and the second number.
+
+```cpp
+    switch (operation) {
+        case '+':
+            cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
+            break;
+        case '-':
+            cout << num1 << " - " << num2 << " = " << num1 - num2 << endl;
+            break;
+        case '*':
+            cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
+            break;
+        case '/':
+            if (num2 != 0) {
+                cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+            } else {
+                cout << "Error: Division by zero is undefined." << endl;
+            }
+            break;
+        default:
+            cout << "Error: Invalid operation." << endl;
+            break;
+    }
+```
+
+- `switch (operation)`: Performs different actions based on the value of `operation`.
+
+- `case '+':`, `case '-':`, `case '*':`, and `case '/':`: Handles each operation accordingly.
+
+- `cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;`: Outputs the result of the addition.
+
+- Similar statements are used for subtraction, multiplication, and division.
+
+- The `default:` case handles an invalid operation.
+
+```cpp
+    return 0;
+}
+```
+
+- `return 0;`: Indicates that the program executed successfully. The value `0` is typically used to indicate successful execution to the operating system.
+
+<2@> why do we need to add 'break' to the "switch" & "default" ?
+
+In a `switch` statement in C++, the `break` statement is used to exit the `switch` block after a case is matched. Without the `break` statement, the control flow would continue to the next case even if the current case's conditions are satisfied. This is known as "falling through."
+
+Consider the following example without `break` statements:
+
+```cpp
+#include <iostream>
+
+int main() {
+    int choice = 2;
+
+    switch (choice) {
+        case 1:
+            std::cout << "Choice is 1." << std::endl;
+        case 2:
+            std::cout << "Choice is 2." << std::endl;
+        case 3:
+            std::cout << "Choice is 3." << std::endl;
+        default:
+            std::cout << "Default case." << std::endl;
+    }
+
+    return 0;
+}
+```
+
+In this case, if `choice` is 2, the output will be:
+
+```
+Choice is 2.
+Choice is 3.
+Default case.
+```
+
+Without `break` statements, control falls through each case until it reaches the end of the `switch` block or until a `break` statement is encountered. This behavior is intentional in some cases where you want multiple cases to execute the same block of code, but it can lead to unintended results if not used carefully.
+
+With `break` statements:
+
+```cpp
+#include <iostream>
+
+int main() {
+    int choice = 2;
+
+    switch (choice) {
+        case 1:
+            std::cout << "Choice is 1." << std::endl;
+            break;
+        case 2:
+            std::cout << "Choice is 2." << std::endl;
+            break;
+        case 3:
+            std::cout << "Choice is 3." << std::endl;
+            break;
+        default:
+            std::cout << "Default case." << std::endl;
+    }
+
+    return 0;
+}
+```
+
+Now, if `choice` is 2, the output will be:
+
+```
+Choice is 2.
+```
+
+Each `break` statement ensures that once a case is executed, the control flow exits the `switch` block. It's a way to prevent unintentional fall-through behavior. If you want cases to fall through intentionally, you can omit the `break` statement, but it's crucial to document this clearly in your code to avoid confusion.
+
 
