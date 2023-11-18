@@ -482,6 +482,93 @@ Here is an example of how to use the tokenizer to preprocess the training data:
 
 The preprocessed input sequences can then be used to train a chatbot model.
 
+<14@> total_words = len(tokenizer.word_index) + 1
+
+The statement `total_words = len(tokenizer.word_index) + 1` is used to calculate the total number of words in the vocabulary of the tokenizer. The `tokenizer.word_index` dictionary contains all of the unique words in the text that the tokenizer has been trained on, and each word is mapped to a unique numerical identifier. The `len(tokenizer.word_index)` expression calculates the number of unique words in the vocabulary, and then the `+ 1` operation is added to account for the reserved index 0, which is typically used for padding.
+
+In other words, the `total_words` variable will contain the total number of words in the vocabulary, including the padding word. This value is important for several reasons, such as:
+
+* It is used to determine the size of the input and output layers of the model.
+* It is used to convert words into numerical identifiers during preprocessing.
+* It is used to convert numerical identifiers back into words during generation.
+
+<15@> the reserved index 0. what does that mean ? 
+
+In the context of natural language processing (NLP) and text processing, a reserved index refers to a specific index within a vocabulary that is intentionally left unused. This index is typically reserved for padding purposes, which is a common technique used to ensure that all input sequences have the same length.
+
+When processing text data, it is often necessary to convert each word into a numerical identifier. This process is known as tokenization. The tokenizer assigns each unique word in the corpus a unique identifier, starting from 1. However, the first index, index 0, is typically reserved for padding.
+
+Padding is used to ensure that all input sequences have the same length. This is important because many machine learning algorithms, such as recurrent neural networks (RNNs), expect input sequences to have the same length. To pad input sequences, the tokenizer adds special padding tokens to the beginning or end of the sequences until they all have the same length.
+
+The reserved index 0 is typically used for the padding token. This ensures that the padding token does not conflict with any real words in the vocabulary. By using a reserved index, the tokenizer can guarantee that there will be no ambiguity between the padding token and real words.
+
+In summary, the reserved index 0 is a common practice in NLP and text processing to ensure that there is a dedicated index for padding purposes. This helps to avoid conflicts between padding tokens and real words and ensures that input sequences are processed consistently.
+
+<16@> step 4 explanation
+
+**Step 4: Prepare the input and output sequences**
+
+The goal of step 4 is to transform the preprocessed training data into a format that can be used to train the model. This involves preparing both input sequences and output sequences.
+
+**Input sequences:**
+
+Input sequences represent the first part of each conversation. These sequences are initially obtained by converting each word into a numerical identifier using the tokenizer. However, the lengths of these sequences may vary. To ensure consistent processing by the model, all input sequences are padded with special padding tokens to a uniform length. This padding ensures that each input sequence has the same number of elements, making it easier for the model to process and learn patterns.
+
+**Output sequences:**
+
+Output sequences represent the second part of each conversation, which corresponds to the model's response. Similarly, output sequences are converted into numerical identifiers using the tokenizer. However, unlike input sequences, output sequences are not padded. This is because the model is expected to predict the next word in the conversation based on the preceding context, and padding could introduce artificial patterns that might confuse the model.
+
+**Summary:**
+
+Step 4 essentially prepares the training data into a structured format suitable for training the model. It involves converting text into numerical identifiers and ensuring consistent sequence lengths for inputs. This step plays a crucial role in enabling the model to effectively learn patterns and generate appropriate responses.
+
+<17@> max_sequence_len = max([len(x) for x in input_sequences])
+input_sequences = np.array(pad_sequences(input_sequences, maxlen=max_sequence_len, padding='pre'))
+
+xs = input_sequences[:, :-1]
+labels = input_sequences[:, -1]
+
+ys = tf.keras.utils.to_categorical(labels, num_classes=total_words)
+
+
+[explanation] ->
+
+```python
+max_sequence_len = max([len(x) for x in input_sequences])
+```
+
+This line of code calculates the maximum length of any of the input sequences. This is done by iterating over the list of input sequences and finding the length of each sequence. The maximum length is then stored in the variable `max_sequence_len`.
+
+```python
+input_sequences = np.array(pad_sequences(input_sequences, maxlen=max_sequence_len, padding='pre'))
+```
+
+This line of code pads all of the input sequences to the same length. This is done by using the `pad_sequences()` function from the `tensorflow.keras.preprocessing.sequence` module. The `pad_sequences()` function takes three arguments:
+
+* `input_sequences`: The list of input sequences to be padded.
+* `maxlen`: The maximum length of the padded sequences.
+* `padding`: The type of padding to be used. In this case, `padding='pre'` means that the sequences will be padded with the padding token at the beginning.
+
+```python
+xs = input_sequences[:, :-1]
+```
+
+This line of code extracts the input sequences from the padded sequences. The `[:, :-1]` slice selects all of the columns of the padded sequences except for the last column. The last column contains the labels for the sequences, so we don't need it for this step.
+
+```python
+labels = input_sequences[:, -1]
+```
+
+This line of code extracts the labels from the padded sequences. The `[:, -1]` slice selects the last column of the padded sequences. The last column contains the labels for the sequences, so we need it for this step.
+
+```python
+ys = tf.keras.utils.to_categorical(labels, num_classes=total_words)
+```
+
+This line of code converts the labels into one-hot encoded vectors. One-hot encoding is a way of representing categorical data as binary vectors. In this case, the labels are the indices of the words in the vocabulary, and the one-hot encoded vectors have a 1 in the position corresponding to the index of the word and a 0 in all other positions.
+
+I hope this explanation is helpful. Please let me know if you have any other questions.
+
 
 2*** build CHAT BOX GPT
 
