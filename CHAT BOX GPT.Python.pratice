@@ -55,6 +55,23 @@ ys = tf.keras.utils.to_categorical(labels, num_classes=total_words) <17@,1***>
 
 18/ what kind of machine learning and neural learning in this code <18@,1***>
 
+19/ one-hot encode vector <19@,1***>
+
+20/ np.array <20@,1***>
+
+21/ LSTM (Long Short-Term Memory) <21@,1***>
+
+22/ model = tf.keras.models.Sequential()
+model.add(tf.keras.layers.Embedding(total_words, 100, input_length=max_sequence_len-1))
+model.add(tf.keras.layers.LSTM(150))
+model.add(tf.keras.layers.Dense(total_words, activation='softmax')) <22@,1***>
+
+23/ The dimension of the embedding vectors. why does it has to be 100 ? <23@,1***>
+
+24/ why do we need embedding layer, LSTM layer, dense layer for this code. what happend if we dont use them ? <24@,1***>
+
+25/ input_length=max_sequence_len-1 <25@,1***>
+
 
 2*** build CHAT BOX GPT
 
