@@ -53,6 +53,8 @@ labels = input_sequences[:, -1]
 
 ys = tf.keras.utils.to_categorical(labels, num_classes=total_words) <17@,1***>
 
+18/ what kind of machine learning and neural learning in this code <18@,1***>
+
 
 2*** build CHAT BOX GPT
 
