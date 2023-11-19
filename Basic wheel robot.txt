@@ -293,8 +293,8 @@ To connect HC-05 to Arduino Uno board, you can follow these steps:
 
 - Connect the GND pin of the HC-05 to the ground connection of your project.This can be connected to the GND pin on the Arduino UNO.
 - Connect the VCC pin of the HC-05 to the 5V pin on the Arduino UNO.
-- Connect the TXD pin of HC-05 to the TXD pin of the MCU (Arduino UNO PIN 0).
-- Connect the RXD pin of HC-05 to the RXD pin of the MCU (Arduino UNO PIN 1).
+- Connect the TXD pin of HC-05 to the RXD pin of the MCU (Arduino UNO PIN 0).
+- Connect the RXD pin of HC-05 to the TXD pin of the MCU (Arduino UNO PIN 1).
 You can use pins 10 and 11 of the Arduino to connect the HC-05 and use the SoftwareSerial library to communicate with the module
 
 # Another way to connect HC-05 to arduino uno
