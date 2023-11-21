@@ -40,6 +40,16 @@
 15/ Sunboard of medium thickness 
 <15@,1***>
 
+16/ L293d motor driver <16@,1***>
+
+17/ motor driver L298n & L293d <17@,1***>
+
+18/ servo <18@,1***>
+
+19/ ultrasonic sensor <19@,1***>
+
+20/ ultrasonic soundwave <20@,1***>
+
 
 2*** Explanation
 
