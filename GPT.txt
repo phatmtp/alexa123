@@ -875,10 +875,6 @@ LSTM networks have been used to achieve state-of-the-art results on a wide range
 
 LSTM networks are a powerful tool for learning sequential data, and they have been used to solve a wide range of real-world problems.
 
-Here is a diagram of an LSTM unit:
-
-[Diagram of an LSTM unit]
-
 The LSTM unit consists of four gates: the input gate, the forget gate, the output gate, and the cell gate. The gates control how information flows into, out of, and through the cell state.
 
 LSTM networks are typically trained using a backpropagation algorithm. The backpropagation algorithm calculates the gradients of the loss function with respect to the network's parameters. These gradients are then used to update the network's parameters in order to reduce the loss function.
