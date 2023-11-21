@@ -186,6 +186,168 @@ It is lightweight and easy to cut and shape.
 
 Sunboard comes in different thicknesses ranging from 2mm to 25mm
 
+<16@> L293d motor driver
+
+The L293D is a dual-channel motor driver integrated circuit (IC) that can control two DC motors simultaneously in any direction. It is widely used in robotics and other applications due to its low cost and ease of use.
+[Image of L293d motor driver IC]
+
+The L293D has a maximum current output of 600 mA per channel and can operate at voltages from 4.5 to 36 V. It also has internal protection against overcurrent and overtemperature.
+
+The L293D is typically used in conjunction with a microcontroller to control the speed and direction of two DC motors. The microcontroller sends signals to the L293D, which then drives the motors accordingly.
+
+Here are some of the key features of the L293D motor driver:
+
+* Dual-channel motor driver
+* Maximum current output of 600 mA per channel
+* Operates at voltages from 4.5 to 36 V
+* Internal protection against overcurrent and overtemperature
+* Low cost and easy to use
+
+**Applications**
+
+The L293D motor driver is a versatile IC that can be used in a wide variety of applications. Some of the most common applications include:
+
+* Robotics
+* Model trains
+* Line-following robots
+* Arduino projects
+
+**How to use the L293D motor driver**
+
+The L293D motor driver is relatively easy to use. Here is a basic tutorial on how to use it to control two DC motors:
+
+1. Connect the power supply to the L293D. The power supply should provide a voltage between 4.5 and 36 V.
+2. Connect the motor to the L293D. The motor should be connected to the output terminals of the L293D.
+3. Connect the microcontroller to the L293D. The microcontroller should be connected to the input terminals of the L293D.
+4. Write a program for the microcontroller to control the speed and direction of the motors.
+
+**Conclusion**
+
+The L293D motor driver is a powerful and versatile IC that can be used in a wide variety of applications. It is a good choice for anyone who needs to control two DC motors with a microcontroller.
+
+<17@> motor driver L298n & L293d
+
+The L293D and L298N are both H-bridge motor drivers that are commonly used in robotics and other applications. They are both inexpensive and easy to use, but there are some key differences between the two that you should be aware of before choosing one for your project.
+
+Here is a table summarizing the key differences between the L293D and L298N:
+
+| Feature  | L293D | L298N |
+|---|---|---|
+| Operating voltage | 4.5 V - 36 V | 4.5 V - 46 V |
+| Current handling | 2A per channel | 2A per channel |
+| Driver configuration | Quadruple half-H driver | Dual full-H driver |
+| Output current | 650 mA per channel | 2A per channel |
+| EMF protection | Internal | External |
+| Recommended applications | Low-current motors (BO motors, DC-geared motors, small stepper motors) | High-current motors (Johnson motors, high-torque DC-geared motors) |
+
+**Operating voltage**
+
+The L293D and L298N can both operate with a wide range of voltages, but the L298N can handle a slightly higher voltage range. This means that the L298N can be used with a wider variety of motors.
+
+**Current handling**
+
+The L298N can handle slightly more current than the L293D. This means that the L298N can be used with motors that require more power.
+
+**Driver configuration**
+
+The L293D is a quadruple half-H driver, which means that it can be used to control four DC motors simultaneously. However, it can only drive two motors in each direction. The L298N is a dual full-H driver, which means that it can be used to control two DC motors simultaneously in either direction.
+
+**Output current**
+
+The L293D has an output current of 650 mA per channel, while the L298N has an output current of 2A per channel. This means that the L298N can drive motors that require more power.
+
+**EMF protection**
+
+The L293D has internal EMF protection, which means that it can protect itself from damage caused by inductive kickback from the motor. The L298N does not have internal EMF protection, so it is necessary to add external EMF protection if you are using it with motors that generate a lot of inductive kickback.
+
+**Recommended applications**
+
+The L293D is a good choice for low-current motors, such as BO motors, DC-geared motors, and small stepper motors. The L298N is a good choice for high-current motors, such as Johnson motors and high-torque DC-geared motors.
+
+**In summary, the L293D is a good choice for low-power applications, while the L298N is a better choice for high-power applications.**
+
+<18@> servo 
+
+A servomotor is an electromechanical device that combines a motor with a sensor for position feedback. This allows the servomotor to control the position, velocity, and acceleration of its output shaft to a high degree of accuracy. Servomotors are widely used in robotics, automation, and other applications where precise control is required.
+
+Here's a more detailed breakdown of a servomotor:
+
+* **Motor:** The motor provides the power to rotate the output shaft. Servomotors typically use DC motors, but AC motors and stepper motors can also be used.
+
+* **Feedback Sensor:** The feedback sensor provides information about the position of the output shaft. This information is then used by the servomotor controller to adjust the motor speed and torque. Common feedback sensors include potentiometers, encoders, and resolvers.
+
+* **Controller:** The controller is the brain of the servomotor. It receives signals from the user or other devices, translates them into commands for the motor, and then adjusts the motor speed and torque accordingly.
+
+Servomotors offer several advantages over traditional DC motors, including:
+
+* **High Precision:** Servomotors can achieve much higher precision in their movements than traditional DC motors. This is because they use feedback to keep the output shaft in the correct position.
+
+* **Fast Response:** Servomotors can respond to changes in position very quickly. This is because their controllers can adjust the motor speed and torque very rapidly.
+
+* **Wide Operating Range:** Servomotors can operate over a wide range of speeds and torques. This makes them versatile for a wide variety of applications.
+
+Servomotors are used in a wide variety of applications, including:
+
+* **Robotics:** Servomotors are the workhorse of robotics. They are used to control the joints of robots, allowing them to perform complex movements.
+
+* **Automation:** Servomotors are used in a wide variety of automated systems, such as CNC machines, automated assembly lines, and medical devices.
+
+* **Consumer Products:** Servomotors are also used in a variety of consumer products, such as CD players, DVD players, and cameras.
+
+Overall, servomotors are versatile and powerful devices that can be used in a wide variety of applications. They are a valuable tool for engineers and hobbyists alike.
+
+<19@> ultrasonic sensor
+
+An ultrasonic sensor is an electronic device that measures the distance to an object by emitting ultrasonic sound waves and then receiving the reflected sound waves. Ultrasonic waves are sound waves with a frequency above the range of human hearing, typically greater than 20 kHz.
+
+Ultrasonic sensors work by sending out a pulse of ultrasonic sound waves at a high frequency. These waves travel through the air and reflect off of any objects they encounter. The sensor then receives the reflected waves and measures the time it takes for them to return. The distance to the object can then be calculated by knowing the speed of sound in air and the time it took for the sound waves to travel to and from the object.
+
+Here is a more detailed explanation of how an ultrasonic sensor works:
+
+1. **Ultrasonic Transducer:** The ultrasonic transducer is the heart of the ultrasonic sensor. It is a device that converts electrical signals into sound waves and vice versa. The transducer emits a high-frequency sound pulse when it is triggered by an electronic signal.
+
+2. **Echo Detection:** The sensor has a microphone or other type of sensor that detects the reflected sound waves. When the sound waves hit an object, they reflect back to the sensor, and the sensor detects the change in the sound wave pattern.
+
+3. **Distance Calculation:** The sensor then calculates the distance to the object by measuring the time it takes for the sound waves to travel to and from the object. The speed of sound in air is approximately 343 meters per second (767 miles per hour), so the distance can be calculated by dividing the time by the speed of sound.
+
+Ultrasonic sensors are a versatile and reliable way to measure distance. They are relatively inexpensive and easy to use, and they are unaffected by dust, smoke, and other airborne particles. However, ultrasonic sensors are not as accurate as some other types of sensors, such as laser rangefinders. They are also not as good at detecting small objects, as the sound waves may not be able to reflect off of them.
+
+Ultrasonic sensors are used in a wide variety of applications, including:
+
+* **Automobiles:** Ultrasonic sensors are used in automobiles for parking assistance, lane departure warning, and blind spot detection.
+
+* **Robotics:** Ultrasonic sensors are used in robotics for obstacle avoidance and navigation.
+
+* **Home Appliances:** Ultrasonic sensors are used in home appliances for automatic door openers, ice makers, and dish washers.
+
+* **Medical Devices:** Ultrasonic sensors are used in medical devices for ultrasound imaging and surgical navigation.
+
+Overall, ultrasonic sensors are a versatile and reliable way to measure distance. They are a valuable tool for engineers and hobbyists alike.
+
+<20@> ultrasonic soundwave
+
+An ultrasonic sound wave is a sound wave with a frequency greater than 20 kHz, which is the upper limit of human hearing. Ultrasonic waves are used in a variety of applications, including sonar, medical imaging, and industrial cleaning.
+
+**Properties of Ultrasonic Sound Waves**
+
+Ultrasonic sound waves have several properties that make them useful for a variety of applications. These properties include:
+
+* **High frequency:** Ultrasonic waves have a high frequency, which means that they have a short wavelength. This short wavelength allows ultrasonic waves to be used to measure small distances and to detect small objects.
+* **Ability to travel through different mediums:** Ultrasonic waves can travel through a variety of mediums, including air, water, and solids. This allows ultrasonic waves to be used in a variety of applications, such as sonar and medical imaging.
+* **High attenuation:** Ultrasonic waves are highly attenuated, which means that they lose energy quickly as they travel through a medium. This attenuation allows ultrasonic waves to be used in applications where it is important to limit the range of the sound waves, such as sonar and medical imaging.
+
+**Applications of Ultrasonic Sound Waves**
+
+Ultrasonic sound waves are used in a variety of applications, including:
+
+* **Sonar:** Sonar is a system that uses sound waves to measure distance and detect objects. Sonar is used in a variety of applications, including marine navigation, submarine detection, and animal tracking.
+* **Medical imaging:** Ultrasonic sound waves are used in medical imaging to create images of the inside of the body. Ultrasound imaging is used to diagnose a variety of medical conditions, including cancer, heart disease, and pregnancy.
+* **Industrial cleaning:** Ultrasonic sound waves are used in industrial cleaning to remove dirt, paint, and other contaminants from surfaces. Ultrasonic cleaning is a very effective way to clean delicate surfaces that cannot be cleaned with traditional methods.
+* **Non-destructive testing:** Ultrasonic sound waves are used in non-destructive testing to detect defects in materials. Non-destructive testing is used to inspect a wide variety of materials, including metals, plastics, and composites.
+* **Ranging and proximity detection:** Ultrasonic sound waves are also used in ranging and proximity detection systems, such as those used in parking assistance systems and ultrasonic proximity sensors.
+
+Overall, ultrasonic sound waves are a versatile and powerful tool that can be used in a variety of applications. They are an important part of many modern technologies, and their use is likely to continue to grow in the future.
+
 
 2*** Explanation
 
@@ -982,8 +1144,8 @@ HC05							arduino uno
 enable pin  			->			3.3v pin	
 VCC				->			5v pin		
 GND				->			GND	
-TXD				->			TXD
-RXD				->			RXD
+TXD				->			RXD
+RXD				->			TXD
 State				->
 
 <2@> connect L298N motor to 1 or 2 motor
