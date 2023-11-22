@@ -143,6 +143,16 @@
 40/ const int BT_TX 
     const int BT_RX   <40@,2***>
 
+41/ how many wires does servo motor has ? how to connect it with L293d and L298n <41@,2***>
+
+42/ what if i set too high baudrate for my wheel robot or drone <42@,2***>
+
+43/ the standar board of ideal baudrate to variety of techs. such as drone or wheel robot <43@,2***>
+
+44/ what kind of serial communication does drone use ? radio signal or bluetooth <44@,2***>
+
+45/ when the data received from the serial port is '1'.Why does IN1 & IN3 are set to 'high' and IN2 & IN4 are set to 'low' <45@,2***>
+
 
 3*** connect arduino uno with components & programing
 
