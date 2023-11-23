@@ -826,6 +826,38 @@ The model may then be trained for multiple epochs. With each epoch, the model ha
 
 The number of epochs that is optimal for a particular model will depend on the size and complexity of the training dataset, the architecture of the model, and the learning rate of the optimizer. It is common to experiment with different values for the number of epochs to find the value that works best for a particular task.
 
+<33@> Hyperparameters in computer programming
+
+Hyperparameters in computer programming are parameters whose values are set before the training of the machine learning model. They are not learned from the data but are set manually or through a search process. Examples of hyperparameters include learning rate, number of hidden layers in a neural network, and the choice of kernel in support vector machines. These parameters can have a significant impact on the performance of the model.
+
+<34@> model.add(tf.keras.layers.LSTM(150))
+
+The line `model.add(tf.keras.layers.LSTM(150))` adds a Long Short-Term Memory (LSTM) layer to the neural network model. LSTM layers are a type of recurrent neural network (RNN) that are well-suited for processing sequential data, such as natural language. They are able to learn long-term dependencies between words in a sentence, which makes them a good choice for tasks like machine translation and speech recognition.
+
+The `LSTM()` layer takes one argument:
+
+* `150`: The number of units in the LSTM layer. This parameter determines the size of the internal representation of the data that is learned by the layer. A larger number of units will allow the layer to learn more complex representations of the data, which can improve the performance of the model.
+
+In this case, we are adding an LSTM layer with 150 units. This means that the layer will learn a representation of each input sequence that is 150 dimensions long. This representation will then be used by the next layer in the model to generate a response.
+
+<35@> what if i set it too high or too low ?
+
+Setting the number of units in an LSTM layer too high or too low can have a significant impact on the performance of the model. Here are some of the effects of setting the number of units too high or too low:
+
+* **If the number of units is too high, the model may overfit to the training data.** This means that the model will learn the training data too well and will not be able to generalize to new data. Overfitting can lead to poor performance on the test dataset.
+
+* **If the number of units is too low, the model may not be able to learn the patterns in the data.** This means that the model will not be able to make accurate predictions on new data. Underfitting can also lead to poor performance on the test dataset.
+
+In general, it is a good idea to experiment with different values for the number of units to find the value that works best for a particular task. There is no one-size-fits-all answer to this question, as the optimal number of units will depend on the size and complexity of the training dataset, the architecture of the model, and the learning rate of the optimizer.
+
+Here are some tips for choosing the number of units in an LSTM layer:
+
+* **Start with a small number of units and increase it gradually until the model starts to overfit.**
+
+* **Use a validation dataset to monitor the performance of the model as you increase the number of units.**
+
+* **Use regularization techniques, such as dropout or early stopping, to help prevent overfitting.**
+
 
 2*** build CHAT BOX GPT
 
