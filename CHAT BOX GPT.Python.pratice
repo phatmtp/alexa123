@@ -93,6 +93,16 @@ model.fit(xs, ys, epochs=100, verbose=1) <31@,1***>
 
 35/ what if i set it too high or too low ? <35@,1***>
 
+36/ model.add(tf.keras.layers.Dense(total_words, activation='softmax')) <36@,1***>
+
+37/ verbose=1. what if i set verbosity level to different numbers ? <37@,1***>
+
+38/ what happend if i dont use verbosity level ? <38@,1***>
+
+39/ probability distribution <39@,1***>
+
+40/ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy']) <40@,1***>
+
 
 2*** build CHAT BOX GPT
 
