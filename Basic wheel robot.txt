@@ -1386,6 +1386,8 @@ Arduino Uno							GND
 
 <2@> the full code of connecting Arduino Uno with L298N, HC-05, 4 pixel LEDs, and 9 volt battery
 
+#include <SoftwareSerial.h>
+
 // Define the pins for the L298N motor driver
 const int ENA = 9;
 const int IN1 = 8;
@@ -1458,8 +1460,94 @@ void loop() {
       digitalWrite(D2, LOW);
       digitalWrite(D3, LOW);
       digitalWrite(D4, LOW);
+    } 
+      // Add Forward Left Condition:
+      else if (data == 'F') {  
+      digitalWrite(ENA, HIGH);
+      digitalWrite(IN1, LOW);
+      digitalWrite(IN2, HIGH);
+    
+      digitalWrite(ENB, HIGH);
+      digitalWrite(IN3, HIGH);
+      digitalWrite(IN4, LOW);
+}
+      // Add Forward Right Condition
+      else if (data == 'R') {
+      digitalWrite(ENA, HIGH);
+      digitalWrite(IN1, HIGH);
+      digitalWrite(IN2, LOW);
+    
+      digitalWrite(ENB, HIGH);
+      digitalWrite(IN3, LOW);
+      digitalWrite(IN4, HIGH);
+}
+      // Add Backward Left Condition
+      else if (data == 'L') {
+      digitalWrite(ENA, LOW);
+      digitalWrite(IN1, HIGH);
+      digitalWrite(IN2, LOW);
+    
+      digitalWrite(ENB, LOW);
+      digitalWrite(IN3, LOW);
+      digitalWrite(IN4, HIGH);
+}
+      // Add Backward Right Condition
+      else if (data == 'B') {
+      digitalWrite(ENA, LOW);
+      digitalWrite(IN1, LOW);
+      digitalWrite(IN2, HIGH);
+    
+      digitalWrite(ENB, LOW);
+      digitalWrite(IN3, HIGH);
+      digitalWrite(IN4, LOW);
     }
   }
+
+// Check if any data is available from the Bluetooth module
+  if (bluetooth.available()) {
+    // Read the incoming data
+    char data = bluetooth.read();
+
+    // Control the robot based on the received data
+    switch (data) {
+      case 'F': // Forward
+        moveForward();
+        break;
+
+      case 'B': // Backward
+        moveBackward();
+        break;
+
+      case 'L': // Left
+        turnLeft();
+        break;
+
+      case 'R': // Right
+        turnRight();
+        break;
+
+      case '1': // Turn on LED1
+        digitalWrite(ledPin1, HIGH);
+        break;
+
+      case '0': // Turn off LED1
+        digitalWrite(ledPin1, LOW);
+        break;
+
+      case '2': // Turn on LED2
+        digitalWrite(ledPin2, HIGH);
+        break;
+
+      case '0': // Turn off LED2
+        digitalWrite(ledPin2, LOW);
+        break;
+
+      case '3': // Turn on LED3
+        digitalWrite(ledPin3, HIGH);
+        break;
+
+      case '0
+     }
 }
 
 
@@ -1698,3 +1786,52 @@ void loop() {
     }
   }
 }
+
+<3@> beside forward & backward & left & right. i would like to control my wheel car to another directions. such as forward left & forward right & backward left & backward right
+
+To control your wheel car in diagonal directions (forward left, forward right, backward left, backward right), you can modify the existing code to include additional commands and corresponding motor control logic. Here's a breakdown of the additional commands and their corresponding motor control:
+
+**Command:** Forward Left
+**Motor Control:**
+
+1. Set motorPin1 (IN1 of L298N) to LOW
+2. Set motorPin2 (IN2 of L298N) to HIGH
+3. Set motorPin3 (IN3 of L298N) to LOW
+4. Set motorPin4 (IN4 of L298N) to HIGH
+
+This combination of motor settings will cause the left wheel to spin forward and the right wheel to spin backward, resulting in a diagonal forward left movement.
+
+**Command:** Forward Right
+**Motor Control:**
+
+1. Set motorPin1 (IN1 of L298N) to HIGH
+2. Set motorPin2 (IN2 of L298N) to LOW
+3. Set motorPin3 (IN3 of L298N) to HIGH
+4. Set motorPin4 (IN4 of L298N) to LOW
+
+This combination of motor settings will cause the right wheel to spin forward and the left wheel to spin backward, resulting in a diagonal forward right movement.
+
+**Command:** Backward Left
+**Motor Control:**
+
+1. Set motorPin1 (IN1 of L298N) to LOW
+2. Set motorPin2 (IN2 of L298N) to HIGH
+3. Set motorPin3 (IN3 of L298N) to HIGH
+4. Set motorPin4 (IN4 of L298N) to LOW
+
+This combination of motor settings will cause the left wheel to spin backward and the right wheel to spin forward, resulting in a diagonal backward left movement.
+
+**Command:** Backward Right
+**Motor Control:**
+
+1. Set motorPin1 (IN1 of L298N) to HIGH
+2. Set motorPin2 (IN2 of L298N) to LOW
+3. Set motorPin3 (IN3 of L298N) to LOW
+4. Set motorPin4 (IN4 of L298N) to HIGH
+
+This combination of motor settings will cause the right wheel to spin backward and the left wheel to spin forward, resulting in a diagonal backward right movement.
+
+
+
+
+
