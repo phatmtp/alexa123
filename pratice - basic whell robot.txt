@@ -182,5 +182,7 @@
 
 2/ basic example code to get you started with controlling your wheel car using the HC-05 module and L298N motor driver & 9 volt battery & arduino uno & 4 motors with 4 wheels <2@,5***>
 
+3/ beside forward & backward & left & right. i would like to control my wheel car to another directions. such as forward left & forward right & backward left & backward right <3@,5***>
+
 
 
