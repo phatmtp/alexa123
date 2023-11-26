@@ -31,6 +31,8 @@
 
 11/ brief explanation of Building a.i chatbox by using Tensorflow <11@,1***>
 
+11'/ multi-dimensional arrays and matrices <11'@,1***>
+
 12/ tensorflow.keras.preprocessing.text & tensorflow.keras.preprocessing.sequence <12@,1***>
 
 13/ tokenizer = Tokenizer()
@@ -102,6 +104,23 @@ model.fit(xs, ys, epochs=100, verbose=1) <31@,1***>
 39/ probability distribution <39@,1***>
 
 40/ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy']) <40@,1***>
+
+41/ the loss function <41@,1***>
+
+42/ the weights of the model in this a.i project <42@,1***>
+
+43/ model.fit(xs, ys, epochs=100, verbose=1) <43@,1***>
+
+44/ np.array in neural learning <44@,1***>
+
+45/ def generate_response(input_text):
+    input_text_sequence = tokenizer.texts_to_sequences([input_text])
+    input_text_sequence = np.array(pad_sequences(input_text_sequence, maxlen=max_sequence_len-1, padding='pre'))
+
+    predicted = model.predict(input_text_sequence)
+    predicted = np.argmax(predicted)                   <45@,1***>
+
+46/ predicted = np.argmax(predicted) <46@,1***>
 
 
 2*** build CHAT BOX GPT
