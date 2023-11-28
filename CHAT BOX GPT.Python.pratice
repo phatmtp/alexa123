@@ -122,6 +122,16 @@ model.fit(xs, ys, epochs=100, verbose=1) <31@,1***>
 
 46/ predicted = np.argmax(predicted) <46@,1***>
 
+47/ output_sentence = ""
+    for word, index in tokenizer.word_index.items():
+        if index == predicted:
+            output_sentence = word
+            break
+
+    return output_sentence        <47@,1***>
+
+48/ what is linear algebra <48@,1***>
+
 
 2*** build CHAT BOX GPT
 
