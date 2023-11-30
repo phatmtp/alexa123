@@ -132,6 +132,10 @@ model.fit(xs, ys, epochs=100, verbose=1) <31@,1***>
 
 48/ what is linear algebra <48@,1***>
 
+49/ paramenter , different between hyperparameter & parameter <49@,1***>
+
+50/ what kind of attention mechanism in this chatbox project ? <50@,1***>
+
 
 2*** build CHAT BOX GPT
 
