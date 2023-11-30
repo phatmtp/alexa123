@@ -1096,6 +1096,28 @@ Unity, a popular game development platform, utilizes linear algebra extensively 
 
 Overall, linear algebra is an essential tool in the development of software like Blender and Unity, enabling the creation of visually appealing and interactive virtual worlds.
 
+<49@> paramenter , different between hyperparameter & parameter
+
+Parameters
+
+Parameters are the internal coefficients or weights learned by the machine learning model from the training data.
+
+Hyperparameters
+
+Hyperparameters are external configuration settings that are not learned from the data but are set prior to the training process. They control the learning process and affect the behavior and performance of the model.
+
+In summary, parameters are learned during training, while hyperparameters are set before training.
+
+<50@> what kind of attention mechanism in this chatbox project ?
+
+The AI chatbot project utilizes a self-attention mechanism, which is a type of attention mechanism that focuses on the relationships between different parts of the input sequence. This allows the model to capture long-range dependencies and contextual information, which is crucial for generating coherent and relevant responses in a conversational context.
+
+Self-attention mechanisms are particularly well-suited for natural language processing tasks, as they enable the model to attend to different parts of the input sentence based on their relevance to the current word being generated. This helps the model to focus on the most important information in the context and generate responses that are consistent with the overall meaning of the conversation.
+
+In the context of the AI chatbot project, the self-attention mechanism is implemented within the encoder and decoder portions of the neural network architecture. The encoder is responsible for encoding the input sequence into a representation that captures the context and meaning of the input. The decoder, on the other hand, generates the output sequence one word at a time, using the encoder's representation and the self-attention mechanism to inform its predictions.
+
+By incorporating a self-attention mechanism, the AI chatbot is able to generate more coherent and contextually relevant responses, leading to improved conversational interactions.
+
 
 2*** build CHAT BOX GPT
 
