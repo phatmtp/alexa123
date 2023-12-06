@@ -73,13 +73,17 @@ There are a number of popular AI systems that are created using Java and Apache 
 **Apache OpenNLP:**
 
 * Apache Mahout: A scalable machine learning library that includes a number of NLP algorithms, including tokenization, sentence detection, part-of-speech tagging, and named entity recognition. Apache Mahout is used by a variety of companies and organizations, including Google, Amazon, and Yahoo.
+
 * Apache Spark NLP: A library for developing and deploying NLP pipelines on Apache Spark. Apache Spark NLP includes a variety of pre-trained models, as well as tools for training custom models. Apache Spark NLP is used by a variety of companies and organizations, including Netflix, Airbnb, and Databricks.
+
 * Apache Lucene: A search engine library that can be used to index and search text data. Apache Lucene includes a number of NLP features, such as stemming, lemmatization, and stopword removal. Apache Lucene is used by a variety of companies and organizations, including Elasticsearch, Solr, and Hadoop.
 
 **Stanford NLP:**
 
 * CoreNLP: A suite of NLP tools that includes tokenization, sentence detection, part-of-speech tagging, named entity recognition, coreference resolution, and sentiment analysis. CoreNLP is used by a variety of companies and organizations, including Google, Facebook, and Microsoft.
+
 * GloVe: A word embedding algorithm that is used to represent words as vectors. GloVe vectors are used by a variety of NLP systems, including CoreNLP, spaCy, and BERT.
+
 * OpenIE: A system for extracting information from text in the form of triplets, such as (subject, predicate, object). OpenIE is used by a variety of companies and organizations, including Google, Facebook, and IBM.
 
 In addition to these specific examples, there are many other AI systems that use Apache OpenNLP or Stanford NLP in some way. For example, many chatbots and virtual assistants use these libraries to understand and respond to user queries.
