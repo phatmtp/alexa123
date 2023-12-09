@@ -383,6 +383,22 @@ Here are some examples of how System.out.println() can be used in different cont
 
 Overall, System.out.println() is a very versatile and useful method. It is one of the most important methods to know in Java.
 
+<8@> public static void main(String[] args) throws Exception
+
+The public static void main(String[] args) is a special method in Java that serves as the entry point for a Java program. When a Java program is executed, the JVM (Java Virtual Machine) looks for this method and starts executing the code inside it.
+
+Here's a breakdown of the components of this method signature:
+
+public: This keyword indicates that the method can be accessed from outside the class.
+static: This keyword indicates that the method belongs to the class itself, rather than to an instance of the class.
+void: This keyword indicates that the method does not return any value.
+main: This is the name of the method.
+String[] args: This is an array of strings that can be passed as command-line arguments to the program.
+
+The throws Exception part of the method signature indicates that the main method can throw an exception of type Exception. This means that if any exception occurs during the execution of the main method, it will be propagated to the caller.
+
+In summary, the public static void main(String[] args) throws Exception method is the entry point for a Java program and allows it to be executed from the command line.
+
 
 3*** instruction
 
