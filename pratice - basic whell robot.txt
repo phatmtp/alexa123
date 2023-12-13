@@ -50,6 +50,8 @@
 
 20/ ultrasonic soundwave <20@,1***>
 
+21/ crystal oscillator on arduino uno <21@,1***>
+
 
 2*** Explanation
 
@@ -152,6 +154,8 @@
 44/ what kind of serial communication does drone use ? radio signal or bluetooth <44@,2***>
 
 45/ when the data received from the serial port is '1'.Why does IN1 & IN3 are set to 'high' and IN2 & IN4 are set to 'low' <45@,2***>
+
+46/ Driver configuration | Quadruple half-H driver | Dual full-H driver | <46@,2***>
 
 
 3*** connect arduino uno with components & programing
