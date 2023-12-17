@@ -20,6 +20,10 @@
 6/ public static void main(String[] args) throws Exception <6@,2***>
 7/ System.out.println() <7@,2***>
 8/ public static void main(String[] args) throws Exception <8@,2***>
+9/ DoccatModel model = trainModel(trainingData); <9@,2***>
+10/ what is doccatmodel <10@,2***>
+11/ what if i dont use doccatmodel ? <11@,2***>
+12/ so you mean that the DoccatModel will give the trainingData the primary training, as it will have automatically categorization. which then be stored to 'model' as variable. <12@,2***>  
 
 
 3*** instruction
