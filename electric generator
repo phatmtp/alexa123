@@ -1,0 +1,39 @@
+[1] explanation
+
+
+1*** explanation
+
+<1@> how do commutator work ?
+
+the main job of commutator is converting ac to dc
+
+commutator is important because of 3 things:
+
+1- Rotating coils generate AC:
+
+As the coils in a generator spin through a magnetic field, they experience a changing field, inducing an alternating current in the wire
+
+the magnetic field produced by the magnets surrounding the coils.This is the most common way to build an AC generator.
+
+as it utilizes permanent magnets or electromagnets to create a fixed and strong magnetic field around the rotating coils.
+
+2- Commutator switches polarity:
+
+ensuring that the current always flows in the same direction, regardless of the changing polarity in the coils.
+
+3- Smoother DC output:
+
+create a smoother DC output, closer to a constant flow.
+
+
+<2@> so you mean that any motor with the magnetic field produced by the magnets surrounding the coils. if i remove the commutator from it, i can turn it to be ac generator ?
+
+if you have a motor with permanent magnets surrounding the coils and remove the commutator, you essentially have the basic configuration of an AC generator.
+
+The key to generating AC is the relative motion between the magnetic field and the conductor. In a motor with magnets surrounding the coils, the coils rotate within the magnetic field created by the magnets. This generates a changing magnetic flux through the coils, inducing an alternating current (AC) in the wires.
+
+The commutator in a motor serves a specific purpose. Its job is to switch the polarity of the current at the right moment to maintain a constant direction for powering the motor. However, for generating AC, this switching becomes unnecessary. The AC output from the coils, even without the commutator, can be utilized directly.
+
+
+
+
