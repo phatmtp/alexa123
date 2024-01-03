@@ -164,6 +164,85 @@ Here are some examples of how encryption algorithms are used in the real world:
 
 Encryption algorithms are a vital part of modern security. By using strong encryption algorithms, you can protect your data from unauthorized access and keep it safe.
 
+<6@> so if i wanna build a quantum computer, i have to choose a suitable qbit architechture
+
+You're absolutely right! Choosing a suitable qubit architecture is the first and crucial step in building a quantum computer. It's like laying the foundation for your dream house. The type of architecture you choose will determine the capabilities, limitations, and overall performance of your quantum machine.
+
+There are several factors to consider when selecting a qubit architecture:
+
+**1. Qubit technology:** This refers to the physical system used to represent and manipulate qubits. Some common options include:
+
+* **Superconducting qubits:** These are currently the most mature and scalable technology, offering long coherence times but requiring cryogenic temperatures.
+* **Trapped ion qubits:** These offer high fidelities but have limited scalability due to the need for individual traps for each qubit.
+* **Photonic qubits:** These use light pulses to encode qubits, making them good for communication between quantum computers but challenging for complex computations.
+
+**2. Qubit topology:** This describes how qubits are connected within the system. Different topologies offer varying degrees of connectivity and gate operations, impacting the types of algorithms the computer can efficiently run. Examples include:
+
+* **Linear chain:** Offers simple connections but limited computational power.
+* **2D grid:** More complex and scalable, allowing for more intricate algorithms.
+* **3D cube:** Offers potentially the highest connectivity but is technically challenging to implement.
+
+**3. Error correction:** Even the best qubits are prone to errors, so robust error correction mechanisms are essential for accurate computations. Different architectures may favor different error correction techniques.
+
+**4. Additional factors:** Beyond the core technological choices, consider factors like cost, size, power requirements, and compatibility with existing tools and software.
+
+Remember, there's no "one-size-fits-all" qubit architecture. The ideal choice depends on your specific goals and resources. 
+
+Feel free to ask further questions about specific architectures or any aspect of building your quantum computer! I'm here to help you navigate this exciting and challenging field.
+
+<7@> i see the quantum computer is settled to a friedge
+
+You're right, most current quantum computers are housed in specialized refrigerators called **cryostats**. This is because the delicate quantum effects at play in these machines are incredibly sensitive to heat. By maintaining temperatures close to absolute zero (-273.15 °C), we minimize vibrations and thermal noise that can disrupt the qubits and cause errors in calculations.
+
+Imagine a fragile butterfly fluttering its wings. The slightest breeze could send it off course. Similarly, even minute temperature fluctuations can disrupt the delicate quantum states of qubits, causing them to lose their information. These cryostats, which can be quite complex and expensive, essentially create a stable, ultra-cold environment for the quantum computer to operate in.
+
+However, keeping a fridge-sized computer at near absolute zero requires significant technology and resources. Researchers are actively exploring alternative qubit architectures and cooling methods that could operate at less extreme temperatures, paving the way for smaller, more energy-efficient quantum computers in the future.
+
+Here are some interesting facts about quantum computer cryostats:
+
+* Some can reach temperatures within millikelvins (thousandths of a degree Kelvin).
+* They use multiple stages of cooling, like pre-coolers and dilution refrigerators, to achieve such extreme temperatures.
+* They may require liquid helium, a precious and expensive resource, to function.
+* Researchers are exploring alternative cooling methods like magnetic refrigeration and solid-state coolers for future applications.
+
+So, while the fridge might seem like an unusual housing for a powerful computer, it's currently a necessary reality for maintaining the delicate balance of quantum mechanics. As the technology matures, we can hope for more room-temperature-friendly options in the future!
+
+<8@> how about quantum internet. does it need server ?
+
+That's a fascinating question! The concept of a "server" in the traditional sense doesn't directly translate to the quantum internet. However, the future network's functionality might require something similar for specific purposes.
+
+Here's a breakdown of the differences and potential roles:
+
+**Traditional Internet Servers:**
+
+* Act as central storage and processing units for data and applications.
+* Handle requests from multiple clients and perform computations locally.
+* Rely on classical, bit-based information processing.
+
+**Quantum Internet "Servers":**
+
+* **Quantum Nodes:** More likely scenario is dedicated nodes within the network with increased capabilities for specific tasks.
+* **Quantum Memory Storage:** These nodes could act as central repositories for entangled qubits or large-scale quantum data.
+* **Quantum Gate Operations:** Specialized nodes dedicated to performing complex quantum gate operations on entangled qubits.
+* **Quantum Routing & Switching:** Nodes acting as intelligent "traffic cops" directing entangled qubit flow through the network.
+
+**So, why not traditional servers?**
+
+* **Quantum information is delicate:** Qubits are susceptible to decoherence (losing their quantum state) when manipulated or transferred. Centralized processing could introduce additional risk.
+* **Distributed nature of computations:** Many quantum algorithms involve computations distributed across multiple nodes, making centralized processing less efficient.
+* **Focus on entanglement:** The real power of the quantum internet lies in utilizing entangled qubits. Dedicated nodes for entanglement generation, storage, and manipulation are more relevant.
+
+**Possible future roles:**
+
+* **Quantum cloud platforms:** Similar to classical cloud computing, specialized nodes could offer on-demand access to quantum processing power for users.
+* **Global quantum information hubs:** Centralized locations with advanced infrastructure for large-scale quantum data storage and manipulation.
+* **Quantum security infrastructure:** Dedicated nodes could ensure secure communication and verification of entangled qubits across the network.
+
+**In conclusion:**
+
+While traditional servers might not be a direct analog in the quantum internet, specialized nodes with specific functionalities will likely play crucial roles. The exact structure and distribution of these nodes remain an exciting area of research and development, shaped by the unique properties of quantum information and the evolution of algorithms and applications.
+
+
 2*** explanation
 
 <1@> basic part of quantum computer 
