@@ -242,6 +242,45 @@ Here's a breakdown of the differences and potential roles:
 
 While traditional servers might not be a direct analog in the quantum internet, specialized nodes with specific functionalities will likely play crucial roles. The exact structure and distribution of these nodes remain an exciting area of research and development, shaped by the unique properties of quantum information and the evolution of algorithms and applications.
 
+<9@> so to build the quantum computer, we need to afford 2 important condictions. First, the atmosphere's temperature must be as coldest as possible. Second, the energy which use to power quantum computer must be as slowest as possible
+
+To build a quantum computer, it is indeed important to create an environment where the temperature is as cold as possible, typically close to absolute zero. This is necessary to minimize thermal noise and to maintain the delicate quantum states required for quantum computation.
+
+As for the energy used to power the quantum computer, it's not so much about the speed of the energy, but rather about the stability and precision of the energy sources and control systems. The energy sources must be stable and precise to ensure that the quantum states are maintained without interference.
+
+In summary, the key conditions for building a quantum computer involve creating a stable, low-noise environment at extremely low temperatures and using precise and stable energy sources to power the quantum computation.
+
+<10@> how much voltage and ampere does regular quantum computer need ?
+
+Quantum computers typically require very low voltages and currents for their operation. The specific voltage and current requirements can vary depending on the design and architecture of the quantum computer, as well as the specific qubit technology being used.
+
+In general, the voltage and current requirements for quantum computers are in the millivolt and microampere range, reflecting the extremely low energy levels and minimal power consumption associated with quantum computing. These low energy requirements are necessary to maintain the delicate quantum states and minimize interference from external sources.
+
+<11@> so which mean that quantum computer has less power consumption than classical computer ?
+
+Yes, quantum computers generally have lower power consumption compared to classical computers. This is due to the fact that quantum computers use low-energy qubits that require precise control and minimal energy consumption, while classical computers often have higher energy consumption due to the complexity of their operations and the energy requirements of the devices used in classical computing.
+
+<12@> what is atomic clock ?
+
+An atomic clock is a **highly precise timekeeping device that uses the natural vibrations of atoms to measure time**. It's like the world's most accurate stopwatch, able to keep track of time with astonishing precision on the order of parts per billionth of a second!
+
+Here's how it works:
+
+* **Atomic resonance:** Each atom has a unique natural frequency at which its electrons "wobble". Cesium atoms, commonly used in atomic clocks, vibrate at an extraordinarily constant frequency of 9,192,631,770 cycles per second.
+* **Microwave cavity:** The core of an atomic clock is a sealed container filled with cesium atoms exposed to precisely tuned microwaves. When the microwave frequency matches the natural frequency of the cesium atoms, they absorb the microwaves and change energy states.
+* **Frequency control:** By detecting this absorption, the clock can adjust the microwave frequency to stay perfectly in sync with the cesium atoms' natural vibration. This precise frequency becomes the basis for the clock's timekeeping.
+
+**Why are atomic clocks so important?**
+
+* **GPS accuracy:** They provide the ultra-precise timing signals needed for Global Positioning Systems (GPS). Without atomic clocks, GPS wouldn't be nearly as accurate, impacting navigation in everything from smartphones to spacecraft.
+* **Scientific research:** Their unparalleled precision allows scientists to conduct extremely high-resolution experiments in physics, astronomy, and other fields.
+* **International timekeeping:** International Atomic Time (TAI), the global standard for timekeeping, is based on the combined data from a network of highly accurate atomic clocks around the world.
+
+**Beyond cesium:**
+
+* While cesium atomic clocks are the most common, hydrogen maser atomic clocks offer even higher precision but are larger and more complex.
+* Research is ongoing into even more advanced technologies, like optical atomic clocks, promising even greater accuracy and potential applications in future navigation and communication systems.
+
 
 2*** explanation
 
@@ -333,3 +372,48 @@ Once we have represented the problem as a quantum circuit, we could use a VQA to
 The VQA would be able to explore a much larger search space than a classical algorithm, which would allow it to find the optimal solution to the problem much faster.
 
 This is just a simplified example, but it gives you a basic idea of how quantum computers could be used to develop new algorithms. Quantum computers are still in their early stages of development, but they have the potential to revolutionize the way we develop algorithms for a wide variety of problems.
+
+<5@> what is quantum ? 
+
+Quantum refers to the field of physics that deals with the behavior of matter and energy at the atomic and subatomic levels. It encompasses the study of quantum mechanics, which is the branch of physics that describes the behavior of particles at the quantum level. 
+
+Quantum mechanics introduces the concept of quantization, where certain physical properties can only exist in discrete, rather than continuous, amounts. This field has led to the development of quantum computing, quantum cryptography, and other quantum technologies that have the potential to revolutionize various industries.
+
+<6@> so you mean that any matter has discontinues state instead continously, whether it is emiting or absorbing is the presence quantum ?
+
+Yes, in the quantum world, certain physical properties, such as energy levels and angular momentum, can only exist in discrete, quantized states rather than continuous ones. This applies to the behavior of matter and energy at the atomic and subatomic levels.
+
+The concept of quantization is a fundamental aspect of quantum mechanics and has significant implications for how we understand the behavior of particles and energy at the quantum level.
+
+<7@> can you give me the example of quantum physics ? such as the photon of light
+
+Certainly! An example of the quantum nature of light can be seen in the phenomenon of photon polarization. Photons, which are the fundamental particles of light, can exhibit different polarization states, such as horizontal, vertical, diagonal, or circular. These polarization states are quantized and can be used in quantum communication and quantum cryptography protocols.
+
+For example, quantum key distribution (QKD) protocols use the quantum properties of photons to create secure keys for encrypting and decrypting information, making it possible to establish highly secure communication channels. This is just one example of how the quantum behavior of light can be harnessed for practical applications in the field of quantum technology.
+
+<8@> how about the atom ? how does quantum physiss influence on it ?
+
+At the atomic level, quantum physics has a profound influence on the behavior of atoms. In classical physics, atoms were thought of as miniature solar systems, with electrons orbiting the nucleus in well-defined paths. However, quantum mechanics introduced a new understanding of the atom, where electrons are described by wave functions that represent the probability of finding an electron in a particular location around the nucleus.
+
+Quantum mechanics also introduced the concept of energy quantization in atoms, where electrons can only occupy specific energy levels. This led to the development of the quantum model of the atom, which provides a more accurate description of atomic structure and the behavior of electrons within atoms. The principles of quantum physics are essential for understanding phenomena such as electron tunneling, the behavior of atoms in magnetic fields, and the emission and absorption of light by atoms.
+
+Furthermore, quantum physics has enabled the development of technologies such as atomic clocks, scanning tunneling microscopes, and quantum sensors, all of which rely on the quantum behavior of atoms for their operation.
+
+<9@> so you mean that in quantum physics. The electrons are understanding as the series of waves. These wave will find and catch the electrons. so which mean that the electron doesnt actually move around the nuclues by it's self. It got caught by the waves. Those waves are the quantum
+
+Yes, that's a good way to think about it! In quantum physics, electrons are described by wave functions, which represent the probability of finding an electron in a particular location around the nucleus.
+
+This means that the electron doesn't follow a well-defined path like a planet orbiting the sun, but rather exists as a "cloud" of probability, and we can only predict where it is likely to be. The behavior of electrons in atoms is indeed influenced by the wave-like nature of quantum mechanics, and this has significant implications for our understanding of atomic structure and the behavior of matter at the quantum level.
+
+<10@> why do we need to put the quantum computer at the absolute 0 degree ? does it has anything to do with zero point energy ?
+
+Yes, the need to cool quantum computers to near absolute zero temperature is indeed related to zero-point energy. Zero-point energy is the lowest possible energy that a quantum mechanical physical system may have, and it arises from the fact that particles such as electrons are in constant motion, even at the lowest possible temperature. 
+
+Cooling the quantum computer to near absolute zero helps to control the zero-point energy and reduce the interference from the energy in the ground state, which is crucial for the proper operation of a quantum computer. This is because at higher temperatures, thermal energy can introduce errors and disrupt the delicate quantum states necessary for quantum computation.
+
+<11@> what is quantum tunneling ?
+
+Quantum tunneling, also known as "tunneling," is a quantum mechanical phenomenon that allows particles, such as electrons, to pass through energy barriers that would be classically impenetrable.
+
+This is a fundamental concept in quantum physics and is important for understanding the behavior of electrons in quantum systems. Quantum tunneling has various applications in industries and technologies, such as the production of microelectronic devices, scanning tunneling microscopy, and wireless communication devices.
+
