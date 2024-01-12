@@ -431,7 +431,7 @@ This is a fundamental concept in quantum physics and is important for understand
 
 <12@> the node interconnection of quantum computer
 
-so you mean that the node interconnection is a crucial part of quantum computer, but it's not simple like wiring up or connecting componennts to each other. To set up node interconnection for quantum computer, we need 3 basic steps:
+so you mean that the node interconnection is a crucial part of quantum computer, but it's not simple like wiring up or connecting componennts to each other. To set up node interconnection for quantum computer, we need 4 basic steps:
 
 * step 1: Qbits as the building blocks
 
@@ -532,7 +532,7 @@ The quantization of angular momentum in quantum mechanics is described by the co
 
 Additionally, the quantization of angular momentum gives rise to phenomena such as spin, which is an intrinsic form of angular momentum possessed by elementary particles. Spin is a purely quantum mechanical property that has no classical analog, and it plays a crucial role in determining the behavior and properties of particles at the quantum level.
 
-<18@> so you mean that angular momentum is the answer to how the electrons can spin around the neuclus of an atom. the number of electrons spin around the neuclues meaning that only chosen discrete values allow to join the the spin. the force that make the electron's spinning and the act of choosing the appropriate particles are the quantum, which presented as angular momentum. which act on wave functions to determine the possible values of angular momentum for a given particle
+<18@> so you mean that angular momentum is the answer to how the electrons can spin around the neucleus of an atom. the number of electrons spin around the neuclues meaning that only chosen discrete values allow to join the the spin. the force that make the electron's spinning and the act of choosing the appropriate particles are the quantum, which presented as angular momentum. which act on wave functions to determine the possible values of angular momentum for a given particle
 
 Yes, that's a great way to think about it! In the context of quantum mechanics, the concept of angular momentum plays a crucial role in explaining how electrons behave in atoms. The quantization of angular momentum means that electrons can only occupy certain discrete energy levels and have specific values of angular momentum, which determines their behavior and the arrangement of electrons in an atom.
 
@@ -547,4 +547,12 @@ The rotational momentum of a motor refers to the rotational motion and momentum 
 In the context of motors, rotational momentum is crucial for the generation of mechanical work and the transfer of energy to other mechanical components. It is a fundamental aspect of motor operation and is essential for driving various types of machinery and equipment.
 
 The rotational momentum of a motor is influenced by factors such as the motor's speed, torque, and the mass and distribution of mass in its rotating components. Understanding and controlling rotational momentum is important for optimizing the performance and efficiency of motors in a wide range of applications.
+
+<20@> vector quantity
+
+A vector quantity is a quantity that has both magnitude and direction. In physics and mathematics, vector quantities are represented by arrows, where the length of the arrow represents the magnitude of the quantity, and the direction of the arrow represents the direction of the quantity. Examples of vector quantities include displacement, velocity, acceleration, force, and momentum. These quantities are important in describing physical phenomena and are often used in mathematical models to analyze and predict the behavior of systems.
+
+
+
+
 
