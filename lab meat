@@ -70,7 +70,7 @@ Here's a table summarizing the key differences:
 | Application | Can be used for various forms of meat | Typically used for steaks, burgers, etc. |
 | Relationship | Most 3D printed meat is lab-grown, but not all lab meat is 3D printed |
 
-<3@> so what kind of stemcell does it need to make lab meat
+<3@> so what kind of stem cell does it need to make lab meat
 
 For lab-grown meat, the type of stem cell used depends on the desired meat type and the specific production technique. Here's a breakdown:
 
@@ -166,6 +166,28 @@ Tissue engineering is a field of biomedical science that involves creating artif
 <8@> cell-based therapies
 
 Cell-based therapies, or cellular therapies, involve using cells as a treatment for various medical conditions. These therapies can include the use of stem cells, immune cells, or other types of cells to replace or repair damaged tissues, modulate the immune system, or deliver therapeutic agents to specific sites in the body. Cell-based therapies hold potential for treating a wide range of diseases and injuries, and they are an active area of research in regenerative medicine and immunotherapy.
+
+<9@> biodegradable polymers or edible plant-based materials in lab meat context
+
+In the context of lab-grown meat, biodegradable polymers and edible plant-based materials can play important roles. Biodegradable polymers can be used for packaging and scaffolding to support the growth of lab-grown meat cells. Edible plant-based materials can be used as a matrix or scaffold for cell growth, and as a source of nutrients for the cultured meat. These materials can help create a sustainable and environmentally friendly process for producing lab-grown meat.
+
+<10@> Muscle satellite cells to make lab meat, such as pork . can you tell me step by step from stem cell extraction to successfully production
+
+The process of using muscle satellite cells to produce lab-grown pork involves several key steps:
+
+1. Stem Cell Extraction: Obtain a sample of muscle tissue from a live animal, typically through a biopsy. From this tissue sample, isolate and extract the muscle satellite cells, which are the precursor cells for muscle tissue.
+
+2. Cell Culture and Expansion: Culture the extracted muscle satellite cells in a laboratory setting. Provide them with the necessary nutrients, growth factors, and conditions to promote their growth and proliferation. This step aims to expand the population of muscle satellite cells.
+
+3. Differentiation and Maturation: Encourage the cultured muscle satellite cells to differentiate into mature muscle cells. This can be achieved by manipulating the cell culture conditions to mimic the natural environment in which muscle tissue develops.
+
+4. Tissue Scaffold Preparation: Create a scaffold or framework, typically made from biodegradable polymers or edible plant-based materials, to support the growth and organization of the differentiated muscle cells. The scaffold provides structure and shape to the lab-grown meat.
+
+5. Tissue Assembly: Seed the differentiated muscle cells onto the prepared tissue scaffold. The cells will grow and organize themselves on the scaffold, forming the basis of the lab-grown pork.
+
+6. Maturation and Harvesting: Allow the lab-grown muscle tissue to mature and develop, typically through continued culture and appropriate environmental conditions. Once the tissue reaches a suitable stage of maturity, it can be harvested for consumption.
+
+It's important to note that this process is complex and continually evolving as researchers work to optimize each step for efficient and sustainable lab-grown meat production.
 
 
 2*** explanation
@@ -350,6 +372,33 @@ Adult stem cells, or somatic stem cells, are undifferentiated cells found throug
 For example, adult stem cells found in the bone marrow may give rise to different types of blood cells, but they may not have the same broad potential as embryonic stem cells. However, adult stem cells still play a crucial role in maintaining and repairing the specific tissues or organs where they are found.
 
 Adult stem cells can also be found in various tissues and organs throughout the body. They are present in tissues such as the brain, skin, liver, and muscles, among others. These adult stem cells have the ability to generate different cell types specific to the tissue or organ in which they are located, contributing to the body's natural repair and regeneration processes.
+
+<23@> pluripotent stem cells
+
+Pluripotent stem cells are a type of stem cell that has the ability to develop into almost any type of cell in the body. They can be derived from embryos or reprogrammed from adult cells. Pluripotent stem cells have the potential to be used in regenerative medicine and tissue engineering to replace or repair damaged tissues and organs. Their unique ability to differentiate into various cell types makes them valuable for research and potential medical applications.
+
+<24@> the different that distintive Pluripotent stem cells & Pluripo stem cells & adult stem cells 
+
+Pluripotent stem cells, such as embryonic stem cells and induced pluripotent stem cells, have the ability to differentiate into any type of cell in the body. They are derived from embryos or reprogrammed from adult cells.
+
+Pluripotent stem cells, on the other hand, are a broader category that includes both pluripotent stem cells and multipotent stem cells. Multipotent stem cells have a more limited ability to differentiate into specific types of cells, typically within a particular tissue or organ.
+
+Adult stem cells are a type of multipotent stem cell found in specific tissues and organs in the body. They have the ability to differentiate into a limited range of cell types related to the tissue or organ in which they are found.
+
+In summary, pluripotent stem cells have the broadest differentiation potential, followed by pluripotent stem cells (including multipotent stem cells), and then adult stem cells, which have a more limited differentiation capacity.
+
+<25@> Muscle satellite cells
+
+Muscle satellite cells are a type of adult stem cell found in skeletal muscle. They play a key role in muscle growth, repair, and regeneration. When muscle tissue is damaged, satellite cells become activated and proliferate, providing new myonuclei to help repair and replace damaged muscle fibers. This process is essential for muscle maintenance and recovery from injury.
+
+<26@> Skeletal muscle
+
+Skeletal muscle, also known as striated muscle, is a type of muscle tissue that is attached to bones and is responsible for voluntary movement in the body. It is composed of long, cylindrical muscle fibers containing multiple nuclei. Skeletal muscle is under the control of the nervous system and works in conjunction with the skeletal system to produce movement and maintain body posture.
+
+<27@> Myonuclei
+
+Myonuclei are nuclei within skeletal muscle fibers. Each muscle fiber contains multiple myonuclei, and they are responsible for controlling protein synthesis and regulating cellular activity in the muscle tissue. Myonuclei play a crucial role in the growth, repair, and adaptation of skeletal muscle in response to exercise and mechanical stress.
+
 
 
 
