@@ -91,7 +91,6 @@ Yes, the number of propellers and blades on a drone can significantly impact its
 * Generally the loudest of common propeller configurations.
 
 **Five-blade propellers and more:**
-[Image of Five-blade drone propellers]
 
 **Advantages:**
 
@@ -104,5 +103,37 @@ Yes, the number of propellers and blades on a drone can significantly impact its
 * Generate the most noise among common propeller configurations.
 
 In general, the choice of propeller configuration depends on the specific application and desired flight performance. For drones with limited battery life, two-blade or three-blade propellers are often preferred due to their efficiency. For drones requiring more thrust or stability, four-blade propellers may be a better choice. And for specialized applications demanding maximum lifting capacity, five-blade propellers or more may be necessary.
+
+<2@> gyroscopes and accelerometers for orientation and movement for the drone
+
+Gyroscopes and accelerometers are commonly used in drones for orientation and movement sensing. Gyroscopes measure the rate of rotation or angular velocity, while accelerometers measure acceleration, including the force of gravity. By combining the data from these sensors, drones can determine their orientation, detect changes in movement, and stabilize themselves during flight. This information is crucial for controlling the drone's position, stability, and responsiveness to pilot commands.
+
+Gyroscopes and accelerometers are essential components in most modern drones, providing the necessary data for stable flight, precise control, and orientation detection. They form the foundation of the drone's inertial measurement unit (IMU), which is crucial for maintaining stability and responsiveness during flight.
+
+<3@> ESC and flight controller of the drone
+
+The Electronic Speed Controller (ESC) and flight controller are two critical components of a drone's control system. The ESC regulates the speed of the drone's motors by adjusting the power supplied to them, while the flight controller processes data from various sensors, such as gyroscopes and accelerometers, to stabilize the drone and execute pilot commands. Together, these components play a vital role in ensuring the drone's stability, maneuverability, and overall flight performance.
+
+both the Electronic Speed Controller (ESC) and the flight controller can be programmed using platforms like Arduino or Raspberry Pi. These platforms allow for customization and fine-tuning of the drone's control algorithms, sensor integration, and flight behavior. By programming these components, drone enthusiasts and developers can tailor the drone's performance to specific requirements and experiment with advanced control strategies.
+
+<4@> angular velocity meaning 
+
+Angular velocity refers to the rate of change of angular displacement of an object with respect to time. In simpler terms, it describes how quickly an object is rotating around a specific axis. Angular velocity is measured in units such as radians per second (rad/s) or degrees per second (°/s), and it is a key concept in physics and engineering, particularly in the study of rotational motion.
+
+<5@> Less prone to vibration meaning
+
+Less prone to vibration means that the drone's components, such as the flight controller and sensors, are designed to withstand and minimize the effects of vibrations during flight. This is important because excessive vibration can disrupt sensor readings and affect the overall stability and performance of the drone. By reducing the impact of vibrations, the drone can maintain accurate sensor data and improve its overall flight characteristics.
+
+I'm referring to the vibrations that can occur during drone flight, which can be caused by the rotation of the propellers, changes in motor speed, wind turbulence, or sudden maneuvers. These vibrations can affect the accuracy of sensors and components, potentially leading to instability or erratic behavior in the drone. Designing components to be less prone to these vibrations helps ensure reliable performance during flight.
+
+"Maneuver" is a term used to describe a planned movement or series of movements, often in a tactical or strategic context. In general, it refers to a skillful or strategic action taken to achieve a specific goal, such as maneuvering a vehicle through traffic, executing a military maneuver, or making a strategic maneuver in a business negotiation.
+
+Wind turbulence refers to irregular and chaotic air movements in the atmosphere. It can be caused by various factors such as wind shear, thermal convection, or obstacles such as buildings or mountains. Turbulence can create sudden changes in wind speed and direction, which can affect aircraft, causing discomfort for passengers and, in severe cases, presenting hazards to flight operations. Pilots and air traffic controllers monitor and report turbulence to ensure the safety of air travel.
+
+
+
+
+
+
 
 
