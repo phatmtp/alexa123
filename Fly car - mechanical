@@ -130,6 +130,56 @@ I'm referring to the vibrations that can occur during drone flight, which can be
 
 Wind turbulence refers to irregular and chaotic air movements in the atmosphere. It can be caused by various factors such as wind shear, thermal convection, or obstacles such as buildings or mountains. Turbulence can create sudden changes in wind speed and direction, which can affect aircraft, causing discomfort for passengers and, in severe cases, presenting hazards to flight operations. Pilots and air traffic controllers monitor and report turbulence to ensure the safety of air travel.
 
+<6@> rigidity in space meaning
+
+Rigidity in space refers to the property of an object or a system to maintain its shape and orientation in space without deformation. This concept is often associated with the behavior of rigid bodies in physics and engineering, where the object's shape and dimensions remain constant, regardless of its position or orientation in space.
+
+<7@> precession meaning
+
+Precession is the term used to describe the slow, gradual change in the orientation of the rotational axis of a spinning object. This effect can be observed in various contexts, such as the precession of the Earth's axis, which causes the change in the orientation of the Earth's rotational axis over a long period of time. In simpler terms, precession refers to the wobbling or shifting of the axis of rotation of an object.
+
+<8@> all about gyroscope
+
+** gyroscopic principles**
+
+[1] rigidity in space:
+
+- a spinning gyro resist outside forces
+
+- it will hold position in the plane of rotation
+
+[2] precession 
+
+- gyro will turn 90 degree from the direction of the force, and in the direction of the gyro's rotation
+
+**gyroscopic power**
+
+[1] vacuum power
+
+- the attitude indicator & heading indicator are powered by the vacuum pump
+
+- most vacuum powered instruments require about 4 or 5 inches of mercury (pressure)
+
+[2] electric power
+
+- the turn coordirnator is typically powered by the aircraft's electrical system
+
+**gyroscopic instruments**
+
+[1] attitude indicator
+
+- gyro spins parallel to the horizon
+
+[2] heading indicator
+
+- gyro spins prependicular to the horizon
+
+[3] turn coordinator
+
+- gyro spins prependicular to the horizon and is also canted 30 degree
+
+- indicates rate of roll, rate of turn, and quality of turn
+
 
 
 
