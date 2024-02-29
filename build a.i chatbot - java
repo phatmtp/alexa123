@@ -1,6 +1,7 @@
 [1] information
 [2] explanation
 [3] instruction
+[4] summarization
 
 
 1*** information
@@ -542,6 +543,18 @@ public class chatbot {
         return documentSamples;
     }
 }
+
+
+4*** summarization
+
+1/ import opennlp.tools.doccat: a package of openNLP libary, it provide categorize function for the language model. The language model can cateforize the training data
+
+2/ import opennlp.tools.util: a package of openNLP libary, it can help to improve reading & writing function of language models, evaluating the output and normalizing text
+
+3/ public static void main(String[] args) throws Exception: java need this code line for program execution. 
+
+4/ DoccatModel model = trainModel(trainingData): the 'trainingData' will be set to variable 'model'. the `model` represent the training data
+
 
 
 
