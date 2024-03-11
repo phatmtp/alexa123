@@ -1,9 +1,24 @@
 [1] explanation
+[2] simplization
 
 
 1*** explanation
 
 1/ how do commutator work ? <1@,1***>
 2/ so you mean that any motor with the magnetic field produced by the magnets surrounding the coils. if i remove the commutator from it, i can turn it to be ac generator ? <2@,1***>
+3/ can you explain how the dc current cause rotation on commutator ? <3@,1***>
+4/ the current reverse ? <4@,1***>
+5/ the BLDC controler circuit <5@,1***>
+6/ why do we need transistor to bldc controler circuit ? <6@,1***>
+7/ why do we need 10k ohm resistor for bldc controler circuit ? <7@,1***>
+8/ why do we need 1N4007 diode to bldc controler circuit ? <8@,1***>
+
+
+[2] simplization
+
+1/ how do commutator work ? <1@,2***>
+
+
+
 
 
