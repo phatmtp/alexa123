@@ -104,6 +104,44 @@ Devices that commonly use a 10k ohm resistor include:
 
 These resistors are widely used in various electronic devices and circuits for current limiting, voltage division, biasing, and other purposes.
 
+<8'@> idetify type of resistor by colors
+
+Resistors are color-coded to indicate their resistance values. The color bands on a resistor can be used to identify the resistor's resistance value, tolerance, and sometimes even the temperature coefficient. Here is how you can identify the resistance value of a resistor based on its color bands:
+
+1. **Color coding for 4-band resistors:**
+   - The first two bands represent the significant digits of the resistance value.
+   - The third band represents the multiplier (number of zeros to add).
+   - The fourth band represents the tolerance.
+
+2. **Color coding for 5-band resistors:**
+   - The first three bands represent the significant digits of the resistance value.
+   - The fourth band represents the multiplier (number of zeros to add).
+   - The fifth band represents the tolerance.
+
+Here is a quick reference for the color codes of the resistor bands:
+
+- Black: 0
+- Brown: 1
+- Red: 2
+- Orange: 3
+- Yellow: 4
+- Green: 5
+- Blue: 6
+- Violet: 7
+- Gray: 8
+- White: 9
+
+For example, if you see a resistor with the color bands Red-Red-Orange-Gold, it translates to a resistor value of 22 kΩ with a tolerance of ±5%.
+
+For a 100k ohm resistor, the color bands would typically be as follows:
+
+- 1st Band: Brown
+- 2nd Band: Black
+- 3rd Band: Yellow
+- 4th Band: Gold
+
+Therefore, a resistor with the color bands Brown-Black-Yellow-Gold would indicate a 100k ohm resistor with a tolerance of ±5%.
+
 <8@> why do we need 1N4007 diode to bldc controler circuit ?
 
 The 1N4007 diode is commonly used in electronic circuits, including BLDC motor controller circuits, for various purposes. Here are some reasons why a 1N4007 diode might be included in a BLDC motor controller circuit:
