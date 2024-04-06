@@ -44,7 +44,8 @@
 [38] long short-term memory (LSTM) networks
 [39] language model 
 [40] normalizing the output of an a.i chatbot. what does that mean ? 
-
+[41] different between self attention & encoder-decoder attention ?
+[42] Combining self-attention and encoder-decoder attention
 
 2*** information
 
@@ -53,5 +54,7 @@
 [3] What kind of neural network does bard Google use ?
 [4] generative adversarial network (GAN)
 [5] Capcom used AI to create the hardest Street Fighter boss
-
+[6] what kind of neural architecture does geminy a.i use ?
+[7] Google Translate does indeed use a combination of self-attention and encoder-decoder attention
+[8] Does spotify use neural network archictecture ?
 
