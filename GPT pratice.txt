@@ -46,6 +46,7 @@
 [40] normalizing the output of an a.i chatbot. what does that mean ? 
 [41] different between self attention & encoder-decoder attention ?
 [42] Combining self-attention and encoder-decoder attention
+[43] can feedback loops be viewed as a problem or just an aspect in neural learning ?
 
 2*** information
 
@@ -57,4 +58,5 @@
 [6] what kind of neural architecture does geminy a.i use ?
 [7] Google Translate does indeed use a combination of self-attention and encoder-decoder attention
 [8] Does spotify use neural network archictecture ?
+[9] RNNs is a traditional neural network archicture 
 
