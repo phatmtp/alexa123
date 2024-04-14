@@ -47,6 +47,11 @@
 [41] different between self attention & encoder-decoder attention ?
 [42] Combining self-attention and encoder-decoder attention
 [43] can feedback loops be viewed as a problem or just an aspect in neural learning ?
+[44] AND logic gate ?
+[45] different between AND and NAND ?
+[46] Not logic gate ?
+[47] OR logic gate ?
+[48] recurrent neural network
 
 2*** information
 
@@ -59,4 +64,11 @@
 [7] Google Translate does indeed use a combination of self-attention and encoder-decoder attention
 [8] Does spotify use neural network archictecture ?
 [9] RNNs is a traditional neural network archicture 
+[10] cloudflare sever
+[11] does arduino or raspberry pi use NAND or AND ?
+[12] so you mean RNN can create for the a.i an temporal memory (short term memory) how about long term memory ?
+
+
+
+
 
