@@ -52,6 +52,8 @@
 [46] Not logic gate ?
 [47] OR logic gate ?
 [48] recurrent neural network
+[49] what is CNNs neural network ?
+[50] Combining different types of neural networks and machine learning techniques in a single project
 
 2*** information
 
