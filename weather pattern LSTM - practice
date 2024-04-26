@@ -13,4 +13,22 @@
 
 [1] what is one hot encoded in neural learning ? 
 [2] code explanation
+[3] data = pd.get_dummies(data, columns=['city', 'airconditioner_using'])
+
+[4] label_encoder_target = LabelEncoder()
+    data['normal'] = label_encoder_target.fit_transform(data['normal'])
+    data['too hot'] = label_encoder_target.fit_transform(data['too hot'])
+    data['too cold'] = label_encoder_target.fit_transform(data['too cold'])
+    data['fire_outbreak'] = label_encoder_target.fit_transform(data['fire_outbreak'])
+
+[5] scikit-learn library
+
+
+
+
+
+
+
+
+
 
