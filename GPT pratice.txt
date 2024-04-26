@@ -54,6 +54,8 @@
 [48] recurrent neural network
 [49] what is CNNs neural network ?
 [50] Combining different types of neural networks and machine learning techniques in a single project
+[51] BERT 
+[52] Word2Vec or GloVe
 
 2*** information
 
@@ -69,6 +71,7 @@
 [10] cloudflare sever
 [11] does arduino or raspberry pi use NAND or AND ?
 [12] so you mean RNN can create for the a.i an temporal memory (short term memory) how about long term memory ?
+[13] Not all pre-trained models can be fine-tuned
 
 
 
