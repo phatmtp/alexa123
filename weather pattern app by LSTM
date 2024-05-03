@@ -287,6 +287,34 @@ scikit-learn is used in various domains like:
 
 Overall, scikit-learn is a powerful and versatile machine learning library that serves as a great foundation for various data science tasks in Python. If you're interested in getting started with machine learning, scikit-learn is an excellent library to explore!
 
+[6] scaler = StandardScaler()
+data['temperature'] = scaler.fit_transform(data['temperature'].values.reshape(-1, 1))
+
+The code you provided applies a technique called standardization to the 'temperature' column in a pandas DataFrame named `data`. Here's a breakdown of what each part does:
+
+**Standardization:**
+
+- It's a data preprocessing technique that scales features (columns) in a dataset to have a mean of 0 and a standard deviation of 1.
+- This is often useful for machine learning models because many algorithms work better with features on a similar scale.
+
+**Applying Standardization in this code:**
+
+1. **`scaler = StandardScaler()`:** This line creates an instance of the `StandardScaler` class from the scikit-learn library. This object will be used to perform the standardization.
+
+2. **`data['temperature'] = scaler.fit_transform(data['temperature'].values.reshape(-1, 1))`:**
+   - This line applies standardization to the 'temperature' column of the DataFrame (`data`).
+   - `.fit_transform` is a method of the `StandardScaler` object. It performs two steps:
+     - **`fit`:** It calculates the mean and standard deviation of the values in the 'temperature' column.
+     - **`transform`:** It uses the calculated mean and standard deviation to center and scale each value in the 'temperature' column. The centered and scaled values are then stored back into the 'temperature' column of the DataFrame (`data`).
+
+   - `.values.reshape(-1, 1)`: This part of the code reshapes the 'temperature' column into a two-dimensional array with one column (even if it originally has a single row). This is because `StandardScaler` expects a 2D array for fitting and transformation.
+
+**Result:**
+
+After running this line of code, the 'temperature' column in your DataFrame (`data`) will now contain the standardized values. These values will have a mean of 0 and a standard deviation of 1. This can improve the performance of machine learning models in some cases. 
+
+[7] can you explain why standard scale & deviation are needed ? is it because this is weather patter project ?
+
 
 
 
