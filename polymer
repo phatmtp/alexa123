@@ -1,1 +1,152 @@
+1*** information
+2*** explanation
+
+
+
+1*** information
+
+
+
+2*** explanation
+
+[1] what is polimer ?
+
+A polymer is a large molecule composed of repeating structural units, typically connected by covalent bonds. The term "polymer" derives from the Greek words "poly" meaning "many" and "meros" meaning "parts" or "units".
+
+Polymers can be natural or synthetic. Some examples of natural polymers include:
+
+1. Cellulose - found in plants and used to make paper, textiles, and other materials.
+2. Proteins - found in living organisms and perform various functions, such as enzymes, antibodies, and structural components.
+3. DNA and RNA - the genetic material in living organisms.
+
+Synthetic polymers are human-made and include:
+
+1. Plastics - such as polyethylene, polypropylene, and polyvinyl chloride (PVC).
+2. Rubber - such as natural rubber and synthetic rubber.
+3. Synthetic fibers - such as nylon, polyester, and acrylic.
+
+Polymers are widely used in various industries, including:
+
+- Packaging (plastic bags, bottles, and containers)
+- Construction (building materials, insulation, and sealants)
+- Textiles (clothing, carpets, and upholstery)
+- Electronics (circuit boards, wires, and insulation)
+- Automotive (tires, dashboards, and other components)
+- Healthcare (medical devices, prosthetics, and drug delivery systems)
+
+The unique properties of polymers, such as their versatility, durability, and ease of processing, make them essential materials in modern society.
+
+[2] what is Rna and dna ?
+
+RNA (Ribonucleic Acid) and DNA (Deoxyribonucleic Acid) are two of the three major biological macromolecules, along with proteins, that are essential for all known forms of life.
+
+DNA and RNA are both nucleic acids, which are polymers composed of monomeric units called nucleotides. The main differences between DNA and RNA are:
+
+1. Chemical structure:
+   - DNA (Deoxyribonucleic Acid):
+     - The sugar molecule in the nucleotides is deoxyribose.
+     - DNA typically exists as a double-stranded helix.
+   - RNA (Ribonucleic Acid):
+     - The sugar molecule in the nucleotides is ribose.
+     - RNA is usually single-stranded, but can also form some secondary and tertiary structures.
+
+2. Genetic information storage:
+   - DNA is the primary molecule responsible for storing and transmitting genetic information in most organisms.
+   - RNA acts as an intermediary, carrying the genetic information from DNA to the protein synthesis machinery in the cell.
+
+3. Functions:
+   - DNA is the genetic material that contains the instructions for the development and functioning of living organisms.
+   - RNA plays various roles in the cell, including:
+     - Messenger RNA (mRNA): Carries the genetic information from the nucleus to the ribosomes for protein synthesis.
+     - Transfer RNA (tRNA): Brings the appropriate amino acids to the ribosome during protein synthesis.
+     - Ribosomal RNA (rRNA): Provides the structural and functional components of ribosomes, the cellular organelles where protein synthesis occurs.
+     - Small nuclear RNA (snRNA) and small nucleolar RNA (snoRNA): Involved in the processing and modification of other RNA molecules.
+
+In summary, DNA stores the genetic information, while RNA is responsible for the expression and regulation of that information, playing a central role in the central dogma of molecular biology: DNA → RNA → Protein.
+
+[2] what is Rna and dna ?
+
+RNA (Ribonucleic Acid) and DNA (Deoxyribonucleic Acid) are two of the three major biological macromolecules, along with proteins, that are essential for all known forms of life.
+
+DNA and RNA are both nucleic acids, which are polymers composed of monomeric units called nucleotides. The main differences between DNA and RNA are:
+
+1. Chemical structure:
+   - DNA (Deoxyribonucleic Acid):
+     - The sugar molecule in the nucleotides is deoxyribose.
+     - DNA typically exists as a double-stranded helix.
+   - RNA (Ribonucleic Acid):
+     - The sugar molecule in the nucleotides is ribose.
+     - RNA is usually single-stranded, but can also form some secondary and tertiary structures.
+
+2. Genetic information storage:
+   - DNA is the primary molecule responsible for storing and transmitting genetic information in most organisms.
+   - RNA acts as an intermediary, carrying the genetic information from DNA to the protein synthesis machinery in the cell.
+
+3. Functions:
+   - DNA is the genetic material that contains the instructions for the development and functioning of living organisms.
+   - RNA plays various roles in the cell, including:
+     - Messenger RNA (mRNA): Carries the genetic information from the nucleus to the ribosomes for protein synthesis.
+     - Transfer RNA (tRNA): Brings the appropriate amino acids to the ribosome during protein synthesis.
+     - Ribosomal RNA (rRNA): Provides the structural and functional components of ribosomes, the cellular organelles where protein synthesis occurs.
+     - Small nuclear RNA (snRNA) and small nucleolar RNA (snoRNA): Involved in the processing and modification of other RNA molecules.
+
+In summary, DNA stores the genetic information, while RNA is responsible for the expression and regulation of that information, playing a central role in the central dogma of molecular biology: DNA → RNA → Protein.
+
+[3] gene and DNA or RNA. which one come first ?
+
+DNA comes before RNA in the central dogma of molecular biology.
+
+The central dogma describes the flow of genetic information within a biological system, and it states that the genetic information stored in DNA is first transcribed into RNA, which is then translated into proteins.
+
+The sequence is as follows:
+
+1. DNA (Deoxyribonucleic Acid):
+   - DNA is the primary genetic material that stores the hereditary information in the form of genes.
+   - Genes are specific sequences of DNA that contain the instructions for the synthesis of proteins or other molecules.
+
+2. RNA (Ribonucleic Acid):
+   - DNA is transcribed into RNA, which serves as an intermediary molecule.
+   - The information stored in the DNA is copied into a complementary RNA molecule, known as messenger RNA (mRNA).
+   - Other types of RNA, such as transfer RNA (tRNA) and ribosomal RNA (rRNA), also play important roles in the process of protein synthesis.
+
+3. Protein:
+   - The mRNA molecule is then used as a template for the synthesis of proteins by the cellular machinery, a process known as translation.
+   - The specific sequence of amino acids in a protein is determined by the sequence of nucleotides in the corresponding mRNA molecule.
+
+So, in the central dogma, the genetic information flows from DNA to RNA to protein, with DNA being the primary source of genetic information, and RNA acting as an intermediate in the expression of that information.
+
+[4] where are DNA or RNA located to the cell ?
+
+DNA and RNA are located in different parts of the cell, as follows:
+
+1. DNA (Deoxyribonucleic Acid):
+   - In eukaryotic cells (cells with a nucleus, such as plant and animal cells):
+     - The DNA is located in the nucleus of the cell.
+     - The nucleus is a membrane-enclosed organelle that serves as the control center of the cell, housing the genetic material.
+   - In prokaryotic cells (cells without a nucleus, such as bacteria):
+     - The DNA is located in the cytoplasm of the cell, typically in a region called the nucleoid.
+     - Prokaryotic cells do not have a membrane-enclosed nucleus, so the genetic material is present in the cytoplasm.
+
+2. RNA (Ribonucleic Acid):
+   - In eukaryotic cells:
+     - RNA is found in various locations, including the nucleus, the cytoplasm, and the ribosomes (organelles where protein synthesis occurs).
+     - Different types of RNA, such as mRNA, tRNA, and rRNA, are located in different compartments of the cell to perform their specific functions.
+   - In prokaryotic cells:
+     - RNA is primarily found in the cytoplasm, where it plays a role in the synthesis of proteins.
+
+The specific locations of DNA and RNA within the cell are crucial for their respective functions:
+
+- DNA is located in the nucleus (or nucleoid in prokaryotes) to protect the genetic information and ensure its accurate replication and transmission to daughter cells during cell division.
+- RNA is found in various cellular compartments to facilitate the expression of genetic information and the synthesis of proteins.
+
+This spatial organization of DNA and RNA within the cell contributes to the efficient and coordinated flow of genetic information and the proper functioning of the cell.
+
+
+
+
+
+
+
+
+
 
