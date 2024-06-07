@@ -19,8 +19,7 @@ Another example is DNA, the genetic material of all living things. DNA is a poly
 
 Ethylene, also known as ethene, is the simplest alkene. It's a colorless gas with a faint sweet odor at room temperature. Ethylene itself is a monomer, not a polymer. A monomer is a relatively simple molecule that can be linked together to form a polymer.  
 
-Ethylene molecules have the chemical formula C2H4, which means it has two carbon atoms and four hydrogen atoms. The two carbon atoms are connected by a double bond.  [Image of Ethylene molecule]
-
+Ethylene molecules have the chemical formula C2H4, which means it has two carbon atoms and four hydrogen atoms. The two carbon atoms are connected by a double bond.  
 **Ethylene as a Monomer**
 
 Ethylene is the most widely produced organic compound. It's a versatile starting material in the production of numerous chemicals, including:
@@ -1358,9 +1357,78 @@ In this process:
 
 Overall, the complete combustion (oxidation) of methane results in the formation of carbon dioxide and water, releasing energy in the form of heat and light. This reaction is an essential part of energy production in many industrial and domestic settings, such as in natural gas appliances and power plants.
 
+[42] nonpolar
 
+"Nonpolar" is a term commonly used in chemistry to describe molecules that do not have distinct positive and negative poles. Here are some key points about nonpolar molecules:
 
+1. **Equal Sharing of Electrons**: In nonpolar molecules, the electrons are shared equally between the atoms, resulting in a balanced distribution of electrical charge. This typically occurs when the atoms involved have similar electronegativities.
 
+2. **Lack of Dipole Moment**: Nonpolar molecules do not have a dipole moment, meaning there is no separation of positive and negative charges within the molecule. This is in contrast to polar molecules, which have regions of partial positive and partial negative charge.
+
+3. **Examples**: Common examples of nonpolar molecules include diatomic gases like nitrogen (N₂) and oxygen (O₂), as well as hydrocarbons like methane (CH₄) and ethane (C₂H₆).
+
+4. **Solubility**: Nonpolar molecules tend to be hydrophobic, meaning they do not dissolve well in water (a polar solvent). Instead, they dissolve better in nonpolar solvents such as oils and other hydrocarbons.
+
+5. **Molecular Geometry**: The shape of the molecule can also influence its polarity. Symmetrical molecules (e.g., carbon dioxide, CO₂) can be nonpolar even if they contain polar bonds because the bond dipoles cancel out due to the molecular geometry.
+
+Understanding the concept of nonpolarity is crucial in predicting the behavior of molecules in different chemical reactions and environments.
+
+[43] dipole
+
+A dipole refers to a separation of electrical charges within a molecule, resulting in regions of partial positive and partial negative charge. Here are some key aspects of dipoles:
+
+1. **Dipole Moment**: The dipole moment is a measure of the strength of the dipole and the separation of charge within the molecule. It is a vector quantity, meaning it has both magnitude and direction. The dipole moment (\(\mu\)) is calculated as the product of the charge difference (\(q\)) and the distance (\(r\)) between the charges: \(\mu = q \times r\).
+
+2. **Polar Molecules**: Molecules that have a permanent dipole moment are called polar molecules. These molecules have an asymmetric distribution of charges, often due to differences in electronegativity between the atoms involved. For example, in a water molecule (H₂O), the oxygen atom is more electronegative than the hydrogen atoms, creating a dipole with a partial negative charge near the oxygen and a partial positive charge near the hydrogens.
+
+3. **Temporary Dipoles**: Even nonpolar molecules can exhibit temporary dipoles due to momentary distributions of electrons. These are known as instantaneous or induced dipoles, which can lead to weak intermolecular forces like London dispersion forces.
+
+4. **Electrostatic Interactions**: Dipoles interact with other dipoles (dipole-dipole interactions) or with ions (ion-dipole interactions) through electrostatic forces. These interactions play a significant role in determining the physical properties and behaviors of substances, such as boiling points, solubility, and intermolecular bonding.
+
+5. **Examples**: Common examples of molecules with dipoles include hydrogen chloride (HCl), ammonia (NH₃), and sulfur dioxide (SO₂). These molecules have regions of partial positive and negative charges due to the differences in electronegativity between their constituent atoms.
+
+Understanding dipoles is essential for predicting and explaining the behavior of molecules in various chemical and physical processes.
+
+[44] so that's mean polar substance or liquid has better current conduction than non polar substance, because polar substance has partial positive pole & negative pole while non-polar substance has balance electronegativity among atoms within that substance
+
+Yes, you're correct in noting that polar substances generally have better electrical conductivity than nonpolar substances. This is because polar substances have a separation of charge that allows them to interact more effectively with electric fields. Here's a more detailed explanation:
+
+1. **Charge Separation in Polar Substances**: Polar molecules have regions of partial positive and negative charge due to differences in electronegativity between atoms. This separation of charge allows polar molecules to align with an electric field, facilitating the movement of charges.
+
+2. **Interaction with Ions**: In polar solvents like water, the partial charges on the molecules can stabilize ions. This means that when an ionic compound dissolves in a polar solvent, the ions are surrounded by the polar molecules, which helps to keep them in solution and allows them to move freely, thus conducting electricity. For example, salt (NaCl) dissolves in water to form Na⁺ and Cl⁻ ions, which are stabilized by the polar water molecules.
+
+3. **Nonpolar Substances**: Nonpolar substances, on the other hand, do not have regions of partial positive and negative charge. This means they do not interact as effectively with electric fields and are less likely to stabilize ions or facilitate their movement. As a result, nonpolar substances generally do not conduct electricity well. For example, oils and hydrocarbons, which are nonpolar, do not conduct electricity.
+
+4. **Molecular Structure and Conductivity**: The molecular structure of a substance greatly influences its ability to conduct electricity. In polar substances, the asymmetrical charge distribution creates dipole moments that allow for better interaction with electric fields and ions. In contrast, the symmetrical charge distribution in nonpolar substances results in poor interaction with electric fields, leading to lower electrical conductivity.
+
+In summary, the presence of partial positive and negative charges in polar substances allows them to interact with electric fields and ions more effectively, leading to better electrical conductivity compared to nonpolar substances.
+
+[45] what is sterols ?
+
+Sterols are a subgroup of steroids, a class of organic molecules, characterized by a hydroxyl group (-OH) attached to a steroid nucleus. Sterols are essential components in the biology of plants, animals, and fungi. Here are some key points about sterols:
+
+1. **Structure**:
+   - Sterols have a structure consisting of a hydroxyl group at the 3-position of the A-ring of the steroid nucleus. This structure typically consists of four fused rings (three six-membered and one five-membered).
+   - The most well-known sterol is cholesterol, which has the formula C₂₇H₄₆O.
+
+2. **Types**:
+   - **Cholesterol**: Found in animal cell membranes, it is crucial for maintaining cell membrane integrity and fluidity. Cholesterol also serves as a precursor for the synthesis of steroid hormones, bile acids, and vitamin D.
+   - **Phytosterols**: Found in plants, they include compounds like sitosterol, campesterol, and stigmasterol. Phytosterols are similar to cholesterol but have different side chains.
+   - **Ergosterol**: Found in fungi and some protists, it is similar to cholesterol and serves a similar function in maintaining cell membrane integrity.
+
+3. **Biological Functions**:
+   - **Membrane Structure**: Sterols are vital components of cell membranes, helping to modulate fluidity and permeability. In animal cells, cholesterol is a key membrane component, while in plant cells, phytosterols serve a similar role.
+   - **Precursor to Bioactive Molecules**: Cholesterol is a precursor to several important biological molecules, including steroid hormones (like estrogen and testosterone), bile acids (which aid in digestion), and vitamin D (which is important for bone health).
+
+4. **Health Implications**:
+   - **Cholesterol**: While essential for various bodily functions, high levels of cholesterol, particularly low-density lipoprotein (LDL) cholesterol, are associated with an increased risk of cardiovascular diseases.
+   - **Phytosterols**: These plant sterols can help reduce cholesterol levels in humans by competing with cholesterol for absorption in the digestive system, thus lowering overall cholesterol levels.
+
+5. **Sources**:
+   - **Cholesterol**: Found in animal-derived foods such as meat, dairy products, and eggs.
+   - **Phytosterols**: Found in plant-based foods such as vegetable oils, nuts, seeds, and legumes.
+
+In summary, sterols are a type of steroid important for cell membrane structure and function and serve as precursors to various biologically significant molecules. Cholesterol, a well-known sterol, is vital for animal cells, while phytosterols play similar roles in plants.
 
 
 
