@@ -1271,6 +1271,16 @@ user_input = "hello"
 response = generate_response(user_input)
 print(response)
 
+# Interactive chatting
+while True:
+    user_input = input("You: ")  # Take user input
+    if user_input.lower() == 'exit':
+        print("Chatbot: Goodbye!")
+        break  # Exit the loop if user types 'exit'
+    
+    response = generate_response(user_input)
+    print("Chatbot:", response)  # Print the generated response
+
     
 3*** basic instruction to buil CHAT BOX GPT with OPEN A.I
 
